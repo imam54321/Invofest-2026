@@ -26,9 +26,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        invofest: "#852e4e",
-        invofest_secondary: "#FEE3EC",
+        invofest: "#1c0941",
+        invofest_secondary: "#381971",
         invofest_dark: "#4c1d3d",
+        navbar: "#f6e6fe",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -25,14 +25,14 @@ const ITTalkshowSec = () => {
                 <h1
                   data-aos="fade-right"
                   data-aos-delay="300"
-                  className="font-semibold text-invofest text-3xl sm:text-4xl lg:text-5xl"
+                  className="font-semibold text-gray-300 text-3xl sm:text-4xl lg:text-5xl"
                 >
                   IT Talkshow
                 </h1>
                 <p
                   data-aos="fade-right"
                   data-aos-delay="300"
-                  className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-slate-600"
+                  className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-gray-300"
                 >
                   Talkshow berskala nasional: “Humanizing Technology: Kolaborasi Manusia dan AI di Masa Depan.”
 

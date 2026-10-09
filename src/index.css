@@ -105,4 +105,184 @@
       #FA9F43
     );
   }
+  
+/* Container utama */
+.flip-card {
+  width: 100%;
+  max-width: 380px;
+  height: 480px;
+  perspective: 1200px;
+  border-radius: 16px;
+  margin-inline: auto;
+}
+
+/* Struktur 3D */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+  border-radius: inherit;
+}
+
+/* Flip ketika hover */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Kedua sisi card */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: inherit;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Tampilan depan */
+.flip-card-front {
+  background: #111827;
+  isolation: isolate;
+}
+
+.flip-card-image {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.flip-card:hover .flip-card-image {
+  transform: scale(1.06);
+}
+
+/* Gradient keseluruhan untuk keterbacaan */
+.flip-card-gradient {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.02) 25%,
+    rgba(0, 0, 0, 0.08) 35%,
+    rgba(0, 0, 0, 0.15) 55%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+}
+
+/* Area bawah dengan efek glass + blur */
+.flip-card-overlay {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  min-height: 25%;
+  padding: 24px;
+    background: linear-gradient(
+    to bottom,
+    rgba(15, 23, 42, 0) 0%,
+    rgba(15, 23, 42, 0.10) 12%,
+    rgba(15, 23, 42, 0.42) 36%,
+    rgba(15, 23, 42, 0.70) 100%
+  );
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Tombol */
+.flip-card-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.flip-card-button:hover {
+  background: #fff;
+  border-color: #fff;
+  color: #111827;
+}
+
+/* Tampilan belakang */
+.flip-card-back {
+  transform: rotateY(180deg);
+  background: linear-gradient(
+    145deg,
+    #1c0941
+  );  
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: white;
+}
+
+.flip-card-back-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  padding: 30px;
+}
+
+.flip-card-label {
+  color: #c5a46d;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  margin-bottom: 16px;
+}
+
+.flip-card-divider {
+  width: 48px;
+  height: 3px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  background: #c5a46d;
+}
+
+/* Responsif */
+@media (max-width: 640px) {
+  .flip-card {
+    max-width: 100%;
+    height: 420px;
+  }
+
+  .flip-card-overlay {
+    padding: 18px;
+  }
+
+  .flip-card-back-content {
+    padding: 24px;
+  }
+}
+
+/* Pengguna yang memilih minimasi animasi */
+@media (prefers-reduced-motion: reduce) {
+  .flip-card-inner,
+  .flip-card-image {
+    transition: none;
+  }
+}
+
 }

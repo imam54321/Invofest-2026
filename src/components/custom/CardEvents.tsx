@@ -23,7 +23,7 @@ function CardEvents({
       data-aos="fade-up"
     >
       <div className="p-5 bg-invofest rounded-xl mr-5">{icon}</div>
-      <p className="text-slate-600">{place}</p>
+      <p className="text-invofest">{place}</p>
     </div>
   );
 }

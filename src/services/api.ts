@@ -24,7 +24,7 @@ const handleResponse = async (res: Response) => {
 };
 
 /* ------------------------------------------------------------------ */
-/* Auth API                                                           */
+/* Auth API */
 /* ------------------------------------------------------------------ */
 export const authAPI = {
   login: (email: string, password: string) =>
@@ -36,7 +36,7 @@ export const authAPI = {
 };
 
 /* ------------------------------------------------------------------ */
-/* Competition API (public)                                           */
+/* Competition API (public)  */
 /* ------------------------------------------------------------------ */
 export const competitionAPI = {
   register: (formData: FormData) =>
@@ -47,7 +47,7 @@ export const competitionAPI = {
 };
 
 /* ------------------------------------------------------------------ */
-/* Event API (public)                                                 */
+/* Event API (public)  */
 /* ------------------------------------------------------------------ */
 export const eventAPI = {
   registerSeminar: (formData: FormData) =>
@@ -70,7 +70,7 @@ export const eventAPI = {
 };
 
 /* ------------------------------------------------------------------ */
-/* Admin API                                                          */
+/* Admin API */
 /* ------------------------------------------------------------------ */
 const adminHeader = (token: string) => ({ Authorization: `Bearer ${token}` });
 
@@ -160,7 +160,7 @@ export const adminAPI = {
   /* --- Akhir Fungsi Aksi --- */
 
   /* ---------------------------------------------------------- */
-  /*  Perbaikan utama: pakai enum value POSTER / UIUX / WEB     */
+  /* Perbaikan utama: pakai enum value POSTER / UIUX / WEB */
   /* ---------------------------------------------------------- */
   getCompetition: (token: string, competition: "POSTER" | "UIUX" | "WEB") =>
     fetch(`${API_BASE_URL}/admin/competition/${competition}`, {

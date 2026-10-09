@@ -83,7 +83,7 @@ const WebdesignCompetition: React.FC = () => {
 
                         <div
                             data-aos="fade-up"
-                            className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-slate-600"
+                            className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-gray-300"
                         >
                             <p className="mb-4">
                                 Salah satu perlombaan dalam kegiatan{" "}

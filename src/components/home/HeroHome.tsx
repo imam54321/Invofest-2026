@@ -1,6 +1,6 @@
 import React from "react";
 import heroInvofest1 from "/assets/Maskot-Hero.png";
-import textImage from "/assets/text-image.png";
+import textImage from "/assets/LOGO 1.webp";
 import AOS from "aos";
 import ButtonPrimary from "../custom/ButtonPrimary";
 
@@ -14,10 +14,10 @@ const HeroHome = () => {
 
   return (
     <React.Fragment>
-      <div className="max-w-screen-xl mx-auto">
-        <div className="w-full h-fit p-4 px-8">
+      <div className="max-w-screen-xl mx-auto ">
+        <div className="w-full h-fit p-4 px-8 ">
           <div className="flex flex-col-reverse lg:flex-row justify-between items-center gap-3">
-            <div className="flex flex-col gap-3 sm:gap-4">
+            <div className="flex flex-col gap-3 sm:gap-4 ">
               <img
                 data-aos="fade-right"
                 data-aos-delay="100"

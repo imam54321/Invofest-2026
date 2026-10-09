@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "/assets/nav-logo.png";
+import Logo from "/assets/nav-logo.webp";
 import { Link, useLocation } from "react-router-dom";
 import { FaMicrophoneAlt, FaTrophy, FaHome } from "react-icons/fa";
 import { MdCoPresent } from "react-icons/md";
@@ -15,18 +15,18 @@ const Navbar = () => {
 
   return (
     <React.Fragment>
-      <nav className="bg-white border-gray-200 fixed top-0 z-[999] w-full">
+      <nav className="bg-invofest border-gray-200 fixed top-0 z-[999] w-full">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img src={Logo} className="w-48" alt="Invofest Logo" />
+            <img src={Logo} className="w-40" alt="Invofest Logo" />
           </a>
           <button
             data-collapse-toggle="navbar-default"
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
             aria-controls="navbar-default"
             aria-expanded={`${openMenu ? true : false}`}
             onClick={() => setOpenMenu(!openMenu)}
@@ -52,14 +52,14 @@ const Navbar = () => {
             className={`${!openMenu && "hidden"} w-full lg:block lg:w-auto`}
             id="navbar-default"
           >
-            <ul className="font-medium flex flex-col p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:items-center lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-white">
+            <ul className="font-medium flex flex-col p-4 lg:p-0 mt-4 border  rounded-lg lg:flex-row lg:items-center lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 ">
               <li>
                 <Link
                   to={"/"}
                   className={`block py-2 px-3 ${
                     activeLink === ""
-                      ? "text-white bg-invofest rounded lg:bg-transparent lg:text-invofest"
-                      : "text-slate-600 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-invofest"
+                      ? "text-white bg-white rounded lg:bg-transparent lg:text-white"
+                      : "text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-white"
                   } lg:p-0 flex items-center gap-2`}
                   aria-current="page"
                   onClick={() => setOpenMenu(false)}
@@ -73,8 +73,8 @@ const Navbar = () => {
                   to={"/competition"}
                   className={`block py-2 px-3 ${
                     activeLink === "competition"
-                      ? "text-white bg-invofest rounded lg:bg-transparent lg:text-invofest"
-                      : "text-slate-600 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-invofest"
+                      ? "text-white bg-invofest rounded lg:bg-transparent lg:text-white"
+                      : "text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-white"
                   } lg:p-0 flex items-center gap-2`}
                   aria-current="page"
                   onClick={() => setOpenMenu(false)}
@@ -88,8 +88,8 @@ const Navbar = () => {
                   to={"/seminar"}
                   className={`block py-2 px-3 ${
                     activeLink === "seminar"
-                      ? "text-white bg-invofest rounded lg:bg-transparent lg:text-invofest"
-                      : "text-slate-600 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-invofest"
+                      ? "text-white bg-invofest rounded lg:bg-transparent lg:text-white"
+                      : "text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-white"
                   } lg:p-0 flex items-center gap-2`}
                   aria-current="page"
                   onClick={() => setOpenMenu(false)}
@@ -103,8 +103,8 @@ const Navbar = () => {
                   to={"/workshop"}
                   className={`block py-2 px-3 ${
                     activeLink === "workshop"
-                      ? "text-white bg-invofest rounded lg:bg-transparent lg:text-invofest"
-                      : "text-slate-600 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-invofest"
+                      ? "text-white bg-invofest rounded lg:bg-transparent lg:text-white"
+                      : "text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-white"
                   } lg:p-0 flex items-center gap-2`}
                   aria-current="page"
                   onClick={() => setOpenMenu(false)}
@@ -118,8 +118,8 @@ const Navbar = () => {
                   to={"/talkshow"}
                   className={`block py-2 px-3 ${
                     activeLink === "talkshow"
-                      ? "text-white bg-invofest rounded lg:bg-transparent lg:text-invofest"
-                      : "text-slate-600 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-invofest"
+                      ? "text-white bg-invofest rounded lg:bg-transparent lg:text-white"
+                      : "text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-white"
                   } lg:p-0 flex items-center gap-2`}
                   aria-current="page"
                   onClick={() => setOpenMenu(false)}
@@ -133,8 +133,8 @@ const Navbar = () => {
                   to={"/login-admin"}
                   className={`block py-2 px-3 ${
                     activeLink === "login-admin"
-                      ? "text-white bg-invofest rounded lg:bg-transparent lg:text-invofest"
-                      : "text-slate-600 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-invofest"
+                      ? "text-white bg-invofest rounded lg:bg-transparent lg:text-white"
+                      : "text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-white"
                   } lg:p-0`}
                   aria-current="page"
                   onClick={() => setOpenMenu(false)}

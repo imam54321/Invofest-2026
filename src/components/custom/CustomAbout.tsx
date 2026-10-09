@@ -22,14 +22,14 @@ const CustomAbout = ({ title, description }: CustomAboutProps) => {
             <h1
               data-aos="zoom-in-up"
               data-aos-delay="300"
-              className="font-semibold text-invofest text-center text-2xl sm:text-4xl lg:text-5xl mb-5"
+              className="font-semibold text-gray-300 text-center text-2xl sm:text-4xl lg:text-5xl mb-5"
             >
               {title}
             </h1>
             <p
               data-aos="zoom-in-up"
               data-aos-delay="450"
-              className="text-center text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-slate-600"
+              className="text-center text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-gray-300"
             >
               {description}
             </p>

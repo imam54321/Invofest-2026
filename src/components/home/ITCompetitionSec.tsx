@@ -1,3 +1,4 @@
+
 import React from "react";
 import AOS from "aos";
 import ButtonPrimary from "../custom/ButtonPrimary";
@@ -25,14 +26,14 @@ const ITCompetitionSec = () => {
                 <h1
                   data-aos="fade-right"
                   data-aos-delay="300"
-                  className="font-semibold text-invofest text-3xl sm:text-4xl lg:text-5xl"
+                  className="font-semibold text-gray-300 text-3xl sm:text-4xl lg:text-5xl"
                 >
                   IT Competition
                 </h1>
                 <p
                   data-aos="fade-right"
                   data-aos-delay="300"
-                  className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-slate-600"
+                  className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-gray-300"
                 >
                   <b>"From Creation to Innovation"</b> adalah sebuah kompetisi IT
                   yang dirancang untuk menjembatani jurang antara ide kreatif dan inovasi nyata.

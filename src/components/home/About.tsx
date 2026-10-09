@@ -22,14 +22,14 @@ const About = () => {
             <h1
               data-aos="fade-right"
               data-aos-delay="300"
-              className="font-semibold text-invofest text-3xl sm:text-4xl lg:text-5xl"
+              className="font-semibold text-gray-300 text-3xl sm:text-4xl lg:text-5xl"
             >
               Tentang INVOFEST
             </h1>
             <p
               data-aos="fade-right"
               data-aos-delay="450"
-              className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-slate-600"
+              className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-gray-300"
             >
               Invofest 2025, yang diselenggarakan oleh sarjana terapan Teknik Informatika
               Universitas Harkat Negeri, adalah festival tahunan yang bertujuan untuk menginspirasi

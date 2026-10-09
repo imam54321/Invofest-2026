@@ -11,13 +11,13 @@ import { FaYoutube } from "react-icons/fa";
 const Footer = () => {
   return (
     <React.Fragment>
-      <footer className="bg-invofest_secondary mt-8">
+      <footer className="bg-invofest mt-8">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="lg:flex lg:justify-between">
             <div className="mb-6 lg:mb-0">
               <a href="/" className="flex items-center">
                 <img
-                  src="/assets/nav-logo.png"
+                  src="/assets/nav-logo.webp"
                   className="w-48"
                   alt="Invofest Logo"
                 />
@@ -25,10 +25,10 @@ const Footer = () => {
             </div>
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
+                <h2 className="mb-6 text-sm font-semibold text-gray-300 uppercase">
                   Menu Navigasi
                 </h2>
-                <ul className="text-gray-500 font-medium">
+                <ul className="text-gray-300 font-medium">
                   <li className="mb-4">
                     <Link
                       to="/"
@@ -77,10 +77,10 @@ const Footer = () => {
                 </ul>
               </div>
               <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
+                <h2 className="mb-6 text-sm font-semibold text-gray-300 uppercase">
                   Ikuti Kami
                 </h2>
-                <ul className="text-gray-500 font-medium">
+                <ul className="text-gray-300 font-medium">
                   <li className="mb-4">
                     <a
                       href="https://instagram.com/invofest_harkatnegeri"
@@ -105,10 +105,10 @@ const Footer = () => {
               </div>
 
               <div className="w-full">
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
+                <h2 className="mb-6 text-sm font-semibold text-gray-300 uppercase">
                   Alamat
                 </h2>
-                <ul className="w-full text-gray-500 font-medium">
+                <ul className="w-full text-gray-300 font-medium">
                   <li>
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.1835440601208!2d109.10518467424245!3d-6.868597267201685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb9e2805c1c1b%3A0xe3e61e1ae59106ff!2sPoliteknik%20Harapan%20Bersama%20Tegal!5e0!3m2!1sen!2sid!4v1724836082153!5m2!1sen!2sid"
@@ -127,7 +127,7 @@ const Footer = () => {
           </div>
           <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
           <div className="sm:flex sm:items-center sm:justify-between">
-            <span className="text-sm text-gray-500 sm:text-center">
+            <span className="text-sm text-gray-300 sm:text-center">
               © 2025{" "}
               <a href="https://flowbite.com/" className="hover:underline">
                 INVOFEST

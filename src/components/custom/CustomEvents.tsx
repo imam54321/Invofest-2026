@@ -26,7 +26,7 @@ const CustomEvents = ({ title, place, time, date }: CustomEventsProps) => {
             <h1
               data-aos="zoom-in-up"
               data-aos-delay="300"
-              className="font-semibold text-invofest text-center text-2xl sm:text-4xl lg:text-5xl mb-5"
+              className="font-semibold text-gray-300 text-center text-2xl sm:text-4xl lg:text-5xl mb-5"
             >
               Pelaksanaan {title}
             </h1>

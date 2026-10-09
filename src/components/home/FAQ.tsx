@@ -23,7 +23,7 @@ const FAQ = () => {
                 <span className="mb-2 block text-lg font-semibold text-slate-600">
                   FAQ
                 </span>
-                <h2 className="mb-4 text-3xl font-bold text-slate-600 sm:text-[40px]/[48px]">
+                <h2 className="mb-4 text-3xl font-bold text-invofest sm:text-[40px]/[48px]">
                   Punya Pertanyaan? Lihat{" "}
                   <span className="text-invofest">Disini</span>
                 </h2>

@@ -1,5 +1,6 @@
 import React from "react";
-import ButtonPrimary from './ButtonPrimary';
+// import ButtonPrimary from './ButtonPrimary';
+import "../../index.css";
 import AOS from "aos";
 // import {
 //   Dialog,
@@ -45,100 +46,72 @@ const CompetitionCard = ({
       duration: 1500,
     });
   }, []);
-
+  
   return (
     <React.Fragment>
-      {/* Dialog Popup */}
-      {/* <Dialog open={openDialog} onOpenChange={setOpenDialog}>
-        <DialogContent className="sm:max-w-[425px]">
-          <DialogHeader>
-            <DialogTitle className="text-2xl">{TitleCard}</DialogTitle>
-            <DialogDescription className="text-base">
-              Berikut adalah informasi lengkap mengenai kompetisi '{TitleCard}'.
-            </DialogDescription>
-          </DialogHeader>
-          <DialogFooter>
-            <div className="flex flex-col gap-2 w-full h-fit">
-              <Link
-                to={linkGuideBook}
-                target="_blank"
-                className="before:ease w-full relative px-3 py-2 sm:px-4 sm:py-3 text-center border border-invofest bg-invofest text-white transition-all text-[0.75rem] sm:text-base rounded-sm sm:rounded-lg flex justify-center items-center gap-3"
-              >
-                <FaBook />
-                <span className="relative z-10">GUIDEBOOK & PERLENGKAPAN</span>
-              </Link> */}
-
-
-
-                                                                                         {/* close register */}
-                                                                      {/* unCommand the code, when open register again thanks */}
-
-              {/* <Link
-                to={linkReg}
-                target="_blank"
-                className="before:ease w-full relative px-3 py-2 sm:px-4 sm:py-3 text-center border border-invofest bg-invofest text-white transition-all text-[0.75rem] sm:text-base rounded-sm sm:rounded-lg flex justify-center items-center gap-3"
-              >
-                <FaTrophy />
-                <span className="relative z-10">PENDAFTARAN KOMPETISI</span>
-              </Link> */}
-              {/* <Link
-                to={linkPengumpulan}
-                target="_blank"
-                className="before:ease w-full relative px-3 py-2 sm:px-4 sm:py-3 text-center border border-invofest bg-invofest text-white transition-all text-[0.75rem] sm:text-base rounded-sm sm:rounded-lg flex justify-center items-center gap-3"
-              >
-                <IoSend />
-                <span className="relative z-10">PENGUMPULAN KARYA</span>
-              </Link> */}
-
-
-
-            {/* </div>
-          </DialogFooter>
-        </DialogContent>
-      </Dialog> */}
-
       <div
-        data-aos={dataAos}
-        data-aos-delay={delayAos}
-        className="max-w-sm bg-white border border-slate-200 rounded-lg shadow transition-all duration-300 group"
-      >
+    data-aos={dataAos}
+    data-aos-delay={delayAos}
+    className="flip-card group"
+  >
+    <div className="flip-card-inner">
+      {/* FRONT SIDE */}
+      <div className="flip-card-front">
         <img
-          className="rounded-t-lg group-hover:grayscale-[50%] transition-all duration-300"
           src={ImageCard}
-          alt="Competition-Image"
+          alt={TitleCard}
+          className="flip-card-image"
         />
-        <div className="p-5">
-          <a href="#">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-slate-600">
-              {TitleCard}
-            </h5>
-          </a>
-          <p className="text-sm sm:text-base mb-3 font-normal text-slate-600">
+
+        {/* Gradient untuk kontras teks */}
+        <div className="flip-card-gradient" />
+
+        {/* Bagian teks + blur bawah sekitar 1/4 card */}
+        <div className="flip-card-overlay">
+          <h5 className="text-xl sm:text-2xl font-bold tracking-tight text-white mb-2">
+            {TitleCard}
+          </h5>
+
+          <p className="text-sm text-white/90 line-clamp-2 mb-4">
             {DescCard}
           </p>
-          
+        </div>
+      </div>
+
+      {/* BACK SIDE */}
+      <div className="flip-card-back">
+        <div className="flip-card-back-content">
+          <span className="flip-card-label">
+            INVOFEST COMPETITION
+          </span>
+
+          <h5 className="text-2xl font-bold text-white mb-4">
+            {TitleCard}
+          </h5>
+
+          <div className="flip-card-divider" />
+
+          <p className="text-sm sm:text-base leading-relaxed text-white/85">
+            {DescCard}
+          </p>
 
           <Link
             to={linkRedirect}
-            onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "auto" })}
+            onClick={() =>
+              window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "auto",
+              })
+            }
+            className="flip-card-button mt-6"
           >
-            <ButtonPrimary
-              text="INFO SELENGKAPNYA"
-              dataAos=""
-              delayAos=""
-              isOutline={false}
-            />
+            LIHAT DETAIL
           </Link>
-
-
-            
-          
-            
-           
-
-          
         </div>
       </div>
+    </div>
+  </div>
     </React.Fragment>
   );
 };
