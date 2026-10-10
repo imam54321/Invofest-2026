@@ -1,6 +1,6 @@
 import React from "react";
-import heroInvofest1 from "/assets/Maskot-Hero.png";
-import textImage from "/assets/LOGO 1.webp";
+import heroInvofest1 from "/assets/Maskot-Hero-2026.webp";
+import textImage from "/assets/Logo Invofest.webp";
 import AOS from "aos";
 import ButtonPrimary from "../custom/ButtonPrimary";
 
@@ -33,7 +33,12 @@ const HeroHome = () => {
                 Invofest (Informatics Vocational Festival) adalah festival
                 tahunan yang bertujuan untuk menginspirasi dan memberdayakan
                 generasi muda Indonesia dalam menghadapi era digital. Dengan
-                mengusung tema <b>“Beyond Limits, Beyond Intelligence: Innovate for a Smarter Tomorrow ”</b>.
+                mengusung tema{" "}
+                <b>
+                  “Beyond Limits, Beyond Intelligence: Innovate for a Smarter
+                  Tomorrow ”
+                </b>
+                .
               </p>
               <div className="flex items-center gap-3 sm:gap-4 lg:gap-5 mt-3">
                 <ButtonPrimary
@@ -55,8 +60,8 @@ const HeroHome = () => {
                   handleClick={() =>
                     window.open(
                       `https://wa.me/62895605919551?text=${encodeURIComponent(
-                        "Halo Kak, Saya Ingin Bertanya mengenai Invofest 2025..."
-                      )}`
+                        "Halo Kak, Saya Ingin Bertanya mengenai Invofest 2025...",
+                      )}`,
                     )
                   }
                 />

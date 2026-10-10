@@ -1,6 +1,6 @@
 import React from "react";
 import AOS from "aos";
-import heroITCompetition from "/assets/Maskot-Lomba.png";
+import heroITCompetition from "/assets/Maskot-Lomba-2026.webp";
 import ButtonPrimary from "../custom/ButtonPrimary";
 
 const HeroComp = () => {
@@ -36,8 +36,8 @@ const HeroComp = () => {
                 data-aos-delay="550"
                 className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-slate-600"
               >
-                Kompetisi dalam INVOFEST ini mengusung tema <b>“From Creation to Innovation”</b>, 
-                Tema ini bertujuan
+                Kompetisi dalam INVOFEST ini mengusung tema{" "}
+                <b>“From Creation to Innovation”</b>, Tema ini bertujuan
                 mengajak generasi muda untuk mengembangkan inovasi dan
                 kreativitas guna membentuk kelompok yang memiliki potensi luar
                 biasa, yang mampu mewujudkan masa depan yang berkelanjutan.
@@ -62,8 +62,8 @@ const HeroComp = () => {
                   handleClick={() =>
                     window.open(
                       `https://wa.me/6282220190948?text=${encodeURIComponent(
-                        "Halo Kak, Saya Ingin Bertanya mengenai It Competition Invofest 2025..."
-                      )}`
+                        "Halo Kak, Saya Ingin Bertanya mengenai It Competition Invofest 2025...",
+                      )}`,
                     )
                   }
                 />

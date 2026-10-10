@@ -20,12 +20,12 @@ const FAQ = () => {
                 data-aos-delay="150"
                 className="mx-auto mb-[60px] max-w-[520px] text-center lg:mb-20"
               >
-                <span className="mb-2 block text-lg font-semibold text-slate-600">
+                <span className="mb-2 block text-lg font-semibold text-invofest_secondary">
                   FAQ
                 </span>
                 <h2 className="mb-4 text-3xl font-bold text-invofest sm:text-[40px]/[48px]">
                   Punya Pertanyaan? Lihat{" "}
-                  <span className="text-invofest">Disini</span>
+                  <span className="text-invofest_secondary">Disini</span>
                 </h2>
                 <p className="text-base text-slate-600">
                   Ada banyak informasi yang terkait dengan INVOFEST, Anda dapat
@@ -85,19 +85,23 @@ const FAQ = () => {
 
 const AccordionItem = ({ header, text }: { header: string; text: string }) => {
   const [active, setActive] = React.useState<boolean>(false);
+  const panelId = React.useId();
 
   const handleToggle = () => {
     setActive(!active);
   };
   return (
-    <div className="mb-8 w-full rounded-lg p-4 shadow-[0px_0px_7px_0px_rgba(153,5,81,1)] overflow-hidden relative before:absolute before:w-[0.4rem] before:h-full before:bg-invofest before:right-0 before:top-0 sm:p-8 lg:px-6 xl:px-8">
+    <div className="group relative mb-6 w-full overflow-hidden rounded-xl border border-white/15 bg-invofest/90 p-4 shadow-xl shadow-invofest/20 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-invofest_light/60 hover:shadow-2xl hover:shadow-invofest_secondary/30 sm:p-6 lg:px-6 xl:px-8">
       <button
-        className={`faq-btn flex w-full text-left`}
-        onClick={() => handleToggle()}
+        type="button"
+        className="faq-btn flex w-full items-center text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-invofest_light focus-visible:ring-offset-2 focus-visible:ring-offset-invofest"
+        onClick={handleToggle}
+        aria-expanded={active}
+        aria-controls={panelId}
       >
-        <div className="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg text-slate-600 bg-gray-600/5">
+        <div className="mr-4 flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-invofest_light/20 bg-invofest_secondary/70 text-invofest_light transition-colors duration-300 group-hover:bg-invofest_secondary">
           <svg
-            className={`fill-slate-600 stroke-slate-600 duration-200 ease-in-out ${
+            className={`fill-invofest_light stroke-invofest_light transition-transform duration-300 ease-in-out ${
               active ? "rotate-180" : ""
             }`}
             width="17"
@@ -113,19 +117,24 @@ const AccordionItem = ({ header, text }: { header: string; text: string }) => {
           </svg>
         </div>
 
-        <div className="w-full">
-          <h4 className="mt-1 text-lg font-semibold text-slate-600">
+        <div className="w-full pr-2">
+          <h4 className="text-base font-semibold leading-snug text-white transition-colors duration-300 group-hover:text-invofest_light sm:text-lg">
             {header}
           </h4>
         </div>
       </button>
 
       <div
-        className={`pl-[62px] duration-200 ease-in-out ${
-          active ? "block" : "hidden"
+        id={panelId}
+        className={`grid transition-[grid-template-rows,opacity] duration-300 ease-in-out ${
+          active ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
         }`}
       >
-        <p className="py-3 text-base leading-relaxed text-slate-600">{text}</p>
+        <div className="min-h-0 overflow-hidden">
+          <p className="py-4 pl-14 text-sm leading-relaxed text-white/80 sm:text-base">
+            {text}
+          </p>
+        </div>
       </div>
     </div>
   );

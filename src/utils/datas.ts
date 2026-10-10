@@ -4,10 +4,9 @@ export const dataSeminar = {
     "“Human-AI Integration: Merancang Arsitektur Kolaboratif, Bukan Kompetitif”",
   heroDescription:
     "Seminar nasional yang membahas strategi dan arsitektur teknologi untuk menciptakan sistem di mana manusia dan AI bekerja sebagai mitra yang sinergis." +
-
     "Yang bertujuan mengubah paradigma dari persaingan menjadi kolaborasi, serta meningkatkan pengetahuan peserta dalam merancang teknologi AI yang berpusat pada manusia.",
   linkRegister: "https://forms.gle/chNgyZPdS7SneLwV6",
-  image: "/assets/Maskot-Seminar.png",
+  image: "/assets/Maskot-Seminar-2026.webp",
   aboutTitle: "Tentang  IT SEMINAR",
   aboutDescription: `Seminar bertajuk “Human-AI Integration: Merancang Arsitektur Kolaboratif, Di tengah pesatnya kemajuan kecerdasan buatan (AI), narasi yang sering muncul adalah tentang persaingan antara manusia dan mesin. Kekhawatiran akan penggantian peran manusia oleh teknologi cerdas menjadi diskusi utama di berbagai sektor. Namun, bagaimana jika kita mengubah paradigma tersebut?
                     Seminar Nasional Teknologi Informasi ini hadir untuk menjawab tantangan itu dengan mengangkat tema "Human-AI Integration: Merancang Arsitektur Kolaboratif, Bukan Kompetitif.”
@@ -34,12 +33,11 @@ export const dataSeminar = {
 
 export const dataTalkshow = {
   heroTitle: "IT Talkshow",
-  subtitle:
-    "“Humanizing Technology: Kolaborasi Manusia dan AI di Masa Depan”",
+  subtitle: "“Humanizing Technology: Kolaborasi Manusia dan AI di Masa Depan”",
   heroDescription: `Talkshow “Humanizing Technology: Kolaborasi Manusia dan AI di Masa Depan” Sebuah diskusi interaktif yang mengeksplorasi cara mengintegrasikan nilai-nilai kemanusiaan seperti etika, empati, dan kreativitas ke dalam pengembangan kecerdasan buatan.
                     yang bertujuan menginspirasi audiens untuk membangun dan memanfaatkan AI sebagai alat kolaboratif yang memperkuat potensi unik manusia, bukan sebagai penggantinya.`,
   linkRegister: "https://forms.gle/xgJY5hWLP2z4sp7eA",
-  image: "/assets/Maskot-Talkshow.png",
+  image: "/assets/Maskot-Talkshow-2026.webp",
   aboutTitle: "Tentang IT Talkshow",
   aboutDescription: `Seiring teknologi, khususnya kecerdasan buatan (AI), yang semakin meresap ke dalam setiap aspek kehidupan kita, muncul sebuah pertanyaan fundamental: Apakah kita sedang menciptakan teknologi yang melayani manusia, atau justru sebaliknya?
                     Untuk menjawab pertanyaan tersebut, kami mempersembahkan talkshow berskala nasional: “Humanizing Technology: Kolaborasi Manusia dan AI di Masa Depan.”
