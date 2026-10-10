@@ -27,7 +27,7 @@ const EventWorkshop = ({ data }: { data: EventWorkshopProps[] }) => {
             <h1
               data-aos="zoom-in-up"
               data-aos-delay="300"
-              className="font-semibold text-invofest text-center text-2xl sm:text-4xl lg:text-5xl mb-5"
+              className="font-semibold text-invofes t text-center text-2xl sm:text-4xl lg:text-5xl mb-5"
             >
               Pelaksanaan IT Workshop
             </h1>
@@ -38,13 +38,13 @@ const EventWorkshop = ({ data }: { data: EventWorkshopProps[] }) => {
                 key={item.id}
                 icon={
                   item.id === 1 ? (
-                    <FaCode className="inline text-3xl text-white" />
+                    <FaCode className="inline text-5xl text-invofest" />
                   ) : item.id === 2 ? (
-                    <MdPhoneAndroid className="inline text-3xl text-white" />
+                    <MdPhoneAndroid className="inline text-5xl text-invofest" />
                   ) : item.id === 3 ? (
-                    <SiTensorflow className="inline text-3xl text-white" />
+                    <SiTensorflow className="inline text-5xl text-invofest" />
                   ) : (
-                    <FaShieldAlt className="inline text-3xl text-white" />
+                    <FaShieldAlt className="inline text-5xl text-invofest" />
                   )
                 }
                 id={item.id}
