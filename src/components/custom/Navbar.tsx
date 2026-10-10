@@ -7,11 +7,21 @@ import { MdCoPresent } from "react-icons/md";
 import { FaUserCircle } from "react-icons/fa"; // Contoh ikon pengguna
 import { FaLaptop } from "react-icons/fa";
 
-
 const Navbar = () => {
   const location = useLocation();
-  const activeLink = location.pathname.split("/").pop();
   const [openMenu, setOpenMenu] = React.useState<boolean>(false);
+
+  const getNavLinkClass = (path: string) => {
+    const isActive =
+      path === "/"
+        ? location.pathname === "/"
+        : location.pathname === path ||
+          location.pathname.startsWith(`${path}/`);
+
+    return `block py-2 px-3 rounded transition-colors duration-200 hover:text-invofest_light focus-visible:text-invofest_light ${
+      isActive ? "text-invofest_light" : "text-white"
+    } lg:bg-transparent lg:p-0 flex items-center gap-2`;
+  };
 
   return (
     <React.Fragment>
@@ -56,12 +66,8 @@ const Navbar = () => {
               <li>
                 <Link
                   to={"/"}
-                  className={`block py-2 px-3 ${
-                    activeLink === ""
-                      ? "text-white bg-white rounded lg:bg-transparent lg:text-white"
-                      : "text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-white"
-                  } lg:p-0 flex items-center gap-2`}
-                  aria-current="page"
+                  className={getNavLinkClass("/")}
+                  aria-current={location.pathname === "/" ? "page" : undefined}
                   onClick={() => setOpenMenu(false)}
                 >
                   <FaHome />
@@ -71,12 +77,12 @@ const Navbar = () => {
               <li>
                 <Link
                   to={"/competition"}
-                  className={`block py-2 px-3 ${
-                    activeLink === "competition"
-                      ? "text-white bg-invofest rounded lg:bg-transparent lg:text-white"
-                      : "text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-white"
-                  } lg:p-0 flex items-center gap-2`}
-                  aria-current="page"
+                  className={getNavLinkClass("/competition")}
+                  aria-current={
+                    location.pathname.startsWith("/competition")
+                      ? "page"
+                      : undefined
+                  }
                   onClick={() => setOpenMenu(false)}
                 >
                   <FaTrophy />
@@ -86,12 +92,12 @@ const Navbar = () => {
               <li>
                 <Link
                   to={"/seminar"}
-                  className={`block py-2 px-3 ${
-                    activeLink === "seminar"
-                      ? "text-white bg-invofest rounded lg:bg-transparent lg:text-white"
-                      : "text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-white"
-                  } lg:p-0 flex items-center gap-2`}
-                  aria-current="page"
+                  className={getNavLinkClass("/seminar")}
+                  aria-current={
+                    location.pathname.startsWith("/seminar")
+                      ? "page"
+                      : undefined
+                  }
                   onClick={() => setOpenMenu(false)}
                 >
                   <MdCoPresent />
@@ -101,12 +107,12 @@ const Navbar = () => {
               <li>
                 <Link
                   to={"/workshop"}
-                  className={`block py-2 px-3 ${
-                    activeLink === "workshop"
-                      ? "text-white bg-invofest rounded lg:bg-transparent lg:text-white"
-                      : "text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-white"
-                  } lg:p-0 flex items-center gap-2`}
-                  aria-current="page"
+                  className={getNavLinkClass("/workshop")}
+                  aria-current={
+                    location.pathname.startsWith("/workshop")
+                      ? "page"
+                      : undefined
+                  }
                   onClick={() => setOpenMenu(false)}
                 >
                   <FaLaptop />
@@ -116,12 +122,12 @@ const Navbar = () => {
               <li>
                 <Link
                   to={"/talkshow"}
-                  className={`block py-2 px-3 ${
-                    activeLink === "talkshow"
-                      ? "text-white bg-invofest rounded lg:bg-transparent lg:text-white"
-                      : "text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-white"
-                  } lg:p-0 flex items-center gap-2`}
-                  aria-current="page"
+                  className={getNavLinkClass("/talkshow")}
+                  aria-current={
+                    location.pathname.startsWith("/talkshow")
+                      ? "page"
+                      : undefined
+                  }
                   onClick={() => setOpenMenu(false)}
                 >
                   <FaMicrophoneAlt />
@@ -131,12 +137,10 @@ const Navbar = () => {
               <li>
                 <Link
                   to={"/login-admin"}
-                  className={`block py-2 px-3 ${
-                    activeLink === "login-admin"
-                      ? "text-white bg-invofest rounded lg:bg-transparent lg:text-white"
-                      : "text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-white"
-                  } lg:p-0`}
-                  aria-current="page"
+                  className={getNavLinkClass("/login-admin")}
+                  aria-current={
+                    location.pathname === "/login-admin" ? "page" : undefined
+                  }
                   onClick={() => setOpenMenu(false)}
                   aria-label="Login Admin"
                   title="Login Admin"
@@ -154,4 +158,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

@@ -32,7 +32,7 @@ const Footer = () => {
                   <li className="mb-4">
                     <Link
                       to="/"
-                      className="hover:text-invofest flex items-center gap-2"
+                      className="flex items-center gap-2 transition-colors duration-200 hover:text-invofest_light focus-visible:text-invofest_light"
                     >
                       <FaHome />
                       Beranda
@@ -41,7 +41,7 @@ const Footer = () => {
                   <li className="mb-4">
                     <Link
                       to="/seminar"
-                      className="hover:text-invofest flex items-center gap-2"
+                      className="flex items-center gap-2 transition-colors duration-200 hover:text-invofest_light focus-visible:text-invofest_light"
                     >
                       <MdCoPresent />
                       Seminar
@@ -50,7 +50,7 @@ const Footer = () => {
                   <li className="mb-4">
                     <Link
                       to="/competition"
-                      className="hover:text-invofest flex items-center gap-2"
+                      className="flex items-center gap-2 transition-colors duration-200 hover:text-invofest_light focus-visible:text-invofest_light"
                     >
                       <FaTrophy />
                       Competition
@@ -59,7 +59,7 @@ const Footer = () => {
                   <li className="mb-4">
                     <Link
                       to="/workshop"
-                      className="hover:text-invofest flex items-center gap-2"
+                      className="flex items-center gap-2 transition-colors duration-200 hover:text-invofest_light focus-visible:text-invofest_light"
                     >
                       <FaWrench />
                       Workshop
@@ -68,7 +68,7 @@ const Footer = () => {
                   <li className="mb-4">
                     <Link
                       to="/talkshow"
-                      className="hover:text-invofest flex items-center gap-2"
+                      className="flex items-center gap-2 transition-colors duration-200 hover:text-invofest_light focus-visible:text-invofest_light"
                     >
                       <FaMicrophoneAlt />
                       Talkshow
@@ -84,7 +84,7 @@ const Footer = () => {
                   <li className="mb-4">
                     <a
                       href="https://instagram.com/invofest_harkatnegeri"
-                      className="hover:text-invofest flex items-center gap-2"
+                      className="flex items-center gap-2 transition-colors duration-200 hover:text-invofest_light focus-visible:text-invofest_light"
                       target="_blank"
                     >
                       <RiInstagramFill className="text-xl" />
@@ -94,7 +94,7 @@ const Footer = () => {
                   <li className="mb-4">
                     <a
                       href="https://www.youtube.com/@invofest2024"
-                      className="hover:text-invofest flex items-center gap-2"
+                      className="flex items-center gap-2 transition-colors duration-200 hover:text-invofest_light focus-visible:text-invofest_light"
                       target="_blank"
                     >
                       <FaYoutube className="text-xl" />
@@ -129,7 +129,10 @@ const Footer = () => {
           <div className="sm:flex sm:items-center sm:justify-between">
             <span className="text-sm text-gray-300 sm:text-center">
               © 2025{" "}
-              <a href="https://flowbite.com/" className="hover:underline">
+              <a
+                href="https://flowbite.com/"
+                className="transition-colors duration-200 hover:text-invofest_light hover:underline focus-visible:text-invofest_light"
+              >
                 INVOFEST
               </a>
               . All Rights Reserved.
@@ -137,13 +140,13 @@ const Footer = () => {
             <div className="flex mt-4 sm:justify-center sm:mt-0">
               <a
                 href="https://www.youtube.com/@invofest2024"
-                className="text-gray-500 hover:text-gray-900"
+                className="text-gray-300 transition-colors duration-200 hover:text-invofest_light focus-visible:text-invofest_light"
               >
                 <FaYoutube className="text-xl" />
               </a>
               <a
                 href="https://instagram.com/invofest_harkatnegeri"
-                className="text-gray-500 hover:text-gray-900 ms-5"
+                className="ms-5 text-gray-300 transition-colors duration-200 hover:text-invofest_light focus-visible:text-invofest_light"
               >
                 <RiInstagramFill className="text-xl" />
               </a>

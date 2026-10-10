@@ -1,7 +1,7 @@
 import React from "react";
 import AOS from "aos";
 import ButtonPrimary from "../custom/ButtonPrimary";
-import heroITTalkshow from "/assets/Maskot-Talkshow.png";
+import heroITTalkshow from "/assets/Maskot-Talkshow-2026.webp";
 import WhiteWaveTop from "/assets/wave-top.png";
 import WhiteWaveBot from "/assets/wave-bot.png";
 
@@ -34,17 +34,21 @@ const ITTalkshowSec = () => {
                   data-aos-delay="300"
                   className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-gray-300"
                 >
-                  Talkshow berskala nasional: “Humanizing Technology: Kolaborasi Manusia dan AI di Masa Depan.”
-
-                  Acara ini dirancang bukan untuk membahas teknologi sebagai entitas yang dingin dan terpisah, 
-                  melainkan untuk menggali bagaimana kita dapat menanamkan nilai-nilai kemanusiaan—seperti empati, 
-                  etika, dan kreativitas—ke dalam inti pengembangan AI. Kami akan mengupas tuntas visi masa depan di 
-                  mana AI tidak menjadi pesaing, tetapi menjadi mitra kolaboratif yang memperkuat potensi unik manusia.
-
-                  Talkshow ini bertujuan untuk menginspirasi generasi muda dan para penggiat teknologi untuk tidak hanya 
-                  menjadi pengguna, tetapi juga menjadi arsitek masa depan digital yang lebih manusiawi. Mari bergabung 
-                  untuk meningkatkan pengetahuan, mengembangkan potensi diri, dan menjadi bagian dari dialog penting dalam 
-                  membentuk era kolaborasi manusia dan AI.
+                  Talkshow berskala nasional: “Humanizing Technology: Kolaborasi
+                  Manusia dan AI di Masa Depan.” Acara ini dirancang bukan untuk
+                  membahas teknologi sebagai entitas yang dingin dan terpisah,
+                  melainkan untuk menggali bagaimana kita dapat menanamkan
+                  nilai-nilai kemanusiaan—seperti empati, etika, dan
+                  kreativitas—ke dalam inti pengembangan AI. Kami akan mengupas
+                  tuntas visi masa depan di mana AI tidak menjadi pesaing,
+                  tetapi menjadi mitra kolaboratif yang memperkuat potensi unik
+                  manusia. Talkshow ini bertujuan untuk menginspirasi generasi
+                  muda dan para penggiat teknologi untuk tidak hanya menjadi
+                  pengguna, tetapi juga menjadi arsitek masa depan digital yang
+                  lebih manusiawi. Mari bergabung untuk meningkatkan
+                  pengetahuan, mengembangkan potensi diri, dan menjadi bagian
+                  dari dialog penting dalam membentuk era kolaborasi manusia dan
+                  AI.
                 </p>
                 <div className="flex items-center gap-3 sm:gap-4 lg:gap-5 mt-3">
                   <ButtonPrimary

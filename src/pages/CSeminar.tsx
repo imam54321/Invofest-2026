@@ -1,6 +1,6 @@
 import { TitlePage } from "@/utils/TitlePage";
 import React from "react";
-import heroInvofest1 from "/assets/Maskot-Hero.png";
+import heroInvofest1 from "/assets/Maskot-Hero-2026.png";
 
 const Seminar = () => {
   TitlePage("Seminar");

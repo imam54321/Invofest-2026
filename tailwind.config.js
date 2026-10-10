@@ -30,6 +30,7 @@ module.exports = {
         invofest_secondary: "#381971",
         invofest_dark: "#4c1d3d",
         navbar: "#f6e6fe",
+        invofest_light: "#00f5ff",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
