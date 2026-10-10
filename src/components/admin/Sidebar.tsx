@@ -11,7 +11,7 @@ import { RiImageEditLine } from "react-icons/ri";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
-import Logo from "/assets/nav-logo.png";
+import Logo from "/assets/nav-logo.webp";
 
 interface SidebarProps {
   isExpanded: boolean;

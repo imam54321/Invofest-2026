@@ -85,7 +85,7 @@ const CompetitionCard = ({
             INVOFEST COMPETITION
           </span>
 
-          <h5 className="text-2xl font-bold text-white mb-4">
+          <h5 className="text-2xl font-bold text-[#dffffc] mb-4">
             {TitleCard}
           </h5>
 
