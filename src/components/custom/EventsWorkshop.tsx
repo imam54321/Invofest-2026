@@ -38,13 +38,13 @@ const EventWorkshop = ({ data }: { data: EventWorkshopProps[] }) => {
                 key={item.id}
                 icon={
                   item.id === 1 ? (
-                    <FaCode className="inline text-3xl text-white" />
+                    <FaCode className="inline text-5xl text-invofest" />
                   ) : item.id === 2 ? (
-                    <MdPhoneAndroid className="inline text-3xl text-white" />
+                    <MdPhoneAndroid className="inline text-5xl text-invofest" />
                   ) : item.id === 3 ? (
-                    <SiTensorflow className="inline text-3xl text-white" />
+                    <SiTensorflow className="inline text-5xl text-invofest" />
                   ) : (
-                    <FaShieldAlt className="inline text-3xl text-white" />
+                    <FaShieldAlt className="inline text-5xl text-invofest" />
                   )
                 }
                 id={item.id}

@@ -21,26 +21,26 @@ function CardWorkshop({
   }, []);
   return (
     <div
-      className="p-8 bg-white border-b-4 sm:border-b-0 box-content sm:box-border sm:border-r-4 w-full max-w-lg border-invofest rounded-xl flex flex-col sm:flex-row gap-5  mx-5"
+      className="bg-white box-border w-full max-w-lg flex flex-col sm:flex-row items-center sm:items-stretch  mx-2 rounded-lg overflow-hidden justify-center"
       data-aos="fade-up"
       data-aos-delay={id * 500}
     >
-      <div className="w-full sm:w-auto py-5 sm:py-5 sm:px-10 bg-invofest rounded-2xl text-8xl flex items-center justify-center">
+      <div className="w-16 h-16 sm:w-20 sm:h-20 shrink-0 rounded-full text-3xl flex items-center justify-center self-center my-auto">
         {icon}
       </div>
-      <div className="">
-        <h2 className="text-2xl font-semibold mb-3 text-slate-700">{title}</h2>
+      <div className="w-full bg-gradient-to-r from-invofest_secondary to-invofest sm:p-6 pr-8 rounded-tl-2xl rounded-br-lg rounded-tr-lg rounded-bl-[3.8rem] text-white shadow-md">
+        <h2 className="text-2xl font-semibold mb-3 text-white">{title}</h2>
         <div className="flex items-center gap-5 text-lg`">
-          <FaCalendarAlt className="inline text-xl text-slate-500" />
-          <p className="text-slate-500">{date}</p>
+          <FaCalendarAlt className="inline text-xl text-white" />
+          <p className="text-white">{date}</p>
         </div>
         <div className="flex items-center gap-5 text-lg`">
-          <IoMdClock className="inline text-xl text-slate-500" />
-          <p className="text-slate-500">{time}</p>
+          <IoMdClock className="inline text-xl text-white" />
+          <p className="text-white">{time}</p>
         </div>
         <div className="flex items-center gap-5 text-lg`">
-          <FaLocationDot className="inline text-xl text-slate-500" />
-          <p className="text-slate-500">{place}</p>
+          <FaLocationDot className="inline text-xl text-white" />
+          <p className="text-white">{place}</p>
         </div>
       </div>
     </div>

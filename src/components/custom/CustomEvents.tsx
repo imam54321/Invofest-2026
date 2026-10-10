@@ -31,30 +31,30 @@ const CustomEvents = ({ title, place, time, date }: CustomEventsProps) => {
               Pelaksanaan {title}
             </h1>
           </div>
-          <div className="w-full max-w-6xl m-auto justify-center items-center flex flex-wrap gap-5">
+
+          <div className="w-full max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 justify-items-center">
             <CardEvents
               delay={500}
               place={date}
-              icon={<FaCalendarAlt className="inline text-3xl text-white" />}
+              icon={<FaCalendarAlt className="inline" />}
             />
             <CardEvents
               delay={1000}
               place={time}
-              icon={<IoMdClock className="inline text-3xl text-white" />}
+              icon={<IoMdClock className="inline" />}
             />
-
             <CardEvents
               delay={1500}
               place={place}
-              icon={<FaLocationDot className="inline text-3xl text-white" />}
+              icon={<FaLocationDot className="inline" />}
             />
-
             <CardEvents
               delay={2000}
               place={"Kampus 1 (Mataram) Universitas Harkat Negeri"}
-              icon={<FaBuilding className="inline text-3xl text-white" />}
+              icon={<FaBuilding className="inline" />}
             />
           </div>
+
         </div>
         <img
           src={WhiteWaveBot}
