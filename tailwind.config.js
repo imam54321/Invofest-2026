@@ -29,6 +29,7 @@ module.exports = {
         invofest: "#1c0941",
         invofest_secondary: "#381971",
         invofest_dark: "#4c1d3d",
+        invofest_card_overlay: "#0f0524",
         navbar: "#f6e6fe",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
