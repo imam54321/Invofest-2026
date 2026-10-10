@@ -25,7 +25,7 @@ const CustomSpeaker = ({ data }: CustomSpeakerProps) => {
           >
             Temui Pembicara Khusus Kami
           </h1>
-          <div className="flex flex-col sm:flex-row gap-36 mt-36 sm:gap-10">
+          <div className="flex justify-center items-center gap-36 flex-wrap">
             {data.map((item, index) => {
               return (
                 <CardSpeaker

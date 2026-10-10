@@ -15,12 +15,12 @@ export const dataSeminar = {
     {
       name: "Dery Agung Triyadi",
       position: "Aws Indonesia",
-      image: "/assets/seminar/Seminar Dery.png",
+      image: "/assets/seminar/test1.png",
     },
     {
       name: "Sowam Habibi",
       position: "Google Indonesia",
-      image: "/assets/seminar/seminar sowam.png",
+      image: "/assets/seminar/test2.png",
     },
   ],
   events: {
@@ -45,25 +45,24 @@ export const dataTalkshow = {
   speakers: [
     {
       name: "Moh. Ichsan Maulana",
-      position:
-        "Human Capital Information System (HCIS), PT. Garuda Daya Pratama Sejahtera",
-      image: "/assets/talkshow/talkshow ichsan.png",
+      position: "Human Capital Information System (HCIS), PT. Garuda Daya Pratama Sejahtera",
+      image: "/assets/talkshow/test3.png",
     },
     {
       name: "M. Zaim Zamzami",
       position: "Programmer, PT. Pertamina Drilling Service Indonesia",
-      image: "/assets/talkshow/talkshow zaim zamzami.png",
+      image: "/assets/talkshow/test3.png",
     },
     {
       name: "Daffa Zuhdan Muhtar",
       position: "Android Developer, PT. Astra Internasional",
-      image: "/assets/talkshow/talkshow daffa.png",
+      image: "/assets/talkshow/test3.png",
     },
     {
       name: "Bayu Adi Prasetiyo",
       position: "Software Engineer, KOMPAS.ID",
-      image: "/assets/talkshow/talkshow bayu.png",
-    },
+      image: "/assets/talkshow/test3.png",
+    }
   ],
   events: {
     title: "IT Talkshow",
@@ -91,19 +90,19 @@ export const dataWorkshop = {
     {
       name: "Lhuqita Fazry",
       position: "Mobile Development",
-      image: "assets/workshop/workshop mobile.png",
+      image: "assets/workshop/test4.png",
       title: "Developer, Founder Rumah Coding Indonesia",
     },
     {
       name: "M. Dendi Purwanto",
       position: "Artificial Intelligence",
-      image: "assets/workshop/workshop AI.png",
+      image: "assets/workshop/test4.png",
       title: "Software Engineer, PT. Mayar Kernel Supernova",
     },
     {
       name: "Danang Avan M",
       position: "Cyber Security",
-      image: "assets/workshop/talkshow cyber.png",
+      image: "assets/workshop/test4.png",
       title: "Security Analyst, Founder | Contributor TegalSec",
     },
   ],
