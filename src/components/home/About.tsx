@@ -14,7 +14,7 @@ const About = () => {
 
   return (
     <React.Fragment>
-      <div className="bg-invofest_secondary w-full h-fit relative">
+      <div className="bg-invofest_dark w-full h-fit relative">
         <img src={WhiteWaveTop} alt="wave" className="w-full relative top-0" />
 
         <div className="max-w-screen-xl mx-auto py-20">
@@ -31,13 +31,17 @@ const About = () => {
               data-aos-delay="450"
               className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-gray-300"
             >
-              Invofest 2025, yang diselenggarakan oleh sarjana terapan Teknik Informatika
-              Universitas Harkat Negeri, adalah festival tahunan yang bertujuan untuk menginspirasi
-              dan memberdayakan generasi muda Indonesia dalam menghadapi era
-              digital. Dengan mengusung tema <b>“Beyond Limits, Beyond Intelligence: Innovate for a Smarter Tomorrow ”</b>. Invofest 2025
-              menghadirkan berbagai kegiatan menarik seperti kompetisi IT,
-              workshop IT, dan seminar nasional & talkshow dengan para ahli
-              teknologi.
+              Invofest 2025, yang diselenggarakan oleh sarjana terapan Teknik
+              Informatika Universitas Harkat Negeri, adalah festival tahunan
+              yang bertujuan untuk menginspirasi dan memberdayakan generasi muda
+              Indonesia dalam menghadapi era digital. Dengan mengusung tema{" "}
+              <b>
+                “Beyond Limits, Beyond Intelligence: Innovate for a Smarter
+                Tomorrow ”
+              </b>
+              . Invofest 2025 menghadirkan berbagai kegiatan menarik seperti
+              kompetisi IT, workshop IT, dan seminar nasional & talkshow dengan
+              para ahli teknologi.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-3 gap-5">

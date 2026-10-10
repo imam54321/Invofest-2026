@@ -28,7 +28,8 @@ module.exports = {
       colors: {
         invofest: "#1c0941",
         invofest_secondary: "#381971",
-        invofest_dark: "#4c1d3d",
+        invofest_dark: "#2a1354",
+        invofest_primary: "#b548f6",
         invofest_card_overlay: "#0f0524",
         navbar: "#f6e6fe",
         invofest_light: "#00f5ff",

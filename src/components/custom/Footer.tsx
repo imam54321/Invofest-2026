@@ -4,7 +4,7 @@ import { FaMicrophoneAlt } from "react-icons/fa";
 import { FaTrophy } from "react-icons/fa";
 import { FaHome } from "react-icons/fa";
 import { MdCoPresent } from "react-icons/md";
-import { FaWrench } from "react-icons/fa";
+import { FaLaptop } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa";
 
@@ -61,7 +61,7 @@ const Footer = () => {
                       to="/workshop"
                       className="flex items-center gap-2 transition-colors duration-200 hover:text-invofest_light focus-visible:text-invofest_light"
                     >
-                      <FaWrench />
+                      <FaLaptop />
                       Workshop
                     </Link>
                   </li>

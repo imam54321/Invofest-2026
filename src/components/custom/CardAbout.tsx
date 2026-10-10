@@ -31,22 +31,22 @@ const CardAbout = ({
       <div
         data-aos={dataAos}
         data-aos-delay={delayAos}
-        className="max-w-sm h-fit p-6 bg-white rounded-lg overflow-hidden relative before:absolute before:w-[0.4rem] before:h-full before:bg-invofest before:right-0 before:top-0"
+        className="group relative flex h-full min-h-[20rem] flex-col overflow-hidden rounded-xl border border-white/70 bg-white p-6 shadow-lg shadow-invofest/10 transition-all duration-300 before:absolute before:inset-y-0 before:right-0 before:w-1 before:bg-invofest_primary hover:-translate-y-1 hover:shadow-xl hover:shadow-invofest/20"
       >
-        <a href="#">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-invofest">
-            {title}
-          </h5>
-        </a>
-        <p className="mb-5 font-normal text-slate-600">{desc}</p>
-        <ButtonPrimary
-          text={btnText}
-          dataAos={""}
-          delayAos={""}
-          isOutline={false}
-          isLink={true}
-          href={href}
-        />
+        <h5 className="mb-3 text-2xl font-bold leading-tight text-invofest">
+          {title}
+        </h5>
+        <p className="mb-6 flex-1 leading-relaxed text-slate-600">{desc}</p>
+        <div className="mt-auto pt-2">
+          <ButtonPrimary
+            text={btnText}
+            dataAos={""}
+            delayAos={""}
+            isOutline={false}
+            isLink={true}
+            href={href}
+          />
+        </div>
       </div>
     </React.Fragment>
   );

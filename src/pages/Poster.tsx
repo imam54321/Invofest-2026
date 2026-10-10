@@ -39,7 +39,7 @@ const Poster: React.FC = () => {
             <p className="text-slate-500">Kamis, 27 November 2025</p>
 
             <div className="space-y-3 mt-5">
-              <div className="bg-[#FFC0D3] border border-[#852e4e] text-center rounded-md py-3 font-semibold">
+              <div className="bg-navbar border border-invofest_dark text-center rounded-md py-3 font-semibold">
                 Biaya Pendaftaran Gelombang 2: Rp. 60.000
               </div>
 
@@ -47,7 +47,7 @@ const Poster: React.FC = () => {
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLScdjXXvLnnlLlOTgpn4SP-oMkvUfBXO0gcJeEr8Oa9-fDuh1Q/viewform?usp=preview"
                 rel="noopener noreferrer"
-                className="block w-full bg-[#852e4e] hover:bg-[#4c1d3d] text-white font-semibold py-3 rounded-md text-center transition duration-200"
+                className="block w-full bg-invofest_dark hover:bg-invofest text-white font-semibold py-3 rounded-md text-center transition duration-200"
               >
                 Registrasi
               </a>
@@ -57,19 +57,22 @@ const Poster: React.FC = () => {
                 href="https://drive.google.com/drive/folders/1vOIIfJinlm5aalbp3QDbiTVn8DQSh43K?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full border border-[#852e4e] text-[#852e4e] font-semibold py-3 rounded-md text-center hover:bg-[#FFC0D3] transition duration-200"
+                className="block w-full border border-invofest_dark text-invofest_dark font-semibold py-3 rounded-md text-center hover:bg-navbar transition duration-200"
               >
                 Dokumen Peserta
               </a>
             </div>
-
           </div>
         </section>
 
         {/* DESKRIPSI LOMBA */}
         <section className="bg-invofest_secondary w-full relative">
           {/* Wave atas */}
-          <img src={WhiteWaveTop} alt="wave" className="w-full relative top-0" />
+          <img
+            src={WhiteWaveTop}
+            alt="wave"
+            className="w-full relative top-0"
+          />
 
           {/* Jarak nyata antara wave atas dan konten */}
           <div className="h-24 md:h-36"></div>
@@ -77,28 +80,35 @@ const Poster: React.FC = () => {
           <div className="w-full max-w-4xl mx-auto px-8 text-center">
             <h2
               data-aos="zoom-in"
-              className="font-semibold text-invofest text-2xl sm:text-4xl lg:text-5xl mb-8"
+              className="font-semibold text-white text-2xl sm:text-4xl lg:text-5xl mb-8"
             >
               DESKRIPSI LOMBA
             </h2>
 
             <div
               data-aos="fade-up"
-              className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-slate-600"
+              className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-white"
             >
               <p className="mb-4">
                 Salah satu perlombaan dalam kegiatan{" "}
                 <b>Invofest (Informatics Vocational Festival) 2025</b> adalah{" "}
-                <b>National Poster Design Competition</b>. Kegiatan ini menjadi wadah bagi siswa untuk menyalurkan kreativitas,
-                ide, dan kemampuan berpikir kritis dalam bidang desain visual, khususnya dalam menciptakan karya poster yang
-                komunikatif dan inspiratif di era digital.
+                <b>National Poster Design Competition</b>. Kegiatan ini menjadi
+                wadah bagi siswa untuk menyalurkan kreativitas, ide, dan
+                kemampuan berpikir kritis dalam bidang desain visual, khususnya
+                dalam menciptakan karya poster yang komunikatif dan inspiratif
+                di era digital.
               </p>
 
               <p>
-                Tahun ini, lomba mengusung tema <b>“From Creation to Innovation”</b>, yang menggambarkan proses perjalanan dari menciptakan
-                ide hingga mengubahnya menjadi inovasi yang memiliki nilai dan dampak nyata bagi masyarakat. Melalui tema ini, peserta
-                diharapkan dapat menuangkan gagasan kreatif mereka dalam bentuk visual yang tidak hanya menarik secara estetika, tetapi
-                juga mengandung pesan yang kuat, relevan, dan mendorong semangat inovasi di bidang teknologi dan kehidupan sosial.
+                Tahun ini, lomba mengusung tema{" "}
+                <b>“From Creation to Innovation”</b>, yang menggambarkan proses
+                perjalanan dari menciptakan ide hingga mengubahnya menjadi
+                inovasi yang memiliki nilai dan dampak nyata bagi masyarakat.
+                Melalui tema ini, peserta diharapkan dapat menuangkan gagasan
+                kreatif mereka dalam bentuk visual yang tidak hanya menarik
+                secara estetika, tetapi juga mengandung pesan yang kuat,
+                relevan, dan mendorong semangat inovasi di bidang teknologi dan
+                kehidupan sosial.
               </p>
             </div>
           </div>
@@ -107,7 +117,11 @@ const Poster: React.FC = () => {
           <div className="h-24 md:h-36"></div>
 
           {/* Wave bawah */}
-          <img src={WhiteWaveBot} alt="wave" className="w-full relative bottom-0" />
+          <img
+            src={WhiteWaveBot}
+            alt="wave"
+            className="w-full relative bottom-0"
+          />
         </section>
 
         {/* KATEGORI HADIAH */}
@@ -115,7 +129,7 @@ const Poster: React.FC = () => {
           <div className="max-w-screen-xl mx-auto px-6 text-center">
             <h2
               data-aos="zoom-in"
-              className="text-2xl md:text-3xl font-bold text-[#852e4e] mb-4"
+              className="text-2xl md:text-3xl font-bold text-invofest_dark mb-4"
             >
               KATEGORI HADIAH
             </h2>
@@ -125,7 +139,8 @@ const Poster: React.FC = () => {
               data-aos="fade-up"
               className="text-lg md:text-xl font-semibold text-slate-700 mb-8"
             >
-              🎉 Total Hadiah <span className="text-[#852e4e]">Jutaan Rupiah</span>
+              🎉 Total Hadiah{" "}
+              <span className="text-invofest_dark">Jutaan Rupiah</span>
             </p>
 
             <div className="flex flex-wrap justify-center gap-8">
@@ -133,9 +148,7 @@ const Poster: React.FC = () => {
                 {
                   title: "Semua Peserta",
                   prize: "📜 Sertifikat",
-                  bonus: [
-                    "Mendapatkan e-Sertifikat resmi",
-                  ],
+                  bonus: ["Mendapatkan e-Sertifikat resmi"],
                 },
                 {
                   title: "Juara I",
@@ -157,11 +170,13 @@ const Poster: React.FC = () => {
                   key={index}
                   data-aos="fade-up"
                   data-aos-delay={index * 150}
-                  className="w-[240px] border-2 border-[#852e4e] rounded-xl p-6 shadow-md hover:shadow-lg transition duration-300 bg-white"
+                  className="w-[240px] border-2 border-invofest_dark rounded-xl p-6 shadow-md hover:shadow-lg transition duration-300 bg-white"
                 >
-                  <div className="text-5xl mb-3 text-[#852e4e]">🏆</div>
+                  <div className="text-5xl mb-3 text-invofest_dark">🏆</div>
                   <h3 className="font-semibold text-lg">{item.title}</h3>
-                  <p className="text-slate-600 mt-2 font-medium">{item.prize}</p>
+                  <p className="text-slate-600 mt-2 font-medium">
+                    {item.prize}
+                  </p>
 
                   {item.bonus.length > 0 && (
                     <ul className="mt-3 text-sm text-slate-600 space-y-1">
@@ -176,23 +191,25 @@ const Poster: React.FC = () => {
           </div>
         </section>
 
-
-
         {/* TIMELINE EVENT */}
         <section className="bg-invofest_secondary w-full relative overflow-hidden">
-          <img src={WhiteWaveTop} alt="wave top" className="w-full relative top-0" />
+          <img
+            src={WhiteWaveTop}
+            alt="wave top"
+            className="w-full relative top-0"
+          />
           <div className="h-24 md:h-36"></div>
 
           <div className="w-full max-w-[1600px] mx-auto px-6 md:px-12 text-center">
             <h2
               data-aos="zoom-in"
-              className="font-semibold text-invofest text-2xl sm:text-4xl lg:text-5xl mb-12"
+              className="font-semibold text-white text-2xl sm:text-4xl lg:text-5xl mb-12"
             >
               TIMELINE EVENT
             </h2>
 
             <div className="relative flex flex-wrap justify-center items-center gap-x-16 gap-y-20 md:gap-x-20 md:gap-y-24 px-6 md:px-12">
-              <div className="absolute left-1/2 top-0 bottom-0 w-[4px] bg-[#852e4e]/25 -translate-x-1/2"></div>
+              <div className="absolute left-1/2 top-0 bottom-0 w-[4px] bg-invofest_dark/25 -translate-x-1/2"></div>
 
               {[
                 { title: "Pendaftaran Gelombang 1", date: "21–31 Oktober" },
@@ -208,16 +225,24 @@ const Poster: React.FC = () => {
                   key={index}
                   data-aos="zoom-in-up"
                   data-aos-delay={index * 150}
-                  className={`relative w-full md:w-[45%] flex flex-col items-center ${index % 2 === 0 ? "md:items-end text-right" : "md:items-start text-left"
-                    }`}
+                  className={`relative w-full md:w-[45%] flex flex-col items-center ${
+                    index % 2 === 0
+                      ? "md:items-end text-right"
+                      : "md:items-start text-left"
+                  }`}
                 >
                   <div
-                    className={`absolute top-1/2 w-5 h-5 bg-[#852e4e] border-4 border-[#FFC0D3] rounded-full shadow-md ${index % 2 === 0 ? "md:right-[-1.6rem]" : "md:left-[-1.6rem]"
-                      } transform -translate-y-1/2`}
+                    className={`absolute top-1/2 w-5 h-5 bg-invofest_dark border-4 border-navbar rounded-full shadow-md ${
+                      index % 2 === 0
+                        ? "md:right-[-1.6rem]"
+                        : "md:left-[-1.6rem]"
+                    } transform -translate-y-1/2`}
                   ></div>
 
-                  <div className="bg-white border border-[#852e4e] px-6 py-5 rounded-xl shadow-md hover:scale-105 transition duration-300 w-full md:w-[80%]">
-                    <h4 className="font-semibold text-[#852e4e] text-lg">{step.title}</h4>
+                  <div className="bg-white border border-invofest_dark px-6 py-5 rounded-xl shadow-md hover:scale-105 transition duration-300 w-full md:w-[80%]">
+                    <h4 className="font-semibold text-invofest_dark text-lg">
+                      {step.title}
+                    </h4>
                     <p className="text-slate-600 text-sm mt-1">{step.date}</p>
                   </div>
                 </div>
@@ -226,7 +251,11 @@ const Poster: React.FC = () => {
           </div>
 
           <div className="h-24 md:h-40"></div>
-          <img src={WhiteWaveBot} alt="wave bottom" className="w-full relative bottom-0" />
+          <img
+            src={WhiteWaveBot}
+            alt="wave bottom"
+            className="w-full relative bottom-0"
+          />
         </section>
       </div>
       {/* FAQ Section */}
