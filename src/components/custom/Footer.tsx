@@ -128,7 +128,7 @@ const Footer = () => {
           <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
           <div className="sm:flex sm:items-center sm:justify-between">
             <span className="text-sm text-gray-300 sm:text-center">
-              © 2025{" "}
+              © 2026{" "}
               <a
                 href="https://flowbite.com/"
                 className="transition-colors duration-200 hover:text-invofest_light hover:underline focus-visible:text-invofest_light"
