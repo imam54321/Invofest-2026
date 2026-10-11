@@ -1,8 +1,8 @@
 import React from "react";
 import AOS from "aos";
-import SoftwareDevImg from "/assets/competition-card/software_dev.png";
-import WebDesignImg from "/assets/competition-card/web_design.png";
-import UiUxImg from "/assets/competition-card/ui_ux.png";
+import BusinnesPlan from "/assets/competition-card/bp.png";
+import WebDesignImg from "/assets/competition-card/wd.png";
+import UiUxImg from "/assets/competition-card/uiux.png";
 import CompetitionCard from "../custom/CompetitionCard";
 
 const ListComp = () => {
@@ -37,12 +37,12 @@ const ListComp = () => {
             <CompetitionCard
               dataAos="fade-up"
               delayAos="200"
-              TitleCard="Poster Design Competition"
-              DescCard="Poster Design Competition ini adalah kompetisi untuk menciptakan suatu karya dalam bentuk poster digital yang komunikatif dan inspiratif, guna menyuarakan gagasan atau solusi visual terhadap permasalahan yang ada sekarang ini."
-              ImageCard={SoftwareDevImg}
+              TitleCard="Businnes Plan Competition"
+              DescCard="Businnes Plan Competition ini adalah kompetisi untuk menciptakan suatu rencana bisnis yang inovatif dan realistis, guna menyuarakan gagasan atau solusi visual terhadap permasalahan yang ada sekarang ini."
+              ImageCard={BusinnesPlan}
               linkRedirect="/competition/poster"
-              linkGuideBook="https://drive.google.com/drive/folders/1LDpU9sUieKJuapFYqY0TUBkwV0VBFfWG?usp=drive_link"
-              linkReg="https://forms.gle/dr9rZytG9fcBPLbr8"
+              linkGuideBook="https://drive.google.com/drive/folders/1Ob6ISlnLNvTZiDoryCEybqZc6xxzfKuC?usp=drive_link"
+              linkReg="https://docs.google.com/forms/d/e/1FAIpQLSeb8TJNghw0FLVkR1ek0RRO6v9QVK4Ra-vQzz8T46gcOs908w/viewform"
               linkPengumpulan="https://docs.google.com/forms/d/e/1FAIpQLScRiJofrgYoXJC7BW5XPThT6OO7muih_NueogtsYBs3bQZHGg/viewform"
             />
             <CompetitionCard
@@ -52,8 +52,8 @@ const ListComp = () => {
               DescCard="UI/UX Design Competition ini adalah kompetisi untuk menciptakan dan merancang inovasi sebuah produk digital yang dapat berupa website maupun mobile apps serta dapat membuat nyaman calon pengguna."
               ImageCard={UiUxImg}
               linkRedirect="/competition/ui-ux"
-              linkGuideBook="https://drive.google.com/drive/folders/10UWXXBV-XUts1rv0ww7FBE1lQ1l8EH5u?usp=drive_link"
-              linkReg="https://forms.gle/ZCpEAKWis7nYrQeN6"
+              linkGuideBook="https://drive.google.com/drive/folders/1b2bl9Ei4mmGYv-_1lUjupdmpkCVifCRH?usp=drive_link"
+              linkReg="https://docs.google.com/forms/d/e/1FAIpQLSffQ14uPaPHjFcZii27zvL7lqj8tlU-6B7YpDyEKqPPbMDLkQ/viewform"
               linkPengumpulan="https://docs.google.com/forms/d/e/1FAIpQLSdgWdJru8KiJWqkWJej9wVMlwnpMGurFtPZdJmjABO62TWM-g/viewform"       />
             <CompetitionCard
               dataAos="fade-up"
@@ -63,8 +63,8 @@ const ListComp = () => {
               menciptakan suatu perangkat lunak berbasis website yang menggunakan desain menarik, unik, dan responsive pada semua device serta sesuai dengan tema kompetisi."
               ImageCard={WebDesignImg}
               linkRedirect="/competition/web-design"
-              linkGuideBook="https://drive.google.com/drive/folders/1YjXlJWCw9lMBjT26EK8xmDsDdeCwHnWh?usp=drive_link"
-              linkReg="https://forms.gle/abYz7k5QY8g7V6Bu9"
+              linkGuideBook="https://drive.google.com/drive/folders/1yX4Yr71nU3dARBGYy7SC25hoEYEtHv25?usp=sharing"
+              linkReg="https://docs.google.com/forms/d/e/1FAIpQLSf9VAGf4xv5oRYh1WqdUoW1GoCbJv-p6ydta7j8DDm0yKlTDQ/viewform"
               linkPengumpulan="https://docs.google.com/forms/d/e/1FAIpQLSdOWzo23l4AuOpf_F1oDyrCf8yI2G6lWYN9DsFX05lGiKZn1g/viewform"
             />
           </div>

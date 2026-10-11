@@ -1,6 +1,6 @@
 import React from "react";
 import AOS from "aos";
-import heroITWorkshop from "/assets/Maskot-Workshop.png";
+import heroITWorkshop from "/assets/Maskot-Workshop.webp";
 import ButtonPrimary from "../custom/ButtonPrimary";
 
 const ITWorkshopSec = () => {
