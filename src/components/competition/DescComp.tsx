@@ -13,7 +13,7 @@ const DescComp = () => {
 
   return (
     <React.Fragment>
-      <div className="bg-invofest_secondary w-full h-fit relative">
+      <div className="bg-invofest_dark w-full h-fit relative">
         <img src={WhiteWaveTop} alt="wave" className="w-full relative top-0" />
 
         <div className="max-w-screen-xl mx-auto py-20">
@@ -30,14 +30,14 @@ const DescComp = () => {
               data-aos-delay="450"
               className="text-center text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-gray-300"
             >
-              Kompetisi atau perlombaan yang ada dalam kegiatan <b>INVOFEST
-              (Infomatics Vocational Festival) 2025</b> adalah diantaranya National
-              Poster Design Competition, UI UX Design Competition, dan
-              juga UI/UX Design Competition. Kompetisi dalam INVOFEST ini
-              mengusung tema <b>“From Creation to Innovation”</b>
-               Tema ini bertujuan mengajak generasi muda untuk
-              mengembangkan inovasi dan kreativitas guna membentuk kelompok yang
-              memiliki potensi luar biasa, yang mampu mewujudkan masa depan yang
+              Kompetisi atau perlombaan yang ada dalam kegiatan{" "}
+              <b>INVOFEST (Infomatics Vocational Festival) 2025</b> adalah
+              diantaranya National Poster Design Competition, UI UX Design
+              Competition, dan juga UI/UX Design Competition. Kompetisi dalam
+              INVOFEST ini mengusung tema <b>“From Creation to Innovation”</b>
+              Tema ini bertujuan mengajak generasi muda untuk mengembangkan
+              inovasi dan kreativitas guna membentuk kelompok yang memiliki
+              potensi luar biasa, yang mampu mewujudkan masa depan yang
               berkelanjutan. Melalui pendekatan ini, diharapkan generasi ini
               akan berperan dalam menciptakan solusi-solusi baru untuk tantangan
               masa kini dan mendatang, baik dalam hal teknologi, lingkungan,

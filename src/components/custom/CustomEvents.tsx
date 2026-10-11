@@ -18,7 +18,7 @@ const CustomEvents = ({ title, place, time, date }: CustomEventsProps) => {
 
   return (
     <React.Fragment>
-      <div className="bg-invofest_secondary w-full h-fit relative">
+      <div className="bg-invofest_dark w-full h-fit relative">
         <img src={WhiteWaveTop} alt="wave" className="w-full relative top-0" />
 
         <div className="max-w-screen-xl mx-auto py-20">

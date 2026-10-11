@@ -19,7 +19,7 @@ const EventWorkshop = ({ data }: { data: EventWorkshopProps[] }) => {
 
   return (
     <React.Fragment>
-      <div className="bg-invofest_secondary w-full h-fit relative">
+      <div className="bg-invofest_dark w-full h-fit relative">
         <img src={WhiteWaveTop} alt="wave" className="w-full relative top-0" />
 
         <div className="max-w-screen-xl mx-auto py-20">
@@ -27,7 +27,7 @@ const EventWorkshop = ({ data }: { data: EventWorkshopProps[] }) => {
             <h1
               data-aos="zoom-in-up"
               data-aos-delay="300"
-              className="font-semibold text-invofes t text-center text-2xl sm:text-4xl lg:text-5xl mb-5"
+              className="font-semibold text-white text-center text-2xl sm:text-4xl lg:text-5xl mb-5"
             >
               Pelaksanaan IT Workshop
             </h1>

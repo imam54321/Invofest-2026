@@ -1,115 +1,173 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import WhiteWaveTop from "/assets/wave-top.png";
-import WhiteWaveBot from "/assets/wave-bot.png";
 import { MediaPartner } from "@/components/competition/MediaPartner";
 import FAQ from "@/components/home/FAQ";
 import { Sponsorship } from "@/components/home/Sponsorship";
+import EventTimeline from "../components/custom/TimeLineComp";
+import MaskotDf from "/assets/Maskot-Timeline-1.webp";
+import MaskotWinner from "/assets/Maskot-Lomba-2026.webp";
+import MaskotHp from "/assets/Maskot-Talkshow-2026.webp";
+import MaskotHero from "/assets/Maskot-Hero-2026.webp";
+
 import { dataHadiahPoster } from "@/utils/datas";
 import Certificate from "/assets/certificate.svg";
 import CardHadiah from "@/components/custom/CardHadiah";
 const UiUx: React.FC = () => {
   useEffect(() => {
-    AOS.init({ duration: 1200, once: true });
+    AOS.init({ duration: 1000, once: true });
   }, []);
+
+  const timelineEvents = [
+    {
+      id: 1,
+      title: "Pendaftaran Gelombang 1",
+      date: "10 - 25 Oktober 2024",
+      image: MaskotDf, // Gambar khusus untuk step 1
+    },
+    {
+      id: 2,
+      title: "Pengumuman Seleksi Berkas",
+      date: "01 November 2024",
+      image: MaskotHero, // Gambar khusus untuk step 2
+    },
+    {
+      id: 3,
+      title: "Technical Meeting",
+      date: "10 November 2024",
+      image: MaskotHp, // Gambar khusus untuk step 3
+    },
+    {
+      id: 4,
+      title: "Grand Final & Awarding Night",
+      date: "20 November 2024",
+      image: MaskotWinner, // Gambar khusus untuk step 4
+    },
+  ];
 
   return (
     <React.Fragment>
-      <div className="w-full bg-white text-slate-700 overflow-hidden">
+      <div className="w-full bg-white text-slate-700 overflow-hidden font-sans">
         {/* HERO SECTION */}
-        <section className="max-w-screen-xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center justify-center gap-10">
+        <section className="max-w-screen-xl mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center justify-center gap-12">
           <div
             data-aos="fade-right"
-            data-aos-delay="300"
             className="w-full md:w-1/2 flex justify-center"
           >
             <img
               src="/assets/competition-card/ui_ux.png"
               alt="UI/UX Design"
-              className="rounded-2xl w-[350px] shadow-lg"
+              className="rounded-2xl w-full max-w-[380px] shadow-2xl hover:scale-105 transition-transform duration-500"
             />
           </div>
 
-          <div data-aos="fade-left" className="w-full md:w-1/2 space-y-4">
-            <h1 className="font-semibold text-invofest text-3xl sm:text-4xl lg:text-5xl">
-              UI/UX Design Competition
+          <div
+            data-aos="fade-left"
+            className="w-full md:w-1/2 space-y-5 text-center md:text-left"
+          >
+            <h1
+              className="font-bold text-4xl sm:text-5xl lg:text-6xl tracking-tight"
+              style={{ color: "#1c0941" }}
+            >
+              UI/UX Design <br className="hidden md:block" /> Competition
             </h1>
-            <p className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-slate-600">
+            <p className="text-lg md:text-xl lg:text-2xl font-medium text-slate-600 italic">
               “From Creation to Innovation”
             </p>
-            <p className="text-slate-500">Kamis, 27 November 2025</p>
+            <p className="text-slate-500 font-medium flex items-center justify-center md:justify-start gap-2">
+              <span className="text-xl">📅</span> Kamis, 27 November 2025
+            </p>
 
-            <div className="space-y-3 mt-5">
-              <div className="bg-[#FFC0D3] border border-[#852e4e] text-center rounded-md py-3 font-semibold">
+            <div className="mt-8 space-y-4">
+              <div
+                className="border rounded-lg py-3 px-4 font-semibold shadow-sm inline-block w-full"
+                style={{
+                  backgroundColor: "#f6e6fe",
+                  borderColor: "#2a1354",
+                  color: "#2a1354",
+                }}
+              >
                 Biaya Pendaftaran Gelombang 2: Rp. 85.000
               </div>
 
-              {/* Tombol Register */}
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfuomobackIITWoZ4u9em8PjjZpjqtekXjs33-Ju1ll5r5xNQ/viewform?usp=preview"
-                rel="noopener noreferrer"
-                className="block w-full bg-[#852e4e] hover:bg-[#4c1d3d] text-white font-semibold py-3 rounded-md text-center transition duration-200"
-              >
-                Registrasi
-              </a>
+              {/* Tombol Aksi */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfuomobackIITWoZ4u9em8PjjZpjqtekXjs33-Ju1ll5r5xNQ/viewform?usp=preview"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-1/2 text-white font-semibold py-3 rounded-lg text-center shadow-lg hover:opacity-90 hover:-translate-y-1 transition-all duration-300"
+                  style={{ backgroundColor: "#2a1354" }}
+                >
+                  Registrasi Sekarang
+                </a>
 
-              {/* Tombol Guidebook */}
-              <a
-                href="https://drive.google.com/drive/folders/1dzCkstPOee7pQmZr5Sbn8ugcGAMfdQlH?usp=drive_link"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full border border-[#852e4e] text-[#852e4e] font-semibold py-3 rounded-md text-center hover:bg-[#FFC0D3] transition duration-200"
-              >
-                Dokumen Peserta
-              </a>
+                <a
+                  href="https://drive.google.com/drive/folders/1dzCkstPOee7pQmZr5Sbn8ugcGAMfdQlH?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-1/2 border-2 font-semibold py-3 rounded-lg text-center hover:bg-slate-50 hover:-translate-y-1 transition-all duration-300"
+                  style={{ borderColor: "#2a1354", color: "#2a1354" }}
+                >
+                  Dokumen Peserta
+                </a>
+              </div>
             </div>
           </div>
         </section>
 
         {/* DESKRIPSI LOMBA */}
-        <section className="bg-invofest_secondary w-full relative">
-          {/* Wave atas */}
-          <img src={WhiteWaveTop} alt="wave" className="w-full relative top-0" />
+        <section
+          className="w-full relative"
+          style={{ backgroundColor: "#381971" }}
+        >
+          <div className="h-16 md:h-24"></div>
 
-          {/* Jarak nyata antara wave atas dan konten */}
-          <div className="h-24 md:h-36"></div>
-
-          <div className="w-full max-w-4xl mx-auto px-8 text-center">
+          <div className="w-full max-w-5xl mx-auto px-6 text-center">
             <h2
               data-aos="zoom-in"
-              className="font-semibold text-invofest text-2xl sm:text-4xl lg:text-5xl mb-8"
+              className="font-bold text-white text-3xl sm:text-4xl lg:text-5xl mb-8 tracking-wide drop-shadow-md"
             >
               DESKRIPSI LOMBA
             </h2>
 
             <div
               data-aos="fade-up"
-              className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-slate-600"
+              className="text-base md:text-lg lg:text-xl leading-relaxed text-white/90 space-y-6 text-justify md:text-center"
             >
-              <p className="mb-4">
+              <p>
                 Salah satu perlombaan dalam kegiatan{" "}
-                <b>Invofest (Informatics Vocational Festival) 2025</b> adalah{" "}
-                <b>National UI/UX Design Competition</b>. Kegiatan ini menjadi wadah bagi mahasiswa/i untuk menyalurkan potensi,
-                kreativitas, dan kemampuan berpikir kritis dalam bidang ilmu pengetahuan dan teknologi, khususnya pada ranah desain
+                <b className="text-white">
+                  Invofest (Informatics Vocational Festival) 2025
+                </b>{" "}
+                adalah{" "}
+                <b className="text-white">National UI/UX Design Competition</b>.
+                Kegiatan ini menjadi wadah bagi mahasiswa/i untuk menyalurkan
+                potensi, kreativitas, dan kemampuan berpikir kritis dalam bidang
+                ilmu pengetahuan dan teknologi, khususnya pada ranah desain
                 antarmuka dan pengalaman pengguna.
               </p>
 
               <p>
-                Tahun ini, lomba mengusung tema <b>“From Creation to Innovation”</b>, yang menggambarkan perjalanan dari sekadar menciptakan ide menuju pengembangan inovasi yang bernilai dan berdampak nyata. Melalui tema ini, peserta diharapkan dapat menghadirkan solusi digital yang tidak hanya estetis dan fungsional, tetapi juga mampu menjawab kebutuhan masyarakat di era transformasi digital.
+                Tahun ini, lomba mengusung tema{" "}
+                <b className="text-white">“From Creation to Innovation”</b>,
+                yang menggambarkan perjalanan dari sekadar menciptakan ide
+                menuju pengembangan inovasi yang bernilai dan berdampak nyata.
+                Melalui tema ini, peserta diharapkan dapat menghadirkan solusi
+                digital yang tidak hanya estetis dan fungsional, tetapi juga
+                mampu menjawab kebutuhan masyarakat di era transformasi digital.
               </p>
 
               <p>
-                Kompetisi ini menjadi ajang bagi generasi muda untuk menumbuhkan semangat inovasi, kolaborasi, dan kreativitas dalam merancang produk digital yang berdaya saing, sekaligus berkontribusi pada kemajuan teknologi dan keberlanjutan ekosistem digital di Indonesia.
+                Kompetisi ini menjadi ajang bagi generasi muda untuk menumbuhkan
+                semangat inovasi, kolaborasi, dan kreativitas dalam merancang
+                produk digital yang berdaya saing, sekaligus berkontribusi pada
+                kemajuan teknologi dan keberlanjutan ekosistem digital di
+                Indonesia.
               </p>
             </div>
           </div>
 
-          {/* Jarak antara konten & wave bawah */}
-          <div className="h-24 md:h-36"></div>
-
-          {/* Wave bawah */}
-          <img src={WhiteWaveBot} alt="wave" className="w-full relative bottom-0" />
+          <div className="h-20 md:h-32"></div>
         </section>
 
         {/* KATEGORI HADIAH */}
@@ -151,69 +209,22 @@ const UiUx: React.FC = () => {
 
           </div>
         </section>
-
-
-        {/* TIMELINE EVENT */}
-        <section className="bg-invofest_secondary w-full relative overflow-hidden">
-          <img src={WhiteWaveTop} alt="wave top" className="w-full relative top-0" />
-          <div className="h-24 md:h-36"></div>
-
-          <div className="w-full max-w-[1600px] mx-auto px-6 md:px-12 text-center">
-            <h2
-              data-aos="zoom-in"
-              className="font-semibold text-invofest text-2xl sm:text-4xl lg:text-5xl mb-12"
-            >
-              TIMELINE EVENT
-            </h2>
-
-            <div className="relative flex flex-wrap justify-center items-center gap-x-16 gap-y-20 md:gap-x-20 md:gap-y-24 px-6 md:px-12">
-              <div className="absolute left-1/2 top-0 bottom-0 w-[4px] bg-[#852e4e]/25 -translate-x-1/2"></div>
-
-              {[
-                { title: "Pendaftaran Gelombang 1", date: "21–31 Oktober" },
-                { title: "Pengumpulan Karya Gelombang 1", date: "31 Oktober" },
-                { title: "Pendaftaran Gelombang 2", date: "1–15 November" },
-                { title: "Pengumpulan Karya Gelombang 2", date: "15 November" },
-                { title: "Pengumuman Finalis", date: "20 November" },
-                { title: "Technical Meeting Finalis", date: "21 November" },
-                { title: "Presentasi Finalis", date: "21 November" },
-                { title: "Pengumuman Juara", date: "27 November" },
-              ].map((step, index) => (
-                <div
-                  key={index}
-                  data-aos="zoom-in-up"
-                  data-aos-delay={index * 150}
-                  className={`relative w-full md:w-[45%] flex flex-col items-center ${index % 2 === 0 ? "md:items-end text-right" : "md:items-start text-left"
-                    }`}
-                >
-                  <div
-                    className={`absolute top-1/2 w-5 h-5 bg-[#852e4e] border-4 border-[#FFC0D3] rounded-full shadow-md ${index % 2 === 0 ? "md:right-[-1.6rem]" : "md:left-[-1.6rem]"
-                      } transform -translate-y-1/2`}
-                  ></div>
-
-                  <div className="bg-white border border-[#852e4e] px-6 py-5 rounded-xl shadow-md hover:scale-105 transition duration-300 w-full md:w-[80%]">
-                    <h4 className="font-semibold text-[#852e4e] text-lg">{step.title}</h4>
-                    <p className="text-slate-600 text-sm mt-1">{step.date}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="h-24 md:h-40"></div>
-          <img src={WhiteWaveBot} alt="wave bottom" className="w-full relative bottom-0" />
-        </section>
       </div>
-      {/* FAQ Section */}
+
+      {/* Komponen Eksternal */}
+      <div>
+        {/* Panggil komponen timeline di sini */}
+        <EventTimeline
+          title="JADWAL & TIMELINE EVENT" // Optional (default: TIMELINE EVENT)
+          items={timelineEvents}
+          defaultImage={MaskotHp} // Fallback gambar default
+        />
+      </div>
       <FAQ />
-
-      {/* Sponsorship */}
       <Sponsorship />
-
-      {/* MEDIA PARTNER */}
       <MediaPartner />
     </React.Fragment>
   );
 };
 
-export default UiUx
+export default UiUx;
