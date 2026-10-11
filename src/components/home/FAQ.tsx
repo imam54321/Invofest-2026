@@ -1,8 +1,10 @@
 import React from "react";
+import { createPortal } from "react-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import FAQInvofest from "/assets/Maskot-FAQ.webp";
 import SayInvofest from "/assets/Maskot-Say.webp";
+import ButtonPrimary from "../custom/ButtonPrimary";
 
 type FAQItem = {
   id: string;
@@ -69,8 +71,10 @@ const FAQ = () => {
   React.useEffect(() => {
     if (!selectedFAQ) return;
 
-    const previousOverflow = document.body.style.overflow;
+    const previousBodyOverflow = document.body.style.overflow;
+    const previousDocumentOverflow = document.documentElement.style.overflow;
     document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
 
     closeButtonRef.current?.focus();
 
@@ -83,7 +87,8 @@ const FAQ = () => {
     window.addEventListener("keydown", handleKeyDown);
 
     return () => {
-      document.body.style.overflow = previousOverflow;
+      document.body.style.overflow = previousBodyOverflow;
+      document.documentElement.style.overflow = previousDocumentOverflow;
       window.removeEventListener("keydown", handleKeyDown);
     };
   }, [selectedFAQ]);
@@ -171,11 +176,11 @@ const FAQ = () => {
               <div className="absolute right-0 top-0 h-28 w-28 translate-x-10 -translate-y-10 rounded-full bg-invofest_secondary transition-all duration-500 group-hover:scale-150 group-hover:bg-invofest_dark" />
 
               <div className="relative z-10 mb-7 flex w-full items-center justify-between">
-                <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-invofest_primary_light text-sm font-extrabold text-invofest shadow-lg shadow-black/20 transition-transform duration-300 group-hover:rotate-6 group-hover:scale-110">
+                <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white text-sm font-extrabold text-invofest shadow-lg shadow-black/20 transition-transform duration-300 group-hover:rotate-6 group-hover:scale-110">
                   {item.id}
                 </span>
 
-                <span className="flex h-10 w-10 items-center justify-center rounded-full border border-invofest_primary_light bg-invofest_secondary text-invofest_primary_light transition-all duration-300 group-hover:border-invofest_primary_light group-hover:bg-invofest_primary_light group-hover:text-invofest">
+                <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white bg-invofest_secondary text-white transition-all duration-300 group-hover:border-invofest_primary_light group-hover:bg-invofest group-hover:text-invofest_primary_light">
                   <svg
                     width="18"
                     height="18"
@@ -195,7 +200,7 @@ const FAQ = () => {
               </div>
 
               <div className="relative z-10 flex flex-1 flex-col">
-                <span className="mb-3 text-xs font-bold uppercase tracking-[0.14em] text-invofest_primary_light">
+                <span className="mb-3 text-xs font-bold uppercase tracking-[0.14em] text-invofest_primary_light group-hover:text-invofest_light">
                   {item.category}
                 </span>
 
@@ -240,133 +245,122 @@ const FAQ = () => {
             </p>
           </div>
 
-          <a
-            href="https://www.invofest-harkatnegeri.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex shrink-0 items-center gap-2 rounded-full bg-invofest_primary_light px-5 py-3 text-sm font-bold text-invofest shadow-lg shadow-black/20 transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-xl focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-invofest_primary_light"
-          >
-            Kunjungi Website
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              aria-hidden="true"
-            >
-              <path
-                d="M7 17L17 7M7 7H17V17"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </a>
+          <ButtonPrimary
+            text={"HUBUNGI PANITIA"}
+            dataAos={"zoom-in"}
+            delayAos={"550"}
+            isOutline={false}
+            handleClick={() =>
+              window.open(
+                `https://wa.me/62895605919551?text=${encodeURIComponent(
+                  "Halo Kak, Saya Ingin Bertanya mengenai Invofest 2025...",
+                )}`,
+              )
+            }
+           />
         </div>
       </div>
 
       {/* Answer modal */}
-      {selectedFAQ && (
-        <div
-          className="faq-modal-overlay fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto bg-slate-950/55 p-4 backdrop-blur-md sm:p-6"
-          onClick={closeFAQ}
-        >
-          <section
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="faq-modal-title"
-            aria-describedby="faq-modal-answer"
-            className="faq-modal-card relative my-auto w-full max-w-xl overflow-hidden rounded-[28px] border border-invofest_secondary bg-invofest shadow-[0_30px_100px_-25px_rgba(46,16,101,0.55)]"
-            onClick={(event) => event.stopPropagation()}
+      {selectedFAQ &&
+        createPortal(
+          <div
+            className="faq-modal-overlay fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto overscroll-contain bg-slate-950/55 p-4 backdrop-blur-md sm:p-6"
+            onClick={closeFAQ}
           >
-            {/* Modal accent */}
-            <div className="h-2 w-full bg-invofest_primary_light" />
+            <section
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="faq-modal-title"
+              aria-describedby="faq-modal-answer"
+              className="faq-modal-card relative my-auto w-full max-w-xl overflow-hidden rounded-[28px] border border-invofest_secondary bg-invofest shadow-[0_30px_100px_-25px_rgba(46,16,101,0.55)]"
+              onClick={(event) => event.stopPropagation()}
+            >
+              {/* Modal accent */}
+              <div className="h-2 w-full bg-invofest_primary_light" />
 
-            <div className="relative p-6 sm:p-9">
-              {/* Close button */}
-              <button
-                ref={closeButtonRef}
-                type="button"
-                onClick={closeFAQ}
-                aria-label="Tutup jawaban"
-                className="absolute right-5 top-5 flex h-10 w-10 items-center justify-center rounded-full border border-invofest_primary_light bg-invofest_secondary text-invofest_primary_light transition-all duration-300 hover:rotate-90 hover:border-invofest_primary_light hover:bg-invofest_primary_light hover:text-invofest focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-invofest_primary_light"
-              >
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  aria-hidden="true"
+              <div className="relative p-6 sm:p-9">
+                {/* Close button */}
+                <button
+                  ref={closeButtonRef}
+                  type="button"
+                  onClick={closeFAQ}
+                  aria-label="Tutup jawaban"
+                  className="absolute right-5 top-5 flex h-10 w-10 items-center justify-center rounded-full border border-invofest_primary_light bg-invofest_secondary text-invofest_primary_light transition-all duration-300 hover:rotate-90 hover:border-invofest_primary_light hover:bg-invofest_primary_light hover:text-invofest focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-invofest_primary_light"
                 >
-                  <path
-                    d="M18 6L6 18M6 6L18 18"
-                    stroke="currentColor"
-                    strokeWidth="1.8"
-                    strokeLinecap="round"
-                  />
-                </svg>
-              </button>
-
-              {/* Modal heading */}
-              <div className="mb-7 pr-10">
-                <span className="mb-4 inline-flex items-center gap-2 rounded-full bg-invofest_secondary px-3 py-1.5 text-xs font-extrabold uppercase tracking-wider text-invofest_primary_light">
-                  <span className="h-1.5 w-1.5 rounded-full bg-invofest_primary_light" />
-                  Jawaban #{selectedFAQ.id}
-                </span>
-
-                <h3
-                  id="faq-modal-title"
-                  className="text-2xl font-extrabold leading-tight text-white sm:text-3xl"
-                >
-                  {selectedFAQ.header}
-                </h3>
-
-                <p className="mt-2 text-sm font-medium text-invofest_gay">
-                  {selectedFAQ.category}
-                </p>
-              </div>
-
-              {/* Answer */}
-              <div className="relative rounded-2xl border border-invofest_secondary bg-invofest_secondary p-5 sm:p-6">
-                <div className="absolute left-0 top-5 h-10 w-1 rounded-r-full bg-invofest_primary_light" />
-
-                <p
-                  id="faq-modal-answer"
-                  className="text-base leading-8 text-white"
-                >
-                  {selectedFAQ.text}
-                </p>
-              </div>
-
-              {/* Modal footer */}
-              <div className="mt-7 flex items-center justify-between gap-3 border-t border-invofest_secondary pt-5">
-                <div className="flex min-w-0 items-center gap-3">
-                  <img
-                    src={SayInvofest}
-                    alt=""
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
                     aria-hidden="true"
-                    className="h-12 w-12 shrink-0 object-contain"
-                  />
-                  <p className="text-xs leading-5 text-invofest_gay sm:text-sm">
-                    Semoga membantu!
-                    <br />
-                    Sampai jumpa di INVOFEST.
+                  >
+                    <path
+                      d="M18 6L6 18M6 6L18 18"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                </button>
+
+                {/* Modal heading */}
+                <div className="mb-7 pr-10">
+                  <span className="mb-4 inline-flex items-center gap-2 rounded-full bg-invofest_secondary px-3 py-1.5 text-xs font-extrabold uppercase tracking-wider text-invofest_primary_light">
+                    Jawaban No.{selectedFAQ.id}
+                  </span>
+
+                  <h3
+                    id="faq-modal-title"
+                    className="text-2xl font-extrabold leading-tight text-white sm:text-3xl"
+                  >
+                    {selectedFAQ.header}
+                  </h3>
+
+                  <p className="mt-2 text-sm font-medium text-invofest_gay">
+                    {selectedFAQ.category}
                   </p>
                 </div>
 
-                <button
-                  type="button"
-                  onClick={closeFAQ}
-                  className="shrink-0 rounded-full bg-invofest_primary_light px-5 py-3 text-sm font-bold text-invofest shadow-md shadow-black/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-invofest_primary_light"
-                >
-                  Mengerti
-                </button>
+                {/* Answer */}
+                <div className="relative rounded-2xl border border-invofest_secondary bg-invofest_secondary p-5 sm:p-6">
+                  <p
+                    id="faq-modal-answer"
+                    className="text-base leading-8 text-white"
+                  >
+                    {selectedFAQ.text}
+                  </p>
+                </div>
+
+                {/* Modal footer */}
+                <div className="mt-7 flex items-center justify-between gap-3 border-t border-invofest_secondary pt-5">
+                  <div className="flex min-w-0 items-center gap-3">
+                    <img
+                      src={SayInvofest}
+                      alt=""
+                      aria-hidden="true"
+                      className="h-12 w-12 shrink-0 object-contain"
+                    />
+                    <p className="text-xs leading-5 text-invofest_gay sm:text-sm">
+                      Semoga membantu!
+                      <br />
+                      Sampai jumpa di INVOFEST.
+                    </p>
+                  </div>
+
+                  <button
+                    type="button"
+                    onClick={closeFAQ}
+                    className="shrink-0 rounded-full bg-invofest_primary_light px-5 py-3 text-sm font-bold text-invofest shadow-md shadow-black/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-invofest_primary_light"
+                  >
+                    Mengerti
+                  </button>
+                </div>
               </div>
-            </div>
-          </section>
-        </div>
-      )}
+            </section>
+          </div>,
+          document.body,
+        )}
 
       {/* Modal animations */}
       <style>{`

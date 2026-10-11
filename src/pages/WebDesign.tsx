@@ -6,11 +6,43 @@ import WhiteWaveBot from "/assets/wave-bot.png";
 import { MediaPartner } from "@/components/competition/MediaPartner";
 import FAQ from "@/components/home/FAQ";
 import { Sponsorship } from "@/components/home/Sponsorship";
+import EventTimeline from "../components/custom/TimeLineComp";
+import MaskotDf from "/assets/Maskot-Timeline-1.webp";
+import MaskotWinner from "/assets/Maskot-Lomba-2026.webp";
+import MaskotHp from "/assets/Maskot-Talkshow-2026.webp";
+import MaskotHero from "/assets/Maskot-Hero-2026.webp";
 
 const WebdesignCompetition: React.FC = () => {
   useEffect(() => {
     AOS.init({ duration: 1200, once: true });
   }, []);
+
+  const timelineEvents = [
+    {
+      id: 1,
+      title: "Pendaftaran Gelombang 1",
+      date: "10 - 25 Oktober 2024",
+      image: MaskotDf,
+    },
+    {
+      id: 2,
+      title: "Pengumuman Seleksi Berkas",
+      date: "01 November 2024",
+      image: MaskotHero,
+    },
+    {
+      id: 3,
+      title: "Technical Meeting",
+      date: "10 November 2024",
+      image: MaskotHp,
+    },
+    {
+      id: 4,
+      title: "Grand Final & Awarding Night",
+      date: "20 November 2024",
+      image: MaskotWinner,
+    },
+  ];
 
   return (
     <React.Fragment>
@@ -197,72 +229,11 @@ const WebdesignCompetition: React.FC = () => {
           </div>
         </section>
 
-        {/* TIMELINE EVENT */}
-        <section className="bg-invofest_secondary w-full relative overflow-hidden">
-          <img
-            src={WhiteWaveTop}
-            alt="wave top"
-            className="w-full relative top-0"
-          />
-          <div className="h-24 md:h-36"></div>
-
-          <div className="w-full max-w-[1600px] mx-auto px-6 md:px-12 text-center">
-            <h2
-              data-aos="zoom-in"
-              className="font-semibold text-white text-2xl sm:text-4xl lg:text-5xl mb-12"
-            >
-              TIMELINE EVENT
-            </h2>
-
-            <div className="relative flex flex-wrap justify-center items-center gap-x-16 gap-y-20 md:gap-x-20 md:gap-y-24 px-6 md:px-12">
-              <div className="absolute left-1/2 top-0 bottom-0 w-[4px] bg-invofest_dark/25 -translate-x-1/2"></div>
-
-              {[
-                { title: "Pendaftaran Gelombang 1", date: "21–31 Oktober" },
-                { title: "Pengumpulan Karya Gelombang 1", date: "31 Oktober" },
-                { title: "Pendaftaran Gelombang 2", date: "1–15 November" },
-                { title: "Pengumpulan Karya Gelombang 2", date: "15 November" },
-                { title: "Pengumuman Finalis", date: "20 November" },
-                { title: "Technical Meeting Finalis", date: "21 November" },
-                { title: "Presentasi Finalis", date: "21 November" },
-                { title: "Pengumuman Juara", date: "27 November" },
-              ].map((step, index) => (
-                <div
-                  key={index}
-                  data-aos="zoom-in-up"
-                  data-aos-delay={index * 150}
-                  className={`relative w-full md:w-[45%] flex flex-col items-center ${
-                    index % 2 === 0
-                      ? "md:items-end text-right"
-                      : "md:items-start text-left"
-                  }`}
-                >
-                  <div
-                    className={`absolute top-1/2 w-5 h-5 bg-invofest_dark border-4 border-navbar rounded-full shadow-md ${
-                      index % 2 === 0
-                        ? "md:right-[-1.6rem]"
-                        : "md:left-[-1.6rem]"
-                    } transform -translate-y-1/2`}
-                  ></div>
-
-                  <div className="bg-white border border-invofest_dark px-6 py-5 rounded-xl shadow-md hover:scale-105 transition duration-300 w-full md:w-[80%]">
-                    <h4 className="font-semibold text-invofest_dark text-lg">
-                      {step.title}
-                    </h4>
-                    <p className="text-slate-600 text-sm mt-1">{step.date}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="h-24 md:h-40"></div>
-          <img
-            src={WhiteWaveBot}
-            alt="wave bottom"
-            className="w-full relative bottom-0"
-          />
-        </section>
+        <EventTimeline
+          title="JADWAL & TIMELINE EVENT"
+          items={timelineEvents}
+          defaultImage={MaskotHp}
+        />
       </div>
       {/* FAQ Section */}
       <FAQ />
