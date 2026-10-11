@@ -6,6 +6,9 @@ import WhiteWaveBot from "/assets/wave-bot.png";
 import { MediaPartner } from "@/components/competition/MediaPartner";
 import FAQ from "@/components/home/FAQ";
 import { Sponsorship } from "@/components/home/Sponsorship";
+import CardHadiah from "@/components/custom/CardHadiah";
+import { dataHadiahPoster } from "@/utils/datas";
+import Certificate from "/assets/certificate.svg";
 
 const WebdesignCompetition: React.FC = () => {
     useEffect(() => {
@@ -115,68 +118,42 @@ const WebdesignCompetition: React.FC = () => {
                 </section>
 
                 {/* KATEGORI HADIAH */}
-                <section className="py-16 bg-white">
+                <section className="py-16 bg-white overflow-hidden">
                     <div className="max-w-screen-xl mx-auto px-6 text-center">
                         <h2
                             data-aos="zoom-in"
-                            className="text-2xl md:text-3xl font-bold text-[#852e4e] mb-4"
+                            className="text-2xl md:text-3xl font-bold text-invofest mb-10"
                         >
                             KATEGORI HADIAH
                         </h2>
 
-                        {/* Keterangan Besar */}
-                        <p
-                            data-aos="fade-up"
-                            className="text-lg md:text-xl font-semibold text-slate-700 mb-8"
-                        >
-                            🎉 Total Hadiah <span className="text-[#852e4e]">Jutaan Rupiah</span>
-                        </p>
-
-                        <div className="flex flex-wrap justify-center gap-8">
-                            {[
-                                {
-                                    title: "Semua Peserta",
-                                    prize: "📜 Sertifikat",
-                                    bonus: [
-                                        "Mendapatkan e-Sertifikat resmi",
-                                    ],
-                                },
-                                {
-                                    title: "Juara I",
-                                    prize: "Trophy + Uang Pembinaan",
-                                    bonus: ["🏆 Trophy", "💰 Uang Pembinaan", "📜 e-Sertifikat"],
-                                },
-                                {
-                                    title: "Juara II",
-                                    prize: "Trophy + Uang Pembinaan",
-                                    bonus: ["🏆 Trophy", "💰 Uang Pembinaan", "📜 e-Sertifikat"],
-                                },
-                                {
-                                    title: "Juara III",
-                                    prize: "Trophy + Uang Pembinaan",
-                                    bonus: ["🏆 Trophy", "💰 Uang Pembinaan", "📜 e-Sertifikat"],
-                                },
-                            ].map((item, index) => (
-                                <div
-                                    key={index}
-                                    data-aos="fade-up"
-                                    data-aos-delay={index * 150}
-                                    className="w-[240px] border-2 border-[#852e4e] rounded-xl p-6 shadow-md hover:shadow-lg transition duration-300 bg-white"
-                                >
-                                    <div className="text-5xl mb-3 text-[#852e4e]">🏆</div>
-                                    <h3 className="font-semibold text-lg">{item.title}</h3>
-                                    <p className="text-slate-600 mt-2 font-medium">{item.prize}</p>
-
-                                    {item.bonus.length > 0 && (
-                                        <ul className="mt-3 text-sm text-slate-600 space-y-1">
-                                            {item.bonus.map((bonus, i) => (
-                                                <li key={i}>{bonus}</li>
-                                            ))}
-                                        </ul>
-                                    )}
-                                </div>
+                        <div className="flex flex-wrap justify-center items-end gap-4 md:gap-8 mb-12">
+                            {dataHadiahPoster.map((item) => (
+                                <CardHadiah
+                                    key={item.rank}
+                                    rank={item.rank}
+                                    title={item.title}
+                                    benefits={item.benefits}
+                                    delay={item.delay}
+                                />
                             ))}
                         </div>
+
+
+                        <div
+                            data-aos="fade-up"
+                            data-aos-delay="400"
+                            className="max-w-3xl mx-auto relative flex items-center bg-gradient-to-b from-invofest_secondary to-invofest rounded-2xl overflow-hidden shadow-lg hover:-translate-y-1 transition-all duration-300 h-[120px]"
+                        >
+                            <div className="w-[100px] h-full bg-white flex items-center justify-center rounded-r-[50px] shrink-0 shadow-[2px_0_10px_rgba(0,0,0,0.1)] z-10">
+                                <span><img src={Certificate} alt="Trophy" className="w-12 h-12" /></span>
+                            </div>
+                            <div className="px-8 text-left flex flex-col justify-center h-full flex-grow">
+                                <h3 className="font-bold text-xl text-white mb-1">Semua Peserta</h3>
+                                <p className="text-sm text-purple-200">Mendapatkan e-Sertifikat resmi INVOFEST</p>
+                            </div>
+                        </div>
+
                     </div>
                 </section>
 

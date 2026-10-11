@@ -1,3 +1,5 @@
+import { CardHadiahProps } from "./types";
+
 export const dataSeminar = {
   heroTitle: "IT Seminar",
   subtitle:
@@ -130,3 +132,25 @@ export const dataWorkshop = {
     },
   ],
 };
+
+export const dataHadiahPoster: CardHadiahProps[] = [
+  {
+    rank: 2,
+    title: "Juara II",
+    benefits: ["Trophy", "Uang Pembinaan", "e-Sertifikat"],
+    delay: 100,
+  },
+  {
+    rank: 1,
+    title: "Juara I",
+    benefits: ["Trophy", "Uang Pembinaan", "e-Sertifikat"],
+    delay: 200,
+  },
+  {
+    rank: 3,
+    title: "Juara III",
+    benefits: ["Trophy", "Uang Pembinaan", "e-Sertifikat"],
+    delay: 300,
+  },
+];
+
