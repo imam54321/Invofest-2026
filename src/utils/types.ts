@@ -32,6 +32,14 @@ export type CardSpeakerProps = {
   title: string;
 };
 
+export type CardHadiahProps = {
+  rank: 1 | 2 | 3;
+  title: string;
+  benefits: string[];
+  delay?: number;
+};
+
+
 export type CustomEventsProps = {
   title: string;
   place: string;

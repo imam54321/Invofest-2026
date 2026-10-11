@@ -92,6 +92,208 @@ const WebdesignCompetition: React.FC = () => {
               >
                 Dokumen Peserta
               </a>
+import CardHadiah from "@/components/custom/CardHadiah";
+import { dataHadiahPoster } from "@/utils/datas";
+import Certificate from "/assets/certificate.svg";
+
+const WebdesignCompetition: React.FC = () => {
+    useEffect(() => {
+        AOS.init({ duration: 1200, once: true });
+    }, []);
+
+    return (
+        <React.Fragment>
+            <div className="w-full bg-white text-slate-700 overflow-hidden">
+                {/* HERO SECTION */}
+                <section className="max-w-screen-xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center justify-center gap-10">
+                    <div
+                        data-aos="fade-right"
+                        data-aos-delay="300"
+                        className="w-full md:w-1/2 flex justify-center"
+                    >
+                        <img
+                            src="/assets/competition-card/web_design.png"
+                            alt="UI/UX Design"
+                            className="rounded-2xl w-[350px] shadow-lg"
+                        />
+                    </div>
+
+                    <div data-aos="fade-left" className="w-full md:w-1/2 space-y-4">
+                        <h1 className="font-semibold text-invofest text-3xl sm:text-4xl lg:text-5xl">
+                            Web Design Competition
+                        </h1>
+                        <p className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-slate-600">
+                            “From Creation to Innovation”
+                        </p>
+                        <p className="text-slate-500">Kamis, 27 November 2025</p>
+
+                        <div className="space-y-3 mt-5">
+                            <div className="bg-[#FFC0D3] border border-[#852e4e] text-center rounded-md py-3 font-semibold">
+                                Biaya Pendaftaran Gelombang 2: Rp. 60.000
+                            </div>
+                            {/* Tombol Register */}
+                            <a
+                                href="https://docs.google.com/forms/d/e/1FAIpQLScVgBhnxdHi55I_H-egoeIaIxn-0I3yj4CCK9FXKUieAJ3A0A/viewform?usp=preview"
+                                rel="noopener noreferrer"
+                                className="block w-full bg-[#852e4e] hover:bg-[#4c1d3d] text-white font-semibold py-3 rounded-md text-center transition duration-200"
+                            >
+                                Registrasi
+                            </a>
+
+                            {/* Tombol Guidebook */}
+                            <a
+                                href="https://drive.google.com/drive/folders/1suvD65_gH7koaejynEev8DwV6vF9KNSc?usp=drive_link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block w-full border border-[#852e4e] text-[#852e4e] font-semibold py-3 rounded-md text-center hover:bg-[#FFC0D3] transition duration-200"
+                            >
+                                Dokumen Peserta
+                            </a>
+
+                        </div>
+                    </div>
+                </section>
+
+                {/* DESKRIPSI LOMBA */}
+                <section className="bg-invofest_secondary w-full relative">
+                    {/* Wave atas */}
+                    <img src={WhiteWaveTop} alt="wave" className="w-full relative top-0" />
+
+                    {/* Jarak nyata antara wave atas dan konten */}
+                    <div className="h-24 md:h-36"></div>
+
+                    <div className="w-full max-w-4xl mx-auto px-8 text-center">
+                        <h2
+                            data-aos="zoom-in"
+                            className="font-semibold text-invofest text-2xl sm:text-4xl lg:text-5xl mb-8"
+                        >
+                            DESKRIPSI LOMBA
+                        </h2>
+
+                        <div
+                            data-aos="fade-up"
+                            className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-gray-300"
+                        >
+                            <p className="mb-4">
+                                Salah satu perlombaan dalam kegiatan{" "}
+                                <b>Invofest (Informatics Vocational Festival) 2025</b> adalah{" "}
+                                <b>National Web Design Competition</b>. yang diharapkan melalui ajang ini para <b>mahasiswa/i</b> dapat
+                                menggali serta mengembangkan potensi diri sebagai upaya untuk menjadi sumber daya manusia yang unggul
+                                di bidang ilmu pengetahuan dan teknologi.
+                            </p>
+
+                            <p>
+                                Lomba ini mengusung tema “From Creation to Innovation”, yang bertujuan untuk mendorong generasi muda
+                                agar tidak hanya berhenti pada tahap menciptakan ide, tetapi juga mampu mengembangkannya menjadi inovasi
+                                yang bernilai dan berdampak nyata. Melalui tema ini, peserta diharapkan dapat menciptakan desain web yang
+                                tidak hanya menarik secara visual, tetapi juga inovatif, fungsional, dan relevan dengan kebutuhan masyarakat di era digital.
+                            </p>
+
+                            <p>
+                                Dengan semangat kreativitas dan inovasi, kompetisi ini menjadi wadah bagi mahasiswa/i untuk menunjukkan kemampuan terbaiknya
+                                dalam merancang karya digital yang berdaya saing serta berkontribusi terhadap kemajuan teknologi informasi di masa depan.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Jarak antara konten & wave bawah */}
+                    <div className="h-24 md:h-36"></div>
+
+                    {/* Wave bawah */}
+                    <img src={WhiteWaveBot} alt="wave" className="w-full relative bottom-0" />
+                </section>
+
+                {/* KATEGORI HADIAH */}
+                <section className="py-16 bg-white overflow-hidden">
+                    <div className="max-w-screen-xl mx-auto px-6 text-center">
+                        <h2
+                            data-aos="zoom-in"
+                            className="text-2xl md:text-3xl font-bold text-invofest mb-10"
+                        >
+                            KATEGORI HADIAH
+                        </h2>
+
+                        <div className="flex flex-wrap justify-center items-end gap-4 md:gap-8 mb-12">
+                            {dataHadiahPoster.map((item) => (
+                                <CardHadiah
+                                    key={item.rank}
+                                    rank={item.rank}
+                                    title={item.title}
+                                    benefits={item.benefits}
+                                    delay={item.delay}
+                                />
+                            ))}
+                        </div>
+
+
+                        <div
+                            data-aos="fade-up"
+                            data-aos-delay="400"
+                            className="max-w-3xl mx-auto relative flex items-center bg-gradient-to-b from-invofest_secondary to-invofest rounded-2xl overflow-hidden shadow-lg hover:-translate-y-1 transition-all duration-300 h-[120px]"
+                        >
+                            <div className="w-[100px] h-full bg-white flex items-center justify-center rounded-r-[50px] shrink-0 shadow-[2px_0_10px_rgba(0,0,0,0.1)] z-10">
+                                <span><img src={Certificate} alt="Trophy" className="w-12 h-12" /></span>
+                            </div>
+                            <div className="px-8 text-left flex flex-col justify-center h-full flex-grow">
+                                <h3 className="font-bold text-xl text-white mb-1">Semua Peserta</h3>
+                                <p className="text-sm text-purple-200">Mendapatkan e-Sertifikat resmi INVOFEST</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                {/* TIMELINE EVENT */}
+                <section className="bg-invofest_secondary w-full relative overflow-hidden">
+                    <img src={WhiteWaveTop} alt="wave top" className="w-full relative top-0" />
+                    <div className="h-24 md:h-36"></div>
+
+                    <div className="w-full max-w-[1600px] mx-auto px-6 md:px-12 text-center">
+                        <h2
+                            data-aos="zoom-in"
+                            className="font-semibold text-invofest text-2xl sm:text-4xl lg:text-5xl mb-12"
+                        >
+                            TIMELINE EVENT
+                        </h2>
+
+                        <div className="relative flex flex-wrap justify-center items-center gap-x-16 gap-y-20 md:gap-x-20 md:gap-y-24 px-6 md:px-12">
+                            <div className="absolute left-1/2 top-0 bottom-0 w-[4px] bg-[#852e4e]/25 -translate-x-1/2"></div>
+
+                            {[
+                                { title: "Pendaftaran Gelombang 1", date: "21–31 Oktober" },
+                                { title: "Pengumpulan Karya Gelombang 1", date: "31 Oktober" },
+                                { title: "Pendaftaran Gelombang 2", date: "1–15 November" },
+                                { title: "Pengumpulan Karya Gelombang 2", date: "15 November" },
+                                { title: "Pengumuman Finalis", date: "20 November" },
+                                { title: "Technical Meeting Finalis", date: "21 November" },
+                                { title: "Presentasi Finalis", date: "21 November" },
+                                { title: "Pengumuman Juara", date: "27 November" },
+                            ].map((step, index) => (
+                                <div
+                                    key={index}
+                                    data-aos="zoom-in-up"
+                                    data-aos-delay={index * 150}
+                                    className={`relative w-full md:w-[45%] flex flex-col items-center ${index % 2 === 0 ? "md:items-end text-right" : "md:items-start text-left"
+                                        }`}
+                                >
+                                    <div
+                                        className={`absolute top-1/2 w-5 h-5 bg-[#852e4e] border-4 border-[#FFC0D3] rounded-full shadow-md ${index % 2 === 0 ? "md:right-[-1.6rem]" : "md:left-[-1.6rem]"
+                                            } transform -translate-y-1/2`}
+                                    ></div>
+
+                                    <div className="bg-white border border-[#852e4e] px-6 py-5 rounded-xl shadow-md hover:scale-105 transition duration-300 w-full md:w-[80%]">
+                                        <h4 className="font-semibold text-[#852e4e] text-lg">{step.title}</h4>
+                                        <p className="text-slate-600 text-sm mt-1">{step.date}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="h-24 md:h-40"></div>
+                    <img src={WhiteWaveBot} alt="wave bottom" className="w-full relative bottom-0" />
+                </section>
             </div>
           </div>
         </section>

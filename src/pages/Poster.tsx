@@ -11,6 +11,10 @@ import MaskotDf from "/assets/Maskot-Timeline-1.webp";
 import MaskotWinner from "/assets/Maskot-Lomba-2026.webp";
 import MaskotHp from "/assets/Maskot-Talkshow-2026.webp";
 import MaskotHero from "/assets/Maskot-Hero-2026.webp";
+import CardHadiah from "@/components/custom/CardHadiah";
+import { dataHadiahPoster } from "@/utils/datas";
+import Certificate from "/assets/certificate.svg";
+
 
 const Poster: React.FC = () => {
   useEffect(() => {
@@ -157,7 +161,7 @@ const Poster: React.FC = () => {
         </section>
 
         {/* KATEGORI HADIAH */}
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-white overflow-hidden">https://github.com/imam54321/Invofest-2026/pull/3/conflict?name=src%252Fpages%252FPoster.tsx&ancestor_oid=49ec049973df4e8d62c370b428c5951bc7891f2d&base_oid=1098c7beed9b0375b809d1cbf0e8270137e40744&head_oid=2d6d6d531d2e82f0051b3bd44c9542df27a7c152
           <div className="max-w-screen-xl mx-auto px-6 text-center">
             <h2
               data-aos="zoom-in"
@@ -166,60 +170,33 @@ const Poster: React.FC = () => {
               KATEGORI HADIAH
             </h2>
 
-            {/* Keterangan Besar */}
-            <p
-              data-aos="fade-up"
-              className="text-lg md:text-xl font-semibold text-slate-700 mb-8"
-            >
-              🎉 Total Hadiah{" "}
-              <span className="text-invofest_dark">Jutaan Rupiah</span>
-            </p>
-
-            <div className="flex flex-wrap justify-center gap-8">
-              {[
-                {
-                  title: "Semua Peserta",
-                  prize: "📜 Sertifikat",
-                  bonus: ["Mendapatkan e-Sertifikat resmi"],
-                },
-                {
-                  title: "Juara I",
-                  prize: "Trophy + Uang Pembinaan",
-                  bonus: ["🏆 Trophy", "💰 Uang Pembinaan", "📜 e-Sertifikat"],
-                },
-                {
-                  title: "Juara II",
-                  prize: "Trophy + Uang Pembinaan",
-                  bonus: ["🏆 Trophy", "💰 Uang Pembinaan", "📜 e-Sertifikat"],
-                },
-                {
-                  title: "Juara III",
-                  prize: "Trophy + Uang Pembinaan",
-                  bonus: ["🏆 Trophy", "💰 Uang Pembinaan", "📜 e-Sertifikat"],
-                },
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  data-aos="fade-up"
-                  data-aos-delay={index * 150}
-                  className="w-[240px] border-2 border-invofest_dark rounded-xl p-6 shadow-md hover:shadow-lg transition duration-300 bg-white"
-                >
-                  <div className="text-5xl mb-3 text-invofest_dark">🏆</div>
-                  <h3 className="font-semibold text-lg">{item.title}</h3>
-                  <p className="text-slate-600 mt-2 font-medium">
-                    {item.prize}
-                  </p>
-
-                  {item.bonus.length > 0 && (
-                    <ul className="mt-3 text-sm text-slate-600 space-y-1">
-                      {item.bonus.map((bonus, i) => (
-                        <li key={i}>{bonus}</li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
+            <div className="flex flex-wrap justify-center items-end gap-4 md:gap-8 mb-12">
+              {dataHadiahPoster.map((item) => (
+                <CardHadiah
+                  key={item.rank}
+                  rank={item.rank}
+                  title={item.title}
+                  benefits={item.benefits}
+                  delay={item.delay}
+                />
               ))}
             </div>
+
+            
+            <div
+              data-aos="fade-up"
+              data-aos-delay="400"
+              className="max-w-3xl mx-auto relative flex items-center bg-gradient-to-b from-invofest_secondary to-invofest rounded-2xl overflow-hidden shadow-lg hover:-translate-y-1 transition-all duration-300 h-[120px]"
+            >
+              <div className="w-[100px] h-full bg-white flex items-center justify-center rounded-r-[50px] shrink-0 shadow-[2px_0_10px_rgba(0,0,0,0.1)] z-10">
+                <span><img src={Certificate} alt="Trophy" className="w-12 h-12"/></span>
+              </div>
+              <div className="px-8 text-left flex flex-col justify-center h-full flex-grow">
+                <h3 className="font-bold text-xl text-white mb-1">Semua Peserta</h3>
+                <p className="text-sm text-[#e2e8f0]">Mendapatkan e-Sertifikat resmi INVOFEST</p>
+              </div>
+            </div>
+
           </div>
         </section>
 

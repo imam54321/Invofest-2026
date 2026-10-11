@@ -9,6 +9,7 @@ type cardAbout = {
   desc: string;
   btnText: string;
   href: string;
+  accentColor?: string;
 };
 
 const CardAbout = ({
@@ -31,23 +32,32 @@ const CardAbout = ({
       <div
         data-aos={dataAos}
         data-aos-delay={delayAos}
-        className="group relative flex h-full min-h-[20rem] flex-col overflow-hidden rounded-xl border border-white/70 bg-white p-6 shadow-lg shadow-invofest/10 transition-all duration-300 before:absolute before:inset-y-0 before:right-0 before:w-1 before:bg-invofest_primary hover:-translate-y-1 hover:shadow-xl hover:shadow-invofest/20"
+        className="relative max-w-sm w-full bg-invofest rounded-tl-[2rem] rounded-tr-[2rem] rounded-br-[2rem] rounded-bl-[2rem] overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center h-full"
       >
-        <h5 className="mb-3 text-2xl font-bold leading-tight text-invofest">
-          {title}
-        </h5>
-        <p className="mb-6 flex-1 leading-relaxed text-slate-600">{desc}</p>
-        <div className="mt-auto pt-2">
-          <ButtonPrimary
-            text={btnText}
-            dataAos={""}
-            delayAos={""}
-            isOutline={false}
-            isLink={true}
-            href={href}
-          />
+        <div className="relative max-w-sm w-full bg-white rounded-tl-[3rem] rounded-tr-[4rem] rounded-br-[2rem] rounded-bl-[9rem] overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center pt-10 pb-20 px-6 h-full">
+
+          {/* Judul */}
+          <a href="#" className="relative z-10">
+            <h5 className="text-2xl font-bold uppercase tracking-tight text-invofest transition-colors">
+              {title}
+            </h5>
+          </a>
+
+          <p className="mb-5 mt-5 font-normal text-slate-600">{desc}</p>
+
+          <div className="w-full mt-auto pt-5">
+            <ButtonPrimary
+              text={btnText}
+              dataAos={""}
+              delayAos={""}
+              isOutline={false}
+              isLink={true}
+              href={href}
+            />
+          </div>
         </div>
       </div>
+
     </React.Fragment>
   );
 };

@@ -10,6 +10,9 @@ import MaskotWinner from "/assets/Maskot-Lomba-2026.webp";
 import MaskotHp from "/assets/Maskot-Talkshow-2026.webp";
 import MaskotHero from "/assets/Maskot-Hero-2026.webp";
 
+import { dataHadiahPoster } from "@/utils/datas";
+import Certificate from "/assets/certificate.svg";
+import CardHadiah from "@/components/custom/CardHadiah";
 const UiUx: React.FC = () => {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
@@ -168,78 +171,42 @@ const UiUx: React.FC = () => {
         </section>
 
         {/* KATEGORI HADIAH */}
-        <section className="py-20 bg-slate-50">
+        <section className="py-16 bg-white overflow-hidden">
           <div className="max-w-screen-xl mx-auto px-6 text-center">
             <h2
               data-aos="zoom-in"
-              className="text-3xl md:text-4xl font-bold mb-4 tracking-tight"
-              style={{ color: "#2a1354" }}
+              className="text-2xl md:text-3xl font-bold text-invofest mb-10"
             >
               KATEGORI HADIAH
             </h2>
-            <p
-              data-aos="fade-up"
-              className="text-lg md:text-xl font-medium text-slate-600 mb-12"
-            >
-              🎉 Total Hadiah{" "}
-              <span className="font-bold" style={{ color: "#2a1354" }}>
-                Jutaan Rupiah
-              </span>
-            </p>
 
-            {/* Grid Responsif */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {[
-                {
-                  title: "Semua Peserta",
-                  prize: "📜 Sertifikat",
-                  bonus: ["Mendapatkan e-Sertifikat resmi"],
-                },
-                {
-                  title: "Juara I",
-                  prize: "Trophy + Uang Pembinaan",
-                  bonus: ["🏆 Trophy", "💰 Uang Pembinaan", "📜 e-Sertifikat"],
-                },
-                {
-                  title: "Juara II",
-                  prize: "Trophy + Uang Pembinaan",
-                  bonus: ["🏆 Trophy", "💰 Uang Pembinaan", "📜 e-Sertifikat"],
-                },
-                {
-                  title: "Juara III",
-                  prize: "Trophy + Uang Pembinaan",
-                  bonus: ["🏆 Trophy", "💰 Uang Pembinaan", "📜 e-Sertifikat"],
-                },
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  data-aos="fade-up"
-                  data-aos-delay={index * 100}
-                  className="bg-white border-2 rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center"
-                  style={{ borderColor: "#2a1354" }}
-                >
-                  <div className="text-6xl mb-4 drop-shadow-md">🏆</div>
-                  <h3
-                    className="font-bold text-xl mb-2"
-                    style={{ color: "#2a1354" }}
-                  >
-                    {item.title}
-                  </h3>
-                  <p className="text-slate-700 font-semibold mb-4 text-center">
-                    {item.prize}
-                  </p>
-                  {item.bonus.length > 0 && (
-                    <ul className="text-sm text-slate-600 space-y-2 font-medium w-full text-left bg-slate-50 p-4 rounded-lg">
-                      {item.bonus.map((bonus, i) => (
-                        <li key={i} className="flex items-center gap-2">
-                          <span className="text-[#b548f6]">✔</span> {bonus}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
+            <div className="flex flex-wrap justify-center items-end gap-4 md:gap-8 mb-12">
+              {dataHadiahPoster.map((item) => (
+                <CardHadiah
+                  key={item.rank}
+                  rank={item.rank}
+                  title={item.title}
+                  benefits={item.benefits}
+                  delay={item.delay}
+                />
               ))}
             </div>
+
+            
+            <div
+              data-aos="fade-up"
+              data-aos-delay="400"
+              className="max-w-3xl mx-auto relative flex items-center bg-gradient-to-b from-invofest_secondary to-invofest rounded-2xl overflow-hidden shadow-lg hover:-translate-y-1 transition-all duration-300 h-[120px]"
+            >
+              <div className="w-[100px] h-full bg-white flex items-center justify-center rounded-r-[50px] shrink-0 shadow-[2px_0_10px_rgba(0,0,0,0.1)] z-10">
+                <span><img src={Certificate} alt="Trophy" className="w-12 h-12"/></span>
+              </div>
+              <div className="px-8 text-left flex flex-col justify-center h-full flex-grow">
+                <h3 className="font-bold text-xl text-white mb-1">Semua Peserta</h3>
+                <p className="text-sm text-purple-200">Mendapatkan e-Sertifikat resmi INVOFEST</p>
+              </div>
+            </div>
+
           </div>
         </section>
       </div>
