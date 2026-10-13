@@ -161,7 +161,7 @@ const Poster: React.FC = () => {
         </section>
 
         {/* KATEGORI HADIAH */}
-        <section className="py-16 bg-white overflow-hidden">https://github.com/imam54321/Invofest-2026/pull/3/conflict?name=src%252Fpages%252FPoster.tsx&ancestor_oid=49ec049973df4e8d62c370b428c5951bc7891f2d&base_oid=1098c7beed9b0375b809d1cbf0e8270137e40744&head_oid=2d6d6d531d2e82f0051b3bd44c9542df27a7c152
+        <section className="py-16 bg-white overflow-hidden">
           <div className="max-w-screen-xl mx-auto px-6 text-center">
             <h2
               data-aos="zoom-in"
