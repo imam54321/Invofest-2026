@@ -32,7 +32,7 @@ const CustomEvents = ({ title, place, time, date }: CustomEventsProps) => {
             </h1>
           </div>
 
-          <div className="w-full max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 justify-items-center">
+          <div className="w-full max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-6 px-4 sm:px-0 mt-6 justify-items-center">
             <CardEvents
               delay={500}
               place={date}
