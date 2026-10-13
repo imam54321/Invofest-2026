@@ -145,7 +145,7 @@ export const HomeAdmin: React.FC = () => {
               icon={<RiImageEditLine />}
               value={stats?.poster ?? 0}
               color="bg-rose-500"
-              url="dashboard/competition/poster"
+              url="dashboard/competition/business-plan"
             />
             <CardStats
               title="Pendaftar Competition UI/UX Design"

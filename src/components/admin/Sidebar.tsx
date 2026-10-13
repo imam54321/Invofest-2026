@@ -42,7 +42,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
   useEffect(() => {
     const competitionPaths = [
-      "/dashboard/competition/poster",
+      "/dashboard/competition/business-plan",
       "/dashboard/competition/uiux",
       "/dashboard/competition/web-design",
     ];
@@ -84,10 +84,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
       label: "Competition",
       children: [
         {
-          id: "competition-poster",
+          id: "competition-business-plan",
           icon: <RiImageEditLine />,
-          label: "Poster Design",
-          path: `${basePath}/competition/poster`,
+          label: "Business Plan",
+          path: `${basePath}/competition/business-plan`,
         },
         {
           id: "competition-uiux",

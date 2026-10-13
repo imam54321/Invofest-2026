@@ -52,7 +52,7 @@ const App = () => {
           <Route path="/login-admin" element={<LoginPage />} />
           <Route path="/workshop/register" element={<RegisterWorkshopPage />} />
           <Route path="/competition/ui-ux/register" element={<RegisterUiUxPage />} />
-          <Route path="/competition/poster/register" element={<RegisterPosterPage />} />
+          <Route path="/competition/business-plan/register" element={<RegisterPosterPage />} />
           <Route path="/competition/web-design/register" element={<RegisterWebPage />} />
           <Route path="/seminar/register" element={<RegisterSeminarPage />} />
           <Route path="/talkshow/register" element={<RegisterTalkshowPage />} />

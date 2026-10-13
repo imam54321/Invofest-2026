@@ -40,7 +40,7 @@ const ListComp = () => {
               TitleCard="Businnes Plan Competition"
               DescCard="Businnes Plan Competition ini adalah kompetisi untuk menciptakan suatu rencana bisnis yang inovatif dan realistis, guna menyuarakan gagasan atau solusi visual terhadap permasalahan yang ada sekarang ini."
               ImageCard={BusinnesPlan}
-              linkRedirect="/competition/poster"
+              linkRedirect="/competition/business-plan"
               linkGuideBook="https://drive.google.com/drive/folders/1Ob6ISlnLNvTZiDoryCEybqZc6xxzfKuC?usp=drive_link"
               linkReg="https://docs.google.com/forms/d/e/1FAIpQLSeb8TJNghw0FLVkR1ek0RRO6v9QVK4Ra-vQzz8T46gcOs908w/viewform"
               linkPengumpulan="https://docs.google.com/forms/d/e/1FAIpQLScRiJofrgYoXJC7BW5XPThT6OO7muih_NueogtsYBs3bQZHGg/viewform"

@@ -171,7 +171,7 @@ const RegisterPosterPage: React.FC = () => {
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
-    navigate("/competition/poster"); // Pindah ke home
+    navigate("/competition/business-plan"); // Pindah ke home
   };
   // ----------------------------------------
 
