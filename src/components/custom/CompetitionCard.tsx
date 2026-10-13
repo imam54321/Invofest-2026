@@ -52,7 +52,7 @@ const CompetitionCard = ({
       <div
         data-aos={dataAos}
         data-aos-delay={delayAos}
-        className="flip-card group"
+        className="flip-card group shrink-0 snap-center w-[82vw] max-w-[320px] sm:w-full sm:max-w-[380px]"
       >
         <div className="flip-card-inner">
           {/* FRONT SIDE */}
