@@ -6,7 +6,7 @@ import Seminar from "./pages/Seminar";
 import Competition from "./pages/Competition";
 import Navbar from "./components/custom/Navbar";
 import Workshop from "./pages/Workshop";
-import Poster from "./pages/BPC";
+import BusinnesPlan from "./pages/BPC";
 import WebdesignCompetition from "./pages/WebDesign";
 import UiUx from "./pages/UiUx";
 import LoginPage from "./pages/LoginPage";
@@ -45,7 +45,7 @@ const App = () => {
           <Route path="/talkshow" element={<Talkshow />} />
           <Route path="/seminar" element={<Seminar />} />
           <Route path="/competition" element={<Competition />} />
-          <Route path="/competition/poster" element={<Poster />} />
+          <Route path="/competition/business-plan" element={<BusinnesPlan />} />
           <Route path="/competition/web-design" element={<WebdesignCompetition />} />
           <Route path="/competition/ui-ux" element={<UiUx />} />
           <Route path="/workshop" element={<Workshop />} />

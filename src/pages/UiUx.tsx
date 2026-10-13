@@ -55,7 +55,7 @@ const UiUx: React.FC = () => {
             className="w-full md:w-1/2 flex justify-center"
           >
             <img
-              src="/assets/competition-card/ui_ux.png"
+              src="/assets/competition-card/uiux.png"
               alt="UI/UX Design"
               className="rounded-2xl w-full max-w-[380px] shadow-2xl hover:scale-105 transition-transform duration-500"
             />

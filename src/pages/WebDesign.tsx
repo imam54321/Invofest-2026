@@ -59,7 +59,7 @@ const WebdesignCompetition: React.FC = () => {
                         className="w-full md:w-1/2 flex justify-center"
                     >
                         <img
-                            src="/assets/competition-card/web_design.png"
+                            src="/assets/competition-card/wd.png"
                             alt="UI/UX Design"
                             className="rounded-2xl w-[350px] shadow-lg"
                         />

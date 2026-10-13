@@ -59,7 +59,7 @@ const Poster: React.FC = () => {
             className="w-full md:w-1/2 flex justify-center"
           >
             <img
-              src="/assets/competition-card/poster.png"
+              src="/assets/competition-card/bp.png"
               alt="UI/UX Design"
               className="rounded-2xl w-[350px] shadow-lg"
             />
