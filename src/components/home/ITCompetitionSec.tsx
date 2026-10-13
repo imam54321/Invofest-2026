@@ -34,12 +34,15 @@ const ITCompetitionSec = () => {
                   data-aos-delay="300"
                   className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-gray-300"
                 >
-                  <b>"From Creation to Innovation"</b> adalah sebuah kompetisi
-                  IT yang dirancang untuk menjembatani jurang antara ide kreatif
-                  dan inovasi nyata. Ajang ini menantang para talenta digital
-                  untuk tidak hanya menciptakan sesuatu yang baru, tetapi juga
-                  mengembangkannya menjadi solusi yang berdampak, berkelanjutan,
-                  dan bernilai guna tinggi.
+                  Kompetisi tahun ini mengusung tema <b>"Smart Ecosystems: Digital
+                  Solutions for a Sustainable Future"</b> (Ekosistem Pintar: Solusi
+                  Digital untuk Masa Depan yang Berkelanjutan). Tema ini
+                  bertujuan untuk mendorong generasi muda agar mampu merancang
+                  ide dan model bisnis yang tidak sekadar menguntungkan, tetapi
+                  juga berfungsi sebagai solusi digital yang tepat guna. Peserta
+                  dituntut untuk membangun ekosistem bisnis yang cerdas,
+                  inklusif, dan relevan dalam menjawab tantangan keberlanjutan
+                  lingkungan, sosial, maupun ekonomi di tengah masyarakat.
                 </p>
                 <div className="flex items-center gap-3 sm:gap-4 lg:gap-5 mt-3">
                   <ButtonPrimary

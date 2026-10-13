@@ -29,18 +29,19 @@ const HeroComp = () => {
                 data-aos-delay="450"
                 className="font-semibold text-invofest text-xl sm:text-2xl lg:text-3xl"
               >
-                "From Creation to Innovation"
+                "Smart Ecosystems: Digital Solutions for a Sustainable Future"
               </h1>
               <p
                 data-aos="fade-right"
                 data-aos-delay="550"
                 className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-slate-600"
               >
-                Kompetisi dalam INVOFEST ini mengusung tema{" "}
-                <b>“From Creation to Innovation”</b>, Tema ini bertujuan
-                mengajak generasi muda untuk mengembangkan inovasi dan
-                kreativitas guna membentuk kelompok yang memiliki potensi luar
-                biasa, yang mampu mewujudkan masa depan yang berkelanjutan.
+                Kompetisi tahun ini mengusung tema {""} <b>"Smart Ecosystems: Digital
+                Solutions for a Sustainable Future"</b> <i> (Ekosistem Pintar: Solusi
+                Digital untuk Masa Depan yang Berkelanjutan)</i>. Tema ini bertujuan
+                untuk mendorong generasi muda agar mampu merancang ide dan model
+                bisnis yang tidak sekadar menguntungkan, tetapi juga berfungsi
+                sebagai solusi digital yang tepat guna.
               </p>
               <div className="flex items-center gap-3 sm:gap-4 lg:gap-5 mt-3">
                 <ButtonPrimary

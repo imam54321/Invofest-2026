@@ -65,7 +65,7 @@ const About = () => {
                 dataAos="zoom-in"
                 delayAos="550"
                 btnText="INFO SELENGKAPNYA"
-                desc="Kompetisi “From Creation to Innovation” mengajak generasi muda untuk mengembangkan inovasi dan kreativitas guna membentuk kelompok yang memiliki potensi luar biasa, yang mampu mewujudkan masa depan yang berkelanjutan."
+                desc="Kompetisi IT ini mengusung tema “Smart Ecosystems: Digital Solutions for a Sustainable Future” untuk mendorong generasi muda merancang ide dan model bisnis yang tidak sekadar menguntungkan, tetapi juga berfungsi sebagai solusi digital yang tepat guna."
                 title="IT Competition"
                 href="/competition"
               />
