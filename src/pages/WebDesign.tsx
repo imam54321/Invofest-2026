@@ -160,7 +160,7 @@ const WebdesignCompetition: React.FC = () => {
                             KATEGORI HADIAH
                         </h2>
 
-                        <div className="flex flex-wrap justify-center items-end gap-4 md:gap-8 mb-12">
+                        <div className="flex flex-nowrap sm:flex-wrap items-end justify-center gap-2.5 sm:gap-6 md:gap-8 px-1 sm:px-0 mb-8 sm:mb-12">
                             {dataHadiahPoster.map((item) => (
                                 <CardHadiah
                                     key={item.rank}

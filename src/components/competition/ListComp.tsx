@@ -33,7 +33,7 @@ const ListComp = () => {
           </p>
 
           {/* List Card Competition */}
-          <div className="flex justify-center items-center flex-wrap gap-5">
+          <div className="w-full flex flex-nowrap overflow-x-auto snap-x snap-mandatory px-4 pb-6 gap-5 sm:flex-wrap sm:justify-center sm:overflow-visible sm:px-0 sm:pb-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             <CompetitionCard
               dataAos="fade-up"
               delayAos="200"

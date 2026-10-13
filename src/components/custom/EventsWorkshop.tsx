@@ -32,7 +32,7 @@ const EventWorkshop = ({ data }: { data: EventWorkshopProps[] }) => {
               Pelaksanaan IT Workshop
             </h1>
           </div>
-          <div className="w-full max-w-6xl m-auto justify-center items-center flex flex-wrap gap-5">
+          <div className="w-full max-w-6xl mx-auto flex flex-nowrap overflow-x-auto snap-x snap-mandatory px-4 pb-6 gap-4 sm:flex-wrap sm:justify-center sm:overflow-visible sm:px-0 sm:pb-0 sm:gap-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {data.map((item) => (
               <CardWorkshop
                 key={item.id}
