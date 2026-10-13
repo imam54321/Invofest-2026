@@ -3,9 +3,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import WhiteWaveTop from "/assets/wave-top.png";
 import WhiteWaveBot from "/assets/wave-bot.png";
-import { MediaPartner } from "@/components/competition/MediaPartner";
+// import { MediaPartner } from "@/components/competition/MediaPartner";
 import FAQ from "@/components/home/FAQ";
-import { Sponsorship } from "@/components/home/Sponsorship";
+// import { Sponsorship } from "@/components/home/Sponsorship";
 import EventTimeline from "../components/custom/TimeLineComp";
 import MaskotDf from "/assets/Maskot-Timeline-1.webp";
 import MaskotWinner from "/assets/Maskot-Lomba-2026.webp";
@@ -253,10 +253,10 @@ const WebdesignCompetition: React.FC = () => {
             < FAQ />
 
             {/* Sponsorship */}
-            < Sponsorship />
+            {/* < Sponsorship /> */}
 
             {/* MEDIA PARTNER */}
-            < MediaPartner />
+            {/* < MediaPartner /> */}
         </React.Fragment >
     );
 };

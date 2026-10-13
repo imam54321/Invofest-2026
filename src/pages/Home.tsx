@@ -5,10 +5,10 @@ import ITCompetitionSec from "@/components/home/ITCompetitionSec";
 import ITSeminarSec from "@/components/home/ITSeminarSec";
 import ITTalkshowSec from "@/components/home/ITTalkshowSec";
 import ITWorkshopSec from "@/components/home/ITWorkshopSec";
-import { Sponsorship } from "@/components/home/Sponsorship";
+// import { Sponsorship } from "@/components/home/Sponsorship";
 import { TitlePage } from "@/utils/TitlePage";
 import React from "react";
-import { MediaPartner } from '../components/competition/MediaPartner';
+// import { MediaPartner } from '../components/competition/MediaPartner';
 
 const Home = () => {
   TitlePage();
@@ -37,10 +37,10 @@ const Home = () => {
         <FAQ />
 
         {/* Sponsorship */}
-        <Sponsorship />
+        {/* <Sponsorship /> */}
 
         {/* Media Partner Section */} 
-        <MediaPartner />
+        {/* <MediaPartner /> */}
     </React.Fragment>
   );
 };
