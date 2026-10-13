@@ -67,7 +67,7 @@ const Poster: React.FC = () => {
 
           <div data-aos="fade-left" className="w-full md:w-1/2 space-y-4">
             <h1 className="font-semibold text-invofest text-3xl sm:text-4xl lg:text-5xl">
-              Poster Design Competition
+              Bussines Plan Competition
             </h1>
             <p className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-slate-600">
               “From Creation to Innovation”
@@ -76,12 +76,12 @@ const Poster: React.FC = () => {
 
             <div className="space-y-3 mt-5">
               <div className="bg-navbar border border-invofest_dark text-center rounded-md py-3 font-semibold">
-                Biaya Pendaftaran Gelombang 2: Rp. 60.000
+                Biaya Pendaftaran Gelombang 1 : Rp. 55.000
               </div>
 
               {/* Tombol Register */}
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLScdjXXvLnnlLlOTgpn4SP-oMkvUfBXO0gcJeEr8Oa9-fDuh1Q/viewform?usp=preview"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeb8TJNghw0FLVkR1ek0RRO6v9QVK4Ra-vQzz8T46gcOs908w/viewform"
                 rel="noopener noreferrer"
                 className="block w-full bg-invofest_dark hover:bg-invofest text-white font-semibold py-3 rounded-md text-center transition duration-200"
               >

@@ -6,7 +6,7 @@ import Seminar from "./pages/Seminar";
 import Competition from "./pages/Competition";
 import Navbar from "./components/custom/Navbar";
 import Workshop from "./pages/Workshop";
-import Poster from "./pages/Poster";
+import Poster from "./pages/BPC";
 import WebdesignCompetition from "./pages/WebDesign";
 import UiUx from "./pages/UiUx";
 import LoginPage from "./pages/LoginPage";

@@ -87,16 +87,17 @@ const UiUx: React.FC = () => {
                   color: "#2a1354",
                 }}
               >
-                Biaya Pendaftaran Gelombang 2: Rp. 85.000
+                Biaya Pendaftaran : Rp. 75.000
               </div>
 
               {/* Tombol Aksi */}
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col gap-3">
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSfuomobackIITWoZ4u9em8PjjZpjqtekXjs33-Ju1ll5r5xNQ/viewform?usp=preview"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSffQ14uPaPHjFcZii27zvL7lqj8tlU-6B7YpDyEKqPPbMDLkQ/viewform"
+                  target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-1/2 text-white font-semibold py-3 rounded-lg text-center shadow-lg hover:opacity-90 hover:-translate-y-1 transition-all duration-300"
-                  style={{ backgroundColor: "#2a1354" }}
+                  className="w-full text-white font-semibold bg-invofest py-3 rounded-lg text-center shadow-lg hover:opacity-90 hover:-translate-y-1 transition-all duration-300"
+                  
                 >
                   Registrasi Sekarang
                 </a>
@@ -105,7 +106,7 @@ const UiUx: React.FC = () => {
                   href="https://drive.google.com/drive/folders/1dzCkstPOee7pQmZr5Sbn8ugcGAMfdQlH?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-1/2 border-2 font-semibold py-3 rounded-lg text-center hover:bg-slate-50 hover:-translate-y-1 transition-all duration-300"
+                  className="w-full border-2 font-semibold py-3 rounded-lg text-center hover:bg-slate-50 hover:-translate-y-1 transition-all duration-300"
                   style={{ borderColor: "#2a1354", color: "#2a1354" }}
                 >
                   Dokumen Peserta
@@ -192,21 +193,25 @@ const UiUx: React.FC = () => {
               ))}
             </div>
 
-            
             <div
               data-aos="fade-up"
               data-aos-delay="400"
               className="max-w-3xl mx-auto relative flex items-center bg-gradient-to-b from-invofest_secondary to-invofest rounded-2xl overflow-hidden shadow-lg hover:-translate-y-1 transition-all duration-300 h-[120px]"
             >
               <div className="w-[100px] h-full bg-white flex items-center justify-center rounded-r-[50px] shrink-0 shadow-[2px_0_10px_rgba(0,0,0,0.1)] z-10">
-                <span><img src={Certificate} alt="Trophy" className="w-12 h-12"/></span>
+                <span>
+                  <img src={Certificate} alt="Trophy" className="w-12 h-12" />
+                </span>
               </div>
               <div className="px-8 text-left flex flex-col justify-center h-full flex-grow">
-                <h3 className="font-bold text-xl text-white mb-1">Semua Peserta</h3>
-                <p className="text-sm text-purple-200">Mendapatkan e-Sertifikat resmi INVOFEST</p>
+                <h3 className="font-bold text-xl text-white mb-1">
+                  Semua Peserta
+                </h3>
+                <p className="text-sm text-purple-200">
+                  Mendapatkan e-Sertifikat resmi INVOFEST
+                </p>
               </div>
             </div>
-
           </div>
         </section>
       </div>

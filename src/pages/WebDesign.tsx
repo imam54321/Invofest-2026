@@ -75,14 +75,14 @@ const WebdesignCompetition: React.FC = () => {
                         <p className="text-slate-500">Kamis, 27 November 2025</p>
 
                         <div className="space-y-3 mt-5">
-                            <div className="bg-[#FFC0D3] border border-[#852e4e] text-center rounded-md py-3 font-semibold">
+                            <div className="bg-navbar border border-invofest text-center rounded-md py-3 font-semibold">
                                 Biaya Pendaftaran Gelombang 2: Rp. 60.000
                             </div>
                             {/* Tombol Register */}
                             <a
-                                href="https://docs.google.com/forms/d/e/1FAIpQLScVgBhnxdHi55I_H-egoeIaIxn-0I3yj4CCK9FXKUieAJ3A0A/viewform?usp=preview"
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSf9VAGf4xv5oRYh1WqdUoW1GoCbJv-p6ydta7j8DDm0yKlTDQ/viewform"
                                 rel="noopener noreferrer"
-                                className="block w-full bg-[#852e4e] hover:bg-[#4c1d3d] text-white font-semibold py-3 rounded-md text-center transition duration-200"
+                                className="block w-full bg-invofest hover:bg-invofest/80 text-white font-semibold py-3 rounded-md text-center transition duration-200"
                             >
                                 Registrasi
                             </a>
@@ -92,7 +92,7 @@ const WebdesignCompetition: React.FC = () => {
                                 href="https://drive.google.com/drive/folders/1suvD65_gH7koaejynEev8DwV6vF9KNSc?usp=drive_link"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="block w-full border border-[#852e4e] text-[#852e4e] font-semibold py-3 rounded-md text-center hover:bg-[#FFC0D3] transition duration-200"
+                                className="block w-full border border-invofest text-invofest font-semibold py-3 rounded-md text-center hover:bg-invofest transition duration-200"
                             >
                                 Dokumen Peserta
                             </a>
