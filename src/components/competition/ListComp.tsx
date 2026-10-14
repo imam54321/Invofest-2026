@@ -38,7 +38,7 @@ const ListComp = () => {
               dataAos="fade-up"
               delayAos="200"
               TitleCard="Businnes Plan Competition"
-              DescCard="Kompetisi tahun ini mengusung tema <b>Smart Ecosystems: Digital Solutions for a Sustainable Future</b> (Ekosistem Pintar: Solusi Digital untuk Masa Depan yang Berkelanjutan). Tema ini bertujuan untuk mendorong generasi muda agar mampu merancang ide dan model bisnis yang tidak sekadar menguntungkan, tetapi juga berfungsi sebagai solusi digital yang tepat guna. Peserta dituntut untuk membangun ekosistem bisnis yang cerdas, inklusif, dan relevan dalam menjawab tantangan keberlanjutan lingkungan, sosial, maupun ekonomi di tengah masyarakat."
+              DescCard="Kompetisi tahun ini mengusung tema Smart Ecosystems: Digital Solutions for a Sustainable Future (Ekosistem Pintar: Solusi Digital untuk Masa Depan yang Berkelanjutan). Tema ini bertujuan untuk mendorong generasi muda agar mampu merancang ide dan model bisnis yang tidak sekadar menguntungkan, tetapi juga berfungsi sebagai solusi digital yang tepat guna. Peserta dituntut untuk membangun ekosistem bisnis yang cerdas, inklusif, dan relevan dalam menjawab tantangan keberlanjutan lingkungan, sosial, maupun ekonomi di tengah masyarakat."
               ImageCard={BusinnesPlan}
               linkRedirect="/competition/business-plan"
               linkGuideBook="https://drive.google.com/drive/folders/1Ob6ISlnLNvTZiDoryCEybqZc6xxzfKuC?usp=drive_link"
@@ -49,7 +49,7 @@ const ListComp = () => {
               dataAos="fade-up"
               delayAos="400"
               TitleCard="UI/UX Design Competition"
-              DescCard="Kompetisi tahun ini mengusung tema <b>Smart Ecosystems: Digital Solutions for a Sustainable Future</b> (Ekosistem Pintar: Solusi Digital untuk Masa Depan yang Berkelanjutan). Tema ini bertujuan untuk mendorong generasi muda agar mampu merancang solusi digital yang tidak sekadar menarik secara visual, tetapi juga berfungsi sebagai solusi digital yang tepat guna. Peserta dituntut untuk membangun ekosistem antarmuka yang cerdas, inklusif, dan relevan dalam menjawab tantangan keberlanjutan lingkungan, sosial, maupun ekonomi di tengah masyarakat."
+              DescCard="Kompetisi tahun ini mengusung tema Smart Ecosystems: Digital Solutions for a Sustainable Future (Ekosistem Pintar: Solusi Digital untuk Masa Depan yang Berkelanjutan). Tema ini bertujuan untuk mendorong generasi muda agar mampu merancang solusi digital yang tidak sekadar menarik secara visual, tetapi juga berfungsi sebagai solusi digital yang tepat guna. Peserta dituntut untuk membangun ekosistem antarmuka yang cerdas, inklusif, dan relevan dalam menjawab tantangan keberlanjutan lingkungan, sosial, maupun ekonomi di tengah masyarakat."
               ImageCard={UiUxImg}
               linkRedirect="/competition/ui-ux"
               linkGuideBook="https://drive.google.com/drive/folders/1b2bl9Ei4mmGYv-_1lUjupdmpkCVifCRH?usp=drive_link"
@@ -59,7 +59,7 @@ const ListComp = () => {
               dataAos="fade-up"
               delayAos="600"
               TitleCard="Web Design Competition"
-              DescCard="Kompetisi tahun ini mengusung tema <b> Smart Ecosystems: Digital Solutions for a Sustainable Future</b> (Ekosistem Pintar: Solusi Digital untuk Masa Depan yang Berkelanjutan). Tema ini bertujuan untuk mendorong generasi muda agar mampu merancang arsitektur web yang tidak sekadar menarik secara visual, tetapi juga berfungsi sebagai solusi digital yang tepat guna. Peserta dituntut untuk membangun ekosistem antarmuka yang cerdas, inklusif, dan relevan dalam menjawab tantangan keberlanjutan lingkungan, sosial, maupun ekonomi di tengah masyarakat."
+              DescCard="Kompetisi tahun ini mengusung tema  Smart Ecosystems: Digital Solutions for a Sustainable Future (Ekosistem Pintar: Solusi Digital untuk Masa Depan yang Berkelanjutan). Tema ini bertujuan untuk mendorong generasi muda agar mampu merancang arsitektur web yang tidak sekadar menarik secara visual, tetapi juga berfungsi sebagai solusi digital yang tepat guna. Peserta dituntut untuk membangun ekosistem antarmuka yang cerdas, inklusif, dan relevan dalam menjawab tantangan keberlanjutan lingkungan, sosial, maupun ekonomi di tengah masyarakat."
               ImageCard={WebDesignImg}
               linkRedirect="/competition/web-design"
               linkGuideBook="https://drive.google.com/drive/folders/1yX4Yr71nU3dARBGYy7SC25hoEYEtHv25?usp=sharing"
