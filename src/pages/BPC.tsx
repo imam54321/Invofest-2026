@@ -90,7 +90,7 @@ const Poster: React.FC = () => {
 
               {/* Tombol Guidebook */}
               <a
-                href="https://drive.google.com/drive/folders/1vOIIfJinlm5aalbp3QDbiTVn8DQSh43K?usp=sharing"
+                href="https://drive.google.com/drive/folders/1Ob6ISlnLNvTZiDoryCEybqZc6xxzfKuC?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full border border-invofest_dark text-invofest_dark font-semibold py-3 rounded-md text-center hover:bg-navbar transition duration-200"

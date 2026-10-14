@@ -103,7 +103,7 @@ const UiUx: React.FC = () => {
                 </a>
 
                 <a
-                  href="https://drive.google.com/drive/folders/1dzCkstPOee7pQmZr5Sbn8ugcGAMfdQlH?usp=drive_link"
+                  href="https://drive.google.com/drive/folders/1b2bl9Ei4mmGYv-_1lUjupdmpkCVifCRH?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full border-2 font-semibold py-3 rounded-lg text-center hover:bg-slate-50 hover:-translate-y-1 transition-all duration-300"

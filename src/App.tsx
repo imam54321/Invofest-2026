@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
+import ScrollToTop from "./components/custom/ScrollToTop";
 import Talkshow from "./pages/Talkshow";
 import Seminar from "./pages/Seminar";
 import Competition from "./pages/Competition";
@@ -36,6 +37,7 @@ const App = () => {
 
   return (
     <React.Fragment>
+      <ScrollToTop />
       {/* Navbar dan Footer hanya tampil jika bukan halaman Dashboard */}
       {!isDashboard && <Navbar />}
 

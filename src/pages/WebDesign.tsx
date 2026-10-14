@@ -89,7 +89,7 @@ const WebdesignCompetition: React.FC = () => {
 
                             {/* Tombol Guidebook */}
                             <a
-                                href="https://drive.google.com/drive/folders/1suvD65_gH7koaejynEev8DwV6vF9KNSc?usp=drive_link"
+                                href="https://drive.google.com/drive/folders/1yX4Yr71nU3dARBGYy7SC25hoEYEtHv25?usp=sharing"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="block w-full border border-invofest text-invofest font-semibold py-3 rounded-md text-center hover:bg-invofest transition duration-200"
