@@ -49,7 +49,7 @@ const About = () => {
                 dataAos="zoom-in"
                 delayAos="150"
                 btnText="INFO SELENGKAPNYA"
-                desc="Seminar nasional ini membahas “Human-AI Integration: Merancang Arsitektur Kolaboratif, Bukan Kompetitif” untuk mengembangkan potensi diri dan pengetahuan teknologi lebih dalam lagi."
+                desc="Seminar nasional ini membahas “Beyond the Classroom: Preparing for the Future of Technology and Industry” untuk mengembangkan potensi diri dan pengetahuan teknologi lebih dalam lagi."
                 title="IT Seminar"
                 href="/seminar"
               />
