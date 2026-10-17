@@ -13,6 +13,8 @@ function GeneralLayout({
   aboutTitle,
   aboutDescription,
   children,
+  phoneNumber,
+  waMessage,
 }: GeneralLayoutProps) {
   return (
     <React.Fragment>
@@ -25,7 +27,10 @@ function GeneralLayout({
       />
       <CustomAbout title={aboutTitle} description={aboutDescription} />
       {children}
-      <FAQ />
+      <FAQ
+        phoneNumber={phoneNumber} 
+        waMessage={waMessage}  
+      />
     </React.Fragment>
   );
 }

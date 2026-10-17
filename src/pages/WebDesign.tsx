@@ -250,7 +250,10 @@ const WebdesignCompetition: React.FC = () => {
             />
 
             {/* FAQ Section */}
-            < FAQ />
+            < FAQ 
+                phoneNumber="6283820931296" 
+                waMessage="Halo Kak, Saya Ingin Bertanya mengenai Web Design Competition Invofest 2026..."  
+            />
 
             {/* Sponsorship */}
             {/* < Sponsorship /> */}

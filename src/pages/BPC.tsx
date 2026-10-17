@@ -207,7 +207,10 @@ const Poster: React.FC = () => {
         />
       </div>
       {/* FAQ Section */}
-      <FAQ />
+      <FAQ
+        phoneNumber="6285229110565" 
+        waMessage="Halo Kak, Saya Ingin Bertanya mengenai Business Plan Competition Invofest 2026..."  
+      />
 
       {/* Sponsorship */}
       {/* <Sponsorship /> */}
