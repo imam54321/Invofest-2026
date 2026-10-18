@@ -31,15 +31,14 @@ const About = () => {
               data-aos-delay="450"
               className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-gray-300"
             >
-              Invofest 2025, yang diselenggarakan oleh sarjana terapan Teknik
+              Invofest 2026, yang diselenggarakan oleh sarjana terapan Teknik
               Informatika Universitas Harkat Negeri, adalah festival tahunan
               yang bertujuan untuk menginspirasi dan memberdayakan generasi muda
               Indonesia dalam menghadapi era digital. Dengan mengusung tema{" "}
               <b>
-                “Beyond Limits, Beyond Intelligence: Innovate for a Smarter
-                Tomorrow ”
+                “Beyond the Breakthrough: The Future is Now”
               </b>
-              . Invofest 2025 menghadirkan berbagai kegiatan menarik seperti
+              . Invofest 2026 menghadirkan berbagai kegiatan menarik seperti
               kompetisi IT, workshop IT, dan seminar nasional & talkshow dengan
               para ahli teknologi.
             </p>

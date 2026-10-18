@@ -31,8 +31,7 @@ const ITSeminarSec = () => {
               >
                 Seminar Nasional Teknologi Informasi ini mengangkat tema{" "}
                 <b>
-                  "Human-AI Integration: Merancang Arsitektur Kolaboratif, Bukan
-                  Kompetitif.”
+                
                 </b>
                 Kami bertujuan untuk menggeser fokus dari ketakutan akan
                 kompetisi menjadi eksplorasi peluang kolaborasi. Seminar ini

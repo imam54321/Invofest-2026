@@ -102,10 +102,10 @@ const UiUx: React.FC = () => {
               UI/UX Design Competition
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl font-medium text-slate-600 italic">
-              “From Creation to Innovation”
+              "Smart Ecosystems: Digital Solutions for a Sustainable Future"
             </p>
             <p className="text-slate-500 font-medium flex items-center justify-center md:justify-start gap-2">
-                Minggu, 11 November 2026
+                Rabu, 11 November 2026
             </p>
 
             <div className="mt-8 space-y-4">
@@ -117,7 +117,7 @@ const UiUx: React.FC = () => {
                   color: "#2a1354",
                 }}
               >
-                 Biaya Pendaftaran Gelombang 1 : Rp. 75.000
+                 Biaya Pendaftaran Gelombang 2 : Rp. 85.000
               </div>
 
               {/* Tombol Aksi */}

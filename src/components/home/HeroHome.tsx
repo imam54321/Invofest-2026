@@ -30,14 +30,12 @@ const HeroHome = () => {
                 data-aos-delay="300"
                 className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-slate-600"
               >
-                Invofest (Informatics Vocational Festival) adalah festival
-                tahunan yang bertujuan untuk menginspirasi dan memberdayakan
-                generasi muda Indonesia dalam menghadapi era digital. Dengan
-                mengusung tema{" "}
-                <b>
-                  “Beyond Limits, Beyond Intelligence: Innovate for a Smarter
-                  Tomorrow ”
-                </b>
+                Invofest hadir bukan hanya sebagai festival tahunan, melainkan
+                sebagai manifestasi dari semangat perubahan tersebut. Melalui
+                tema <b>'Beyond the Breakthrough: The Future is Now'</b> , kami ingin
+                merespon gelombang terobosan di kampus ini dengan aksi nyata.
+                Kami percaya bahwa masa depan tidak ditunggu, melainkan
+                diciptakan hari ini melalui karya, kompetisi, dan kolaborasi."{" "}
                 .
               </p>
               <div className="flex items-center gap-3 sm:gap-4 lg:gap-5 mt-3">

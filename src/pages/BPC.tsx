@@ -102,13 +102,13 @@ const Poster: React.FC = () => {
               Bussines Plan Competition
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl font-medium text-slate-600 italic">
-              “From Creation to Innovation”
+              "Smart Ecosystems: Digital Solutions for a Sustainable Future"
             </p>
-            <p className="text-slate-500">Minggu, 11 November 2026</p>
+            <p className="text-slate-500">Rabu, 11 November 2026</p>
 
             <div className="space-y-3 mt-5">
               <div className="bg-navbar border border-invofest_dark text-center rounded-md py-3 font-semibold">
-                Biaya Pendaftaran Gelombang 1 : Rp. 55.000
+                Biaya Pendaftaran Gelombang 2 : Rp. 65.000
               </div>
 
               {/* Tombol Register */}
