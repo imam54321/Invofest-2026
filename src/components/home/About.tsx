@@ -35,12 +35,10 @@ const About = () => {
               Informatika Universitas Harkat Negeri, adalah festival tahunan
               yang bertujuan untuk menginspirasi dan memberdayakan generasi muda
               Indonesia dalam menghadapi era digital. Dengan mengusung tema{" "}
-              <b>
-                “Beyond the Breakthrough: The Future is Now”
-              </b>
-              . Invofest 2026 menghadirkan berbagai kegiatan menarik seperti
-              kompetisi IT, workshop IT, dan seminar nasional & talkshow dengan
-              para ahli teknologi.
+              <b>“Beyond the Breakthrough: The Future is Now”</b>. Invofest 2026
+              menghadirkan berbagai kegiatan menarik seperti kompetisi IT,
+              workshop IT, dan seminar nasional & talkshow dengan para ahli
+              teknologi.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-3 gap-5">
@@ -56,7 +54,7 @@ const About = () => {
                 dataAos="zoom-in"
                 delayAos="350"
                 btnText="INFO SELENGKAPNYA"
-                desc="Talkshow “Humanizing Technology: Kolaborasi Manusia dan AI di Masa Depan” membahas peran manusia dalam memanfaatkan AI untuk solusi berkelanjutan dan peningkatan teknologi."
+                desc="Talkshow “Beyond the Journey: Stories, Challenges, and Breakthroughs”  menggambarkan perjalanan para alumni melalui cerita, pengalaman, dan berbagai tantangan yang mereka hadapi hingga mencapai keberhasilan. Talkshow ini tidak hanya membahas perjalanan mereka, tetapi juga proses, pengalaman, serta pencapaian yang menjadi bagian dari setiap breakthrough yang diraih."
                 title="IT Talkshow"
                 href="/talkshow"
               />
