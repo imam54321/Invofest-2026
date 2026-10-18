@@ -69,14 +69,14 @@ const WebdesignCompetition: React.FC = () => {
                         <h1 className="font-semibold text-invofest text-3xl sm:text-4xl lg:text-5xl">
                             Web Design Competition
                         </h1>
-                        <p className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-slate-600">
+                        <p className="text-lg md:text-xl lg:text-2xl font-medium text-slate-600 italic">
                             “From Creation to Innovation”
                         </p>
-                        <p className="text-slate-500">Kamis, 27 November 2025</p>
+                        <p className="text-slate-500">Minggu, 11 November 2026</p>
 
                         <div className="space-y-3 mt-5">
                             <div className="bg-navbar border border-invofest text-center rounded-md py-3 font-semibold">
-                                Biaya Pendaftaran Gelombang 2: Rp. 60.000
+                                Biaya Pendaftaran Gelombang 1: Rp. 65.000
                             </div>
                             {/* Tombol Register */}
                             <a

@@ -65,14 +65,16 @@ const Poster: React.FC = () => {
             />
           </div>
 
-          <div data-aos="fade-left" className="w-full md:w-1/2 space-y-4">
+          <div 
+            data-aos="fade-left" 
+            className="w-full md:w-1/2 space-y-4">
             <h1 className="font-semibold text-invofest text-3xl sm:text-4xl lg:text-5xl">
               Bussines Plan Competition
             </h1>
-            <p className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-slate-600">
+            <p className="text-lg md:text-xl lg:text-2xl font-medium text-slate-600 italic">
               “From Creation to Innovation”
             </p>
-            <p className="text-slate-500">Kamis, 27 November 2025</p>
+            <p className="text-slate-500">Minggu, 11 November 2026</p>
 
             <div className="space-y-3 mt-5">
               <div className="bg-navbar border border-invofest_dark text-center rounded-md py-3 font-semibold">
@@ -102,7 +104,8 @@ const Poster: React.FC = () => {
         </section>
 
         {/* DESKRIPSI LOMBA */}
-        <section className="bg-invofest_secondary w-full relative">
+        <section 
+          className="bg-invofest_secondary w-full relative">
           {/* Wave atas */}
           <img
             src={WhiteWaveTop}
