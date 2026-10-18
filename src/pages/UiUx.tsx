@@ -22,26 +22,56 @@ const UiUx: React.FC = () => {
     {
       id: 1,
       title: "Pendaftaran Gelombang 1",
-      date: "10 - 25 Oktober 2024",
-      image: MaskotDf, // Gambar khusus untuk step 1
+      date: "11 - 18 Oktober 2026",
+      image: MaskotDf,
     },
     {
       id: 2,
-      title: "Pengumuman Seleksi Berkas",
-      date: "01 November 2024",
-      image: MaskotHero, // Gambar khusus untuk step 2
+      title: "Batas Akhir Pengumpulan Karya",
+      date: "7 November 2026",
+      image: MaskotHero,
     },
     {
       id: 3,
-      title: "Technical Meeting",
-      date: "10 November 2024",
-      image: MaskotHp, // Gambar khusus untuk step 3
+      title: "Rekap Data Peserta",
+      date: "8 November 2026",
+      image: MaskotHp,
     },
     {
       id: 4,
-      title: "Grand Final & Awarding Night",
-      date: "20 November 2024",
-      image: MaskotWinner, // Gambar khusus untuk step 4
+      title: "Penilaian Juri (penyisihan)",
+      date: "9 - 11 November 2026",
+      image: MaskotHero,
+    },
+    {
+      id: 5,
+      title: "Rekap Penilaian Juri",
+      date: "12 November 2026",
+      image: MaskotHero,
+    },
+    {
+      id: 6,
+      title: "Pengumuman 5 Besar (finalis)",
+      date: "12 November 2026",
+      image: MaskotHero,
+    },
+    {
+      id: 7,
+      title: "Tecnical Meeting Finalis",
+      date: "14 November 2026",
+      image: MaskotHero,
+    },
+    {
+      id: 8,
+      title: "Presentasi Finalis",
+      date: "16 November 2026",
+      image: MaskotHero,
+    },
+    {
+      id: 9,
+      title: "Pengumuman Juara",
+      date: "19 November 2026",
+      image: MaskotWinner,
     },
   ];
 
@@ -97,7 +127,7 @@ const UiUx: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full text-white font-semibold bg-invofest py-3 rounded-lg text-center shadow-lg hover:opacity-90 hover:-translate-y-1 transition-all duration-300"
-                  
+
                 >
                   Registrasi Sekarang
                 </a>

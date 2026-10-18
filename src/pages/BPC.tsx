@@ -25,25 +25,55 @@ const Poster: React.FC = () => {
     {
       id: 1,
       title: "Pendaftaran Gelombang 1",
-      date: "10 - 25 Oktober 2024",
+      date: "11 - 18 Oktober 2026",
       image: MaskotDf,
     },
     {
       id: 2,
-      title: "Pengumuman Seleksi Berkas",
-      date: "01 November 2024",
+      title: "Batas Akhir Pengumpulan Karya",
+      date: "7 November 2026",
       image: MaskotHero,
     },
     {
       id: 3,
-      title: "Technical Meeting",
-      date: "10 November 2024",
+      title: "Rekap Data Peserta",
+      date: "8 November 2026",
       image: MaskotHp,
     },
     {
       id: 4,
-      title: "Grand Final & Awarding Night",
-      date: "20 November 2024",
+      title: "Penilaian Juri (penyisihan)",
+      date: "9 - 11 November 2026",
+      image: MaskotHero,
+    },
+    {
+      id: 5,
+      title: "Rekap Penilaian Juri",
+      date: "12 November 2026",
+      image: MaskotHero,
+    },
+    {
+      id: 6,
+      title: "Pengumuman 5 Besar (finalis)",
+      date: "12 November 2026",
+      image: MaskotHero,
+    },
+    {
+      id: 7,
+      title: "Tecnical Meeting Finalis",
+      date: "14 November 2026",
+      image: MaskotHero,
+    },
+    {
+      id: 8,
+      title: "Presentasi Finalis",
+      date: "16 November 2026",
+      image: MaskotHero,
+    },
+    {
+      id: 9,
+      title: "Pengumuman Juara",
+      date: "19 November 2026",
       image: MaskotWinner,
     },
   ];
@@ -185,14 +215,14 @@ const Poster: React.FC = () => {
               ))}
             </div>
 
-            
+
             <div
               data-aos="fade-up"
               data-aos-delay="400"
               className="max-w-3xl mx-auto relative flex items-center bg-gradient-to-b from-invofest_secondary to-invofest rounded-2xl overflow-hidden shadow-lg hover:-translate-y-1 transition-all duration-300 h-[120px]"
             >
               <div className="w-[100px] h-full bg-white flex items-center justify-center rounded-r-[50px] shrink-0 shadow-[2px_0_10px_rgba(0,0,0,0.1)] z-10">
-                <span><img src={Certificate} alt="Trophy" className="w-12 h-12"/></span>
+                <span><img src={Certificate} alt="Trophy" className="w-12 h-12" /></span>
               </div>
               <div className="px-8 text-left flex flex-col justify-center h-full flex-grow">
                 <h3 className="font-bold text-xl text-white mb-1">Semua Peserta</h3>
