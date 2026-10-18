@@ -6,11 +6,17 @@ import FAQInvofest from "/assets/Maskot-FAQ.webp";
 import SayInvofest from "/assets/Maskot-Say.webp";
 import ButtonPrimary from "../custom/ButtonPrimary";
 
-type FAQItem = {
+export type FAQItem = {
   id: string;
   category: string;
   header: string;
   text: string;
+};
+
+export type FAQProps = {
+  phoneNumber?: string;
+  waMessage?: string;
+  items?: FAQItem[];
 };
 
 const FAQ_ITEMS: FAQItem[] = [
@@ -52,7 +58,11 @@ const FAQ_ITEMS: FAQItem[] = [
   },
 ];
 
-const FAQ = () => {
+const FAQ: React.FC<FAQProps> = ({
+  phoneNumber = "6288232405191",
+  waMessage = "Halo Kak, Saya Ingin Bertanya mengenai Invofest 2026...",
+  items = FAQ_ITEMS,
+}) => {
   const [selectedFAQ, setSelectedFAQ] = React.useState<FAQItem | null>(null);
 
   const closeButtonRef = React.useRef<HTMLButtonElement | null>(null);
@@ -140,7 +150,7 @@ const FAQ = () => {
                 <span className="h-7 w-7 rounded-full border-2 border-white bg-invofest_primary_dark" />
                 <span className="h-7 w-7 rounded-full border-2 border-white bg-invofest_dark" />
               </span>
-              <span>{FAQ_ITEMS.length} pertanyaan untuk membantu kamu</span>
+              <span>{items.length} pertanyaan untuk membantu kamu</span>
             </div>
           </div>
 
@@ -162,7 +172,7 @@ const FAQ = () => {
 
         {/* Question cards */}
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {FAQ_ITEMS.map((item, index) => (
+          {items.map((item, index) => (
             <button
               key={item.id}
               type="button"
@@ -252,12 +262,12 @@ const FAQ = () => {
             isOutline={false}
             handleClick={() =>
               window.open(
-                `https://wa.me/62895605919551?text=${encodeURIComponent(
-                  "Halo Kak, Saya Ingin Bertanya mengenai Invofest 2025...",
+                `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+                  waMessage,
                 )}`,
               )
             }
-           />
+          />
         </div>
       </div>
 
@@ -300,6 +310,7 @@ const FAQ = () => {
                       stroke="currentColor"
                       strokeWidth="1.8"
                       strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </button>

@@ -225,7 +225,9 @@ const UiUx: React.FC = () => {
           defaultImage={MaskotHp} // Fallback gambar default
         />
       </div>
-      <FAQ />
+      <FAQ 
+        phoneNumber="6285700865047" 
+        waMessage="Halo Kak, Saya Ingin Bertanya mengenai UI/UX Design Competition Invofest 2026..."  />
       {/* <Sponsorship /> */}
       {/* <MediaPartner /> */}
     </React.Fragment>

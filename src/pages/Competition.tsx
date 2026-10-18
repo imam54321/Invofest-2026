@@ -22,7 +22,9 @@ const Competition = () => {
       <ListComp />
 
       {/* FAQ Section */}
-      <FAQ />
+      <FAQ 
+        phoneNumber="6287719028463" 
+        waMessage="Halo Kak, Saya Ingin Bertanya mengenai IT Competition Invofest 2026..."  />
 
       {/* Sponsorship */}
       {/* <Sponsorship /> */}

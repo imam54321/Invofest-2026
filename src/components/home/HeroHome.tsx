@@ -59,8 +59,8 @@ const HeroHome = () => {
                   isOutline={true}
                   handleClick={() =>
                     window.open(
-                      `https://wa.me/62895605919551?text=${encodeURIComponent(
-                        "Halo Kak, Saya Ingin Bertanya mengenai Invofest 2025...",
+                      `https://wa.me/6288232405191?text=${encodeURIComponent(
+                        "Halo Kak, Saya Ingin Bertanya mengenai Invofest 2026...",
                       )}`,
                     )
                   }
