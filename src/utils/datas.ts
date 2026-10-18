@@ -3,10 +3,10 @@ import { CardHadiahProps } from "./types";
 export const dataSeminar = {
   heroTitle: "IT Seminar",
   subtitle:
-    "“Human-AI Integration: Merancang Arsitektur Kolaboratif, Bukan Kompetitif”",
+    "“Beyond the Classroom: Preparing for the Future of Technology and Industry”",
   heroDescription:
-    "Seminar nasional yang membahas strategi dan arsitektur teknologi untuk menciptakan sistem di mana manusia dan AI bekerja sebagai mitra yang sinergis." +
-    "Yang bertujuan mengubah paradigma dari persaingan menjadi kolaborasi, serta meningkatkan pengetahuan peserta dalam merancang teknologi AI yang berpusat pada manusia.",
+    "“Preparing for the Future of Technology and Industry” menggambarkan pentingnya mempersiapkan diri menghadapi perkembangan teknologi dan kebutuhan industri di masa depan." +
+    "Proses belajar tidak hanya terbatas pada teori di dalam kelas atau lingkungan akademik formal, tetapi juga dapat diperoleh melalui pengalaman berorganisasi dan kegiatan lainnya sebagai bekal untuk belajar menghadapi dunia nyata, khususnya dunia kerja dan industri. Hal ini menjadi semakin penting seiring perkembangan teknologi yang semakin cepat dan kebutuhan industri yang terus berkembang.",
   linkRegister: "https://forms.gle/chNgyZPdS7SneLwV6",
   image: "/assets/Maskot-Seminar-2026.webp",
   aboutTitle: "Tentang  IT SEMINAR",
@@ -35,9 +35,9 @@ export const dataSeminar = {
 
 export const dataTalkshow = {
   heroTitle: "IT Talkshow",
-  subtitle: "“Humanizing Technology: Kolaborasi Manusia dan AI di Masa Depan”",
-  heroDescription: `Talkshow “Humanizing Technology: Kolaborasi Manusia dan AI di Masa Depan” Sebuah diskusi interaktif yang mengeksplorasi cara mengintegrasikan nilai-nilai kemanusiaan seperti etika, empati, dan kreativitas ke dalam pengembangan kecerdasan buatan.
-                    yang bertujuan menginspirasi audiens untuk membangun dan memanfaatkan AI sebagai alat kolaboratif yang memperkuat potensi unik manusia, bukan sebagai penggantinya.`,
+  subtitle: "Beyond the Journey: Stories, Challenges, and Breakthroughs”",
+  heroDescription: ` “Stories, Challenges, and Breakthroughs” menggambarkan perjalanan para alumni melalui cerita, pengalaman, dan berbagai tantangan yang mereka hadapi hingga mencapai keberhasilan.
+                    Talkshow ini tidak hanya membahas perjalanan mereka, tetapi juga proses, pengalaman, serta pencapaian yang menjadi bagian dari setiap breakthrough yang diraih.`,
   linkRegister: "https://forms.gle/xgJY5hWLP2z4sp7eA",
   image: "/assets/Maskot-Talkshow-2026.webp",
   aboutTitle: "Tentang IT Talkshow",
