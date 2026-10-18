@@ -39,7 +39,7 @@ export const dataTalkshow = {
   heroDescription: ` “Stories, Challenges, and Breakthroughs” menggambarkan perjalanan para alumni melalui cerita, pengalaman, dan berbagai tantangan yang mereka hadapi hingga mencapai keberhasilan.
                     Talkshow ini tidak hanya membahas perjalanan mereka, tetapi juga proses, pengalaman, serta pencapaian yang menjadi bagian dari setiap breakthrough yang diraih.`,
   linkRegister: "https://forms.gle/xgJY5hWLP2z4sp7eA",
-  image: "/assets/Maskot-Talkshow-2026.webp",
+  image: "/assets/Maskot-Say.webp",
   aboutTitle: "Tentang IT Talkshow",
   aboutDescription: `Seiring teknologi, khususnya kecerdasan buatan (AI), yang semakin meresap ke dalam setiap aspek kehidupan kita, muncul sebuah pertanyaan fundamental: Apakah kita sedang menciptakan teknologi yang melayani manusia, atau justru sebaliknya?
                     Untuk menjawab pertanyaan tersebut, kami mempersembahkan talkshow berskala nasional: “Humanizing Technology: Kolaborasi Manusia dan AI di Masa Depan.”
@@ -82,7 +82,7 @@ export const dataWorkshop = {
                 yang berkelanjutan. Peserta akan dibekali wawasan dan alat untuk mentransformasi ide-ide 
                 inovatif menjadi solusi lingkungan yang nyata dan terukur di era digital.`,
   linkRegister: "https://forms.gle/6nM63csbHRPg7CSx7",
-  image: "/assets/Maskot-Workshop.png",
+  image: "/assets/Maskot-Talkshow-2026.webp",
   aboutTitle: "Tentang IT Workshop",
   aboutDescription: `Workshop “AI for a Sustainable Future: The Role of Z Generation in the Digital Era” ini didesain khusus untuk Generasi Z, 
   para digital natives yang berada di persimpangan antara inovasi teknologi dan tantangan keberlanjutan global. 

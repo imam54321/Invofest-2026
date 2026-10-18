@@ -30,7 +30,7 @@ const FAQ_ITEMS: FAQItem[] = [
     id: "02",
     category: "Jadwal & Lokasi",
     header: "Kapan dan di mana INVOFEST dilaksanakan?",
-    text: "INVOFEST diselenggarakan mulai tanggal 21 Oktober 2025 sampai dengan 27 November 2025. Workshop, seminar, dan talkshow diadakan secara offline di Kampus 1 Universitas Harkat Negeri, sedangkan kompetisi diadakan secara online.",
+    text: "INVOFEST diselenggarakan mulai tanggal 11 Oktober 2026 sampai dengan 19 November 2026. Workshop, seminar, dan talkshow diadakan secara offline di Kampus 1 Universitas Harkat Negeri, sedangkan kompetisi diadakan secara online.",
   },
   {
     id: "03",
