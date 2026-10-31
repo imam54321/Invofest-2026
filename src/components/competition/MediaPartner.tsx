@@ -32,6 +32,10 @@ export function MediaPartner() {
 }
 
 const mediaPartner = [
+    {
+      id: 1,
+      img_path: "/assets/media_partner/logo himatris .PNG",
+    },
   {
     id: 2,
     img_path: "/assets/media_partner/itsnu.webp",
