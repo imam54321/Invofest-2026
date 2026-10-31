@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import WhiteWaveTop from "/assets/wave-top.png";
 import WhiteWaveBot from "/assets/wave-bot.png";
-// import { MediaPartner } from "@/components/competition/MediaPartner";
+import { MediaPartner } from "@/components/competition/MediaPartner";
 import FAQ from "@/components/home/FAQ";
 // import { Sponsorship } from "@/components/home/Sponsorship";
 import EventTimeline from "../components/custom/TimeLineComp";
@@ -236,7 +236,7 @@ const WebdesignCompetition: React.FC = () => {
             {/* < Sponsorship /> */}
 
             {/* MEDIA PARTNER */}
-            {/* < MediaPartner /> */}
+            < MediaPartner />
         </React.Fragment >
     );
 };
