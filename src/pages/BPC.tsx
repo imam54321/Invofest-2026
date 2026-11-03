@@ -96,7 +96,7 @@ const Poster: React.FC = () => {
 
             <div className="space-y-3 mt-5">
               <div className="bg-navbar border border-invofest_dark text-center rounded-md py-3 font-semibold">
-                Biaya Pendaftaran Gelombang 3 : Rp. 55.000
+                Biaya Pendaftaran Gelombang 3 : Rp. 75.000
               </div>
 
               {/* Tombol Register */}

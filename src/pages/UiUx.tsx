@@ -105,7 +105,7 @@ const UiUx: React.FC = () => {
                   color: "#2a1354",
                 }}
               >
-                Biaya Pendaftaran Gelombang 3 : Rp. 75.000
+                Biaya Pendaftaran Gelombang 3 : Rp. 95.000
               </div>
 
               {/* Tombol Aksi */}

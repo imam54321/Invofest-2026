@@ -94,7 +94,7 @@ const WebdesignCompetition: React.FC = () => {
 
                         <div className="space-y-3 mt-5">
                             <div className="bg-navbar border border-invofest text-center rounded-md py-3 font-semibold">
-                                Biaya Pendaftaran Gelombang 3: Rp. 60.000
+                                Biaya Pendaftaran Gelombang 3: Rp. 85.000
                             </div>
                             {/* Tombol Register */}
                             <a
