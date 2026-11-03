@@ -29,19 +29,24 @@ const HeroSeminar = () => {
                 data-aos-delay="450"
                 className="font-semibold text-invofest text-xl sm:text-2xl lg:text-3xl"
               >
-                “Human-AI Integration: Merancang Arsitektur Kolaboratif, Bukan
-                Kompetitif”
+                “Beyond the Classroom: Preparing for the Future of Technology
+                and Industry”
               </h2>
               <p
                 data-aos="fade-right"
                 data-aos-delay="300"
                 className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-slate-600"
               >
-                Seminar nasional yang membahas strategi dan arsitektur teknologi
-                untuk menciptakan sistem di mana manusia dan AI bekerja sebagai
-                mitra yang sinergis. yang bertujuan mengubah paradigma dari
-                persaingan menjadi kolaborasi, serta meningkatkan pengetahuan
-                peserta dalam merancang teknologi AI yang berpusat pada manusia.
+                Seminar Nasional yang membahas arti “Preparing for the Future of Technology and Industry”.
+                Yakni, menggambarkan pentingnya mempersiapkan diri menghadapi
+                perkembangan teknologi dan kebutuhan industri di masa depan.
+                Proses belajar tidak hanya terbatas pada teori di dalam kelas
+                atau lingkungan akademik formal, tetapi juga dapat diperoleh
+                melalui pengalaman berorganisasi dan kegiatan lainnya sebagai
+                bekal untuk belajar menghadapi dunia nyata, khususnya dunia
+                kerja dan industri. Hal ini menjadi semakin penting seiring
+                perkembangan teknologi yang semakin cepat dan kebutuhan industri
+                yang terus berkembang.
               </p>
               <div className="flex items-center gap-3 sm:gap-4 lg:gap-5 mt-3">
                 <ButtonPrimary
@@ -62,8 +67,8 @@ const HeroSeminar = () => {
                   isOutline={true}
                   handleClick={() =>
                     window.open(
-                      `https://wa.me/62895605919551?text=${encodeURIComponent(
-                        "Halo Kak, Saya Ingin Bertanya mengenai Invofest 2025...",
+                      `https://wa.me/6285290100235?text=${encodeURIComponent(
+                        "Halo Kak, Saya Ingin Bertanya mengenai Invofest 2026...",
                       )}`,
                     )
                   }

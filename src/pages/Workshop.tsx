@@ -7,7 +7,11 @@ const Workshop = () => {
   TitlePage("Workshop");
 
   return (
-    <GeneralLayout {...dataWorkshop}>
+    <GeneralLayout 
+      {...dataWorkshop}
+      phoneNumber="6289666861497"
+      waMessage="Halo Kak, Saya Ingin Bertanya mengenai Workshop Invofest 2026..."
+      >
       {/* <CustomSpeaker data={dataWorkshop.speakers} /> */}
       <EventWorkshop data={dataWorkshop.events} />
     </GeneralLayout>

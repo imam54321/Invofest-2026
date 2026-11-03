@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import WhiteWaveTop from "/assets/wave-top.png";
 import WhiteWaveBot from "/assets/wave-bot.png";
-// import { MediaPartner } from "@/components/competition/MediaPartner";
+import { MediaPartner } from "@/components/competition/MediaPartner";
 import FAQ from "@/components/home/FAQ";
 // import { Sponsorship } from "@/components/home/Sponsorship";
 import EventTimeline from "../components/custom/TimeLineComp";
@@ -87,8 +87,8 @@ const WebdesignCompetition: React.FC = () => {
                         <h1 className="font-semibold text-invofest text-3xl sm:text-4xl lg:text-5xl">
                             Web Design Competition
                         </h1>
-                        <p className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-slate-600">
-                            “From Creation to Innovation”
+                        <p className="text-lg md:text-xl lg:text-2xl font-medium text-slate-600 italic">
+                            "Smart Ecosystems: Digital Solutions for a Sustainable Future"
                         </p>
                         <p className="text-slate-500">Jumat, 30 Oktober 2026</p>
 
@@ -130,7 +130,7 @@ const WebdesignCompetition: React.FC = () => {
                     <div className="w-full max-w-4xl mx-auto px-8 text-center">
                         <h2
                             data-aos="zoom-in"
-                            className="font-semibold text-invofest text-2xl sm:text-4xl lg:text-5xl mb-8"
+                            className="font-semibold text-gray-300 text-2xl sm:text-4xl lg:text-5xl mb-8"
                         >
                             DESKRIPSI LOMBA
                         </h2>
@@ -215,13 +215,16 @@ const WebdesignCompetition: React.FC = () => {
             />
 
             {/* FAQ Section */}
-            < FAQ />
+            < FAQ 
+                phoneNumber="6283820931296" 
+                waMessage="Halo Kak, Saya Ingin Bertanya mengenai Web Design Competition Invofest 2026..."  
+            />
 
             {/* Sponsorship */}
             {/* < Sponsorship /> */}
 
             {/* MEDIA PARTNER */}
-            {/* < MediaPartner /> */}
+            < MediaPartner />
         </React.Fragment >
     );
 };

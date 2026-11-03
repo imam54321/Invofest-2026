@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-// import { MediaPartner } from "@/components/competition/MediaPartner";
+import { MediaPartner } from "@/components/competition/MediaPartner";
 import FAQ from "@/components/home/FAQ";
 // import { Sponsorship } from "@/components/home/Sponsorship";
 import EventTimeline from "../components/custom/TimeLineComp";
@@ -9,7 +9,7 @@ import MaskotDf from "/assets/Maskot-Timeline-1.webp";
 import MaskotWinner from "/assets/Maskot-Lomba-2026.webp";
 import MaskotHp from "/assets/Maskot-Talkshow-2026.webp";
 import MaskotHero from "/assets/Maskot-Hero-2026.webp";
-
+import WhiteWaveTop from "/assets/wave-top.png";
 import { dataHadiahPoster } from "@/utils/datas";
 import Certificate from "/assets/certificate.svg";
 import CardHadiah from "@/components/custom/CardHadiah";
@@ -67,7 +67,7 @@ const UiUx: React.FC = () => {
     <React.Fragment>
       <div className="w-full bg-white text-slate-700 overflow-hidden font-sans">
         {/* HERO SECTION */}
-        <section className="max-w-screen-xl mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center justify-center gap-12">
+        <section className="max-w-screen-xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center justify-center gap-10">
           <div
             data-aos="fade-right"
             className="w-full md:w-1/2 flex justify-center"
@@ -75,7 +75,7 @@ const UiUx: React.FC = () => {
             <img
               src="/assets/competition-card/uiux.png"
               alt="UI/UX Design"
-              className="rounded-2xl w-full max-w-[380px] shadow-2xl hover:scale-105 transition-transform duration-500"
+              className="rounded-2xl w-[350px] shadow-lg"
             />
           </div>
 
@@ -84,13 +84,13 @@ const UiUx: React.FC = () => {
             className="w-full md:w-1/2 space-y-5 text-center md:text-left"
           >
             <h1
-              className="font-bold text-4xl sm:text-5xl lg:text-6xl tracking-tight"
+              className="font-semibold text-invofest text-3xl sm:text-4xl lg:text-5xl"
               style={{ color: "#1c0941" }}
             >
-              UI/UX Design <br className="hidden md:block" /> Competition
+              UI/UX Design Competition
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl font-medium text-slate-600 italic">
-              “From Creation to Innovation”
+              "Smart Ecosystems: Digital Solutions for a Sustainable Future"
             </p>
             <p className="text-slate-500 font-medium flex items-center justify-center md:justify-start gap-2">
               Jumat, 30 Oktober 2026
@@ -98,7 +98,7 @@ const UiUx: React.FC = () => {
 
             <div className="mt-8 space-y-4">
               <div
-                className="border rounded-lg py-3 px-4 font-semibold shadow-sm inline-block w-full"
+                className="border rounded-lg py-3 px-4 font-semibold shadow-sm w-full flex justify-center items-center"
                 style={{
                   backgroundColor: "#f6e6fe",
                   borderColor: "#2a1354",
@@ -135,9 +135,12 @@ const UiUx: React.FC = () => {
 
         {/* DESKRIPSI LOMBA */}
         <section
-          className="w-full relative"
-          style={{ backgroundColor: "#381971" }}
-        >
+          className="bg-invofest_secondary w-full relative">
+          <img
+            src={WhiteWaveTop}
+            alt="wave"
+            className="w-full relative top-0"
+          />
           <div className="h-16 md:h-24"></div>
 
           <div className="w-full max-w-5xl mx-auto px-6 text-center">
@@ -242,9 +245,11 @@ const UiUx: React.FC = () => {
           defaultImage={MaskotHp} // Fallback gambar default
         />
       </div>
-      <FAQ />
+      <FAQ 
+        phoneNumber="6285700865047" 
+        waMessage="Halo Kak, Saya Ingin Bertanya mengenai UI/UX Design Competition Invofest 2026..."  />
       {/* <Sponsorship /> */}
-      {/* <MediaPartner /> */}
+      <MediaPartner />
     </React.Fragment>
   );
 };

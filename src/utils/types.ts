@@ -22,6 +22,8 @@ export type GeneralLayoutProps = {
   aboutTitle: string;
   aboutDescription: string;
   children: React.ReactNode;
+  phoneNumber?: string;
+  waMessage?: string;
 };
 
 export type CardSpeakerProps = {
