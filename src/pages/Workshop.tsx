@@ -3,6 +3,7 @@ import GeneralLayout from "@/components/custom/GeneralLayout";
 import { dataWorkshop } from "../utils/datas";
 // import CustomSpeaker from "@/components/custom/CustomSpeaker";
 import EventWorkshop from "@/components/custom/EventsWorkshop";
+import CustomSpeaker from "@/components/custom/CustomSpeaker";
 const Workshop = () => {
   TitlePage("Workshop");
 
@@ -12,7 +13,7 @@ const Workshop = () => {
       phoneNumber="6289666861497"
       waMessage="Halo Kak, Saya Ingin Bertanya mengenai Workshop Invofest 2026..."
       >
-      {/* <CustomSpeaker data={dataWorkshop.speakers} /> */}
+      <CustomSpeaker data={dataWorkshop.speakers} />
       <EventWorkshop data={dataWorkshop.events} />
     </GeneralLayout>
   );

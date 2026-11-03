@@ -77,35 +77,29 @@ export const dataTalkshow = {
 export const dataWorkshop = {
   heroTitle: "IT Workshop",
   subtitle:
-    "“AI for a Sustainable Future: The Role of Z Generation in the Digital Era”",
+    "“Securing the AI Frontier: Gen Z Role in Building Sustainable & Safe Digital Ecosystems”",
   heroDescription: `IT Workshop ini menjembatani antara potensi Generasi Z dan kekuatan AI untuk menciptakan masa depan 
                 yang berkelanjutan. Peserta akan dibekali wawasan dan alat untuk mentransformasi ide-ide 
                 inovatif menjadi solusi lingkungan yang nyata dan terukur di era digital.`,
   linkRegister: "https://forms.gle/6nM63csbHRPg7CSx7",
   image: "/assets/Maskot-Talkshow-2026.webp",
   aboutTitle: "Tentang IT Workshop",
-  aboutDescription: `Workshop “AI for a Sustainable Future: The Role of Z Generation in the Digital Era” ini didesain khusus untuk Generasi Z, 
+  aboutDescription: `Workshop “Securing the AI Frontier: Gen Z Role in Building Sustainable & Safe Digital Ecosystems” ini didesain khusus untuk Generasi Z, 
   para digital natives yang berada di persimpangan antara inovasi teknologi dan tantangan keberlanjutan global. 
   Peserta akan diajak untuk menyelami bagaimana Kecerdasan Buatan (AI) bukan hanya sekadar teknologi canggih, tetapi juga alat yang ampuh untuk menciptakan solusi nyata bagi isu-isu lingkungan. 
   Melalui sesi inspiratif, pengenalan konsep, dan praktik langsung (hands-on), workshop ini bertujuan memberdayakan Gen Z untuk menjadi agen perubahan di era digital, menggunakan keahlian mereka untuk masa depan bumi yang lebih baik.`,
   speakers: [
     {
-      name: "Lhuqita Fazry",
-      position: "Mobile Development",
-      image: "assets/workshop/test4.png",
-      title: "Developer, Founder Rumah Coding Indonesia",
-    },
-    {
-      name: "M. Dendi Purwanto",
+      name: "Muhammad Dendi Purwanto S.Kom",
       position: "Artificial Intelligence",
-      image: "assets/workshop/test4.png",
-      title: "Software Engineer, PT. Mayar Kernel Supernova",
+      image: "assets/workshop/dandi.png",
+      title: "Software Engineer | Mayar.id, Core Team Tegal Dev",
     },
     {
-      name: "Danang Avan M",
+      name: "Muhammad Hasyim Asy'ari",
       position: "Cyber Security",
-      image: "assets/workshop/test4.png",
-      title: "Security Analyst, Founder | Contributor TegalSec",
+      image: "assets/workshop/hasyim.png",
+      title: "Application Security Engineer | Stockbit",
     },
   ],
   events: [
