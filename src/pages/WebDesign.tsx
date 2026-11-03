@@ -23,54 +23,42 @@ const WebdesignCompetition: React.FC = () => {
     const timelineEvents = [
         {
             id: 1,
-            title: "Pendaftaran Gelombang 1",
-            date: "11 - 18 Oktober 2026",
+            title: "Pendaftaran Gelombang 3",
+            date: "30 - 11 Novembar 2026",
             image: MaskotDf,
         },
         {
             id: 2,
             title: "Batas Akhir Pengumpulan Karya",
-            date: "7 November 2026",
+            date: "11 November 2026",
             image: MaskotHero,
         },
         {
             id: 3,
-            title: "Rekap Data Peserta",
-            date: "8 November 2026",
+            title: "Penilaian Juri",
+            date: "12 - 13 November 2026",
             image: MaskotHp,
         },
         {
             id: 4,
-            title: "Penilaian Juri (penyisihan)",
-            date: "9 - 11 November 2026",
+            title: "Pengumuman finalis",
+            date: "13 November 2026",
             image: MaskotHero,
         },
         {
             id: 5,
-            title: "Rekap Penilaian Juri",
-            date: "12 November 2026",
-            image: MaskotHero,
-        },
-        {
-            id: 6,
-            title: "Pengumuman 5 Besar (finalis)",
-            date: "12 November 2026",
-            image: MaskotHero,
-        },
-        {
-            id: 7,
             title: "Tecnical Meeting Finalis",
             date: "14 November 2026",
             image: MaskotHero,
         },
         {
-            id: 8,
+            id: 6,
             title: "Presentasi Finalis",
             date: "17 November 2026",
             image: MaskotHero,
         },
         {
-            id: 9,
+            id: 7,
             title: "Pengumuman Juara",
             date: "19 November 2026",
             image: MaskotWinner,
@@ -102,11 +90,11 @@ const WebdesignCompetition: React.FC = () => {
                         <p className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-slate-600">
                             “From Creation to Innovation”
                         </p>
-                        <p className="text-slate-500">Kamis, 27 November 2025</p>
+                        <p className="text-slate-500">Jumat, 30 Oktober 2026</p>
 
                         <div className="space-y-3 mt-5">
                             <div className="bg-navbar border border-invofest text-center rounded-md py-3 font-semibold">
-                                Biaya Pendaftaran Gelombang 2: Rp. 60.000
+                                Biaya Pendaftaran Gelombang 3: Rp. 60.000
                             </div>
                             {/* Tombol Register */}
                             <a
