@@ -31,17 +31,14 @@ const About = () => {
               data-aos-delay="450"
               className="text-sm md:text-base lg:text-[1.35rem] sm:leading-[1.5rem] lg:leading-[2rem] text-gray-300"
             >
-              Invofest 2025, yang diselenggarakan oleh sarjana terapan Teknik
+              Invofest 2026, yang diselenggarakan oleh sarjana terapan Teknik
               Informatika Universitas Harkat Negeri, adalah festival tahunan
               yang bertujuan untuk menginspirasi dan memberdayakan generasi muda
               Indonesia dalam menghadapi era digital. Dengan mengusung tema{" "}
-              <b>
-                “Beyond Limits, Beyond Intelligence: Innovate for a Smarter
-                Tomorrow ”
-              </b>
-              . Invofest 2025 menghadirkan berbagai kegiatan menarik seperti
-              kompetisi IT, workshop IT, dan seminar nasional & talkshow dengan
-              para ahli teknologi.
+              <b>“Beyond the Breakthrough: The Future is Now”</b>. Invofest 2026
+              menghadirkan berbagai kegiatan menarik seperti kompetisi IT,
+              workshop IT, dan seminar nasional & talkshow dengan para ahli
+              teknologi.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-3 gap-5">
@@ -49,7 +46,7 @@ const About = () => {
                 dataAos="zoom-in"
                 delayAos="150"
                 btnText="INFO SELENGKAPNYA"
-                desc="Seminar nasional ini membahas “Human-AI Integration: Merancang Arsitektur Kolaboratif, Bukan Kompetitif” untuk mengembangkan potensi diri dan pengetahuan teknologi lebih dalam lagi."
+                desc="Seminar nasional ini membahas “Beyond the Classroom: Preparing for the Future of Technology and Industry” untuk mengembangkan potensi diri dan pengetahuan teknologi lebih dalam lagi."
                 title="IT Seminar"
                 href="/seminar"
               />
@@ -57,7 +54,7 @@ const About = () => {
                 dataAos="zoom-in"
                 delayAos="350"
                 btnText="INFO SELENGKAPNYA"
-                desc="Talkshow “Humanizing Technology: Kolaborasi Manusia dan AI di Masa Depan” membahas peran manusia dalam memanfaatkan AI untuk solusi berkelanjutan dan peningkatan teknologi."
+                desc="Talkshow “Beyond the Journey: Stories, Challenges, and Breakthroughs”  menggambarkan perjalanan para alumni melalui cerita, pengalaman, dan berbagai tantangan yang mereka hadapi hingga mencapai keberhasilan. Talkshow ini tidak hanya membahas perjalanan mereka, tetapi juga proses, pengalaman, serta pencapaian yang menjadi bagian dari setiap breakthrough yang diraih."
                 title="IT Talkshow"
                 href="/talkshow"
               />

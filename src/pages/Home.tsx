@@ -8,7 +8,7 @@ import ITWorkshopSec from "@/components/home/ITWorkshopSec";
 // import { Sponsorship } from "@/components/home/Sponsorship";
 import { TitlePage } from "@/utils/TitlePage";
 import React from "react";
-// import { MediaPartner } from '../components/competition/MediaPartner';
+import { MediaPartner } from '../components/competition/MediaPartner';
 
 const Home = () => {
   TitlePage();
@@ -40,7 +40,7 @@ const Home = () => {
         {/* <Sponsorship /> */}
 
         {/* Media Partner Section */} 
-        {/* <MediaPartner /> */}
+        <MediaPartner />
     </React.Fragment>
   );
 };
