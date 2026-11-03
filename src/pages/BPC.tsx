@@ -24,54 +24,42 @@ const Poster: React.FC = () => {
   const timelineEvents = [
     {
       id: 1,
-      title: "Pendaftaran Gelombang 1",
-      date: "11 - 18 Oktober 2026",
+      title: "Pendaftaran Gelombang 3",
+      date: "30 - 11 Novembar 2026",
       image: MaskotDf,
     },
     {
       id: 2,
       title: "Batas Akhir Pengumpulan Karya",
-      date: "7 November 2026",
+      date: "11 November 2026",
       image: MaskotHero,
     },
     {
       id: 3,
-      title: "Rekap Data Peserta",
-      date: "8 November 2026",
+      title: "Penilaian Juri",
+      date: "12 - 13 November 2026",
       image: MaskotHp,
     },
     {
       id: 4,
-      title: "Penilaian Juri (penyisihan)",
-      date: "9 - 11 November 2026",
+      title: "Pengumuman finalis",
+      date: "13 November 2026",
       image: MaskotHero,
     },
     {
       id: 5,
-      title: "Rekap Penilaian Juri",
-      date: "12 November 2026",
-      image: MaskotHero,
-    },
-    {
-      id: 6,
-      title: "Pengumuman 5 Besar (finalis)",
-      date: "12 November 2026",
-      image: MaskotHero,
-    },
-    {
-      id: 7,
       title: "Tecnical Meeting Finalis",
       date: "14 November 2026",
       image: MaskotHero,
     },
     {
-      id: 8,
+      id: 6,
       title: "Presentasi Finalis",
       date: "16 November 2026",
       image: MaskotHero,
     },
     {
-      id: 9,
+      id: 7,
       title: "Pengumuman Juara",
       date: "19 November 2026",
       image: MaskotWinner,
@@ -104,11 +92,11 @@ const Poster: React.FC = () => {
             <p className="text-lg md:text-xl lg:text-2xl font-medium text-slate-600 italic">
               "Smart Ecosystems: Digital Solutions for a Sustainable Future"
             </p>
-            <p className="text-slate-500">Rabu, 11 November 2026</p>
+            <p className="text-slate-500">Jumat, 30 Oktober 2026</p>
 
             <div className="space-y-3 mt-5">
               <div className="bg-navbar border border-invofest_dark text-center rounded-md py-3 font-semibold">
-                Biaya Pendaftaran Gelombang 2 : Rp. 65.000
+                Biaya Pendaftaran Gelombang 3 : Rp. 55.000
               </div>
 
               {/* Tombol Register */}

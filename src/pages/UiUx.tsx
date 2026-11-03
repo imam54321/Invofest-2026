@@ -21,54 +21,42 @@ const UiUx: React.FC = () => {
   const timelineEvents = [
     {
       id: 1,
-      title: "Pendaftaran Gelombang 1",
-      date: "11 - 18 Oktober 2026",
+      title: "Pendaftaran Gelombang 3",
+      date: "30 - 11 Novembar 2026",
       image: MaskotDf,
     },
     {
       id: 2,
       title: "Batas Akhir Pengumpulan Karya",
-      date: "7 November 2026",
+      date: "11 November 2026",
       image: MaskotHero,
     },
     {
       id: 3,
-      title: "Rekap Data Peserta",
-      date: "8 November 2026",
+      title: "Penilaian Juri",
+      date: "12 - 13 November 2026",
       image: MaskotHp,
     },
     {
       id: 4,
-      title: "Penilaian Juri (penyisihan)",
-      date: "9 - 11 November 2026",
+      title: "Pengumuman finalis",
+      date: "13 November 2026",
       image: MaskotHero,
     },
     {
       id: 5,
-      title: "Rekap Penilaian Juri",
-      date: "12 November 2026",
-      image: MaskotHero,
-    },
-    {
-      id: 6,
-      title: "Pengumuman 5 Besar (finalis)",
-      date: "12 November 2026",
-      image: MaskotHero,
-    },
-    {
-      id: 7,
       title: "Tecnical Meeting Finalis",
       date: "14 November 2026",
       image: MaskotHero,
     },
     {
-      id: 8,
+      id: 6,
       title: "Presentasi Finalis",
       date: "16 November 2026",
       image: MaskotHero,
     },
     {
-      id: 9,
+      id: 7,
       title: "Pengumuman Juara",
       date: "19 November 2026",
       image: MaskotWinner,
@@ -105,7 +93,7 @@ const UiUx: React.FC = () => {
               "Smart Ecosystems: Digital Solutions for a Sustainable Future"
             </p>
             <p className="text-slate-500 font-medium flex items-center justify-center md:justify-start gap-2">
-                Rabu, 11 November 2026
+              Jumat, 30 Oktober 2026
             </p>
 
             <div className="mt-8 space-y-4">
@@ -117,7 +105,7 @@ const UiUx: React.FC = () => {
                   color: "#2a1354",
                 }}
               >
-                 Biaya Pendaftaran Gelombang 2 : Rp. 85.000
+                Biaya Pendaftaran Gelombang 3 : Rp. 75.000
               </div>
 
               {/* Tombol Aksi */}
@@ -127,7 +115,6 @@ const UiUx: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full text-white font-semibold bg-invofest py-3 rounded-lg text-center shadow-lg hover:opacity-90 hover:-translate-y-1 transition-all duration-300"
-
                 >
                   Registrasi Sekarang
                 </a>
