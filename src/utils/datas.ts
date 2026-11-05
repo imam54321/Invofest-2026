@@ -81,7 +81,7 @@ export const dataWorkshop = {
   heroDescription: `IT Workshop ini menjembatani antara potensi Generasi Z dan kekuatan AI untuk menciptakan masa depan 
                 yang berkelanjutan. Peserta akan dibekali wawasan dan alat untuk mentransformasi ide-ide 
                 inovatif menjadi solusi lingkungan yang nyata dan terukur di era digital.`,
-  linkRegister: "https://forms.gle/6nM63csbHRPg7CSx7",
+  linkRegister: "https://docs.google.com/forms/d/e/1FAIpQLSfmd7Sz7WG-AMl6P-k7AF0ESuZrhKtQgbiehHvsTjz1tqABeg/viewform",
   image: "/assets/Maskot-Talkshow-2026.webp",
   aboutTitle: "Tentang IT Workshop",
   aboutDescription: `Workshop “AI for a Sustainable Future: The Role of Z Generation in the Digital Era” ini didesain khusus untuk Generasi Z, 
