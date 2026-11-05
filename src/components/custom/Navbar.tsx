@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { FaMicrophoneAlt, FaTrophy, FaHome } from "react-icons/fa";
 import { MdCoPresent } from "react-icons/md";
 // Mengimpor ikon pengguna sebagai alternatif untuk login admin
-import { FaUserCircle } from "react-icons/fa"; // Contoh ikon pengguna
+// import { FaUserCircle } from "react-icons/fa"; // Contoh ikon pengguna
 import { FaLaptop } from "react-icons/fa";
 
 const Navbar = () => {
@@ -132,21 +132,6 @@ const Navbar = () => {
                 >
                   <FaMicrophoneAlt />
                   Talkshow
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={"/login-admin"}
-                  className={getNavLinkClass("/login-admin")}
-                  aria-current={
-                    location.pathname === "/login-admin" ? "page" : undefined
-                  }
-                  onClick={() => setOpenMenu(false)}
-                  aria-label="Login Admin"
-                  title="Login Admin"
-                >
-                  {/* Menggunakan FaUserCircle sebagai ikon login */}
-                  <FaUserCircle className="text-2xl" />
                 </Link>
               </li>
             </ul>
