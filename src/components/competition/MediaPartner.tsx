@@ -64,36 +64,38 @@ const mediaPartner = [
     id: 8,
     img_path: "/assets/media_partner/logo info lomba IT.webp",
   },
-//   {
-//     id: 9,
-//     img_path: "/assets/media_partner/logo himatris.PNG",
-//   },
-  //   {
-  //     id: 10,
-  //     img_path: "/assets/media_partner/logo info lomba IT.png",
-  //   },
-  //   {
-  //     id: 11,
-  //     img_path: "/assets/media_partner/LOGO HMTIKA.png",
-  //   },
-  //   {
-  //     id: 12,
-  //     img_path: "/assets/media_partner/lomba it ii.png",
-  //   },
-  //   {
-  //     id: 13,
-  //     img_path: "/assets/media_partner/HMP D3 TEKNIK MESIN UHN.png",
-  //   },
-  //   {
-  //     id: 14,
-  //     img_path: "/assets/media_partner/logo hima elektro.png",
-  //   },
-  //   {
-  //     id: 15,
-  //     img_path: "/assets/media_partner/Logo warga tech.png",
-  //   },
-  //   {
-  //     id: 16,
-  //     img_path: "/assets/media_partner/HMPTI_ITB_STIKOM_BALI.png",
-  //   }
+  {
+    id: 9,
+    img_path: "/assets/media_partner/9.jpg",
+    width: 100,
+    height: 80,
+  },
+    {
+      id: 10,
+      img_path: "/assets/media_partner/10.jpg",
+    },
+    {
+      id: 11,
+      img_path: "/assets/media_partner/11.jpg",
+    },
+    {
+      id: 12,
+      img_path: "/assets/media_partner/12.jpg",
+    },
+    {
+      id: 13,
+      img_path: "/assets/media_partner/13.png",
+    },
+    {
+      id: 14,
+      img_path: "/assets/media_partner/LOGO DPM UHD.png",
+    },
+    {
+      id: 15,
+      img_path: "/assets/media_partner/ciber.jpg",
+    },
+    {
+      id: 16,
+      img_path: "/assets/media_partner/16.jpg",
+    }
 ];

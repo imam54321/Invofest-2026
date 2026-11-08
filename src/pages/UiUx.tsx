@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { MediaPartner } from "@/components/competition/MediaPartner";
 import FAQ from "@/components/home/FAQ";
-// import { Sponsorship } from "@/components/home/Sponsorship";
+import { Sponsorship } from "@/components/home/Sponsorship";
 import EventTimeline from "../components/custom/TimeLineComp";
 import MaskotDf from "/assets/Maskot-Timeline-1.webp";
 import MaskotWinner from "/assets/Maskot-Lomba-2026.webp";
@@ -261,7 +261,7 @@ const UiUx: React.FC = () => {
       <FAQ 
         phoneNumber="6285700865047" 
         waMessage="Halo Kak, Saya Ingin Bertanya mengenai UI/UX Design Competition Invofest 2026..."  />
-      {/* <Sponsorship /> */}
+      <Sponsorship />
       <MediaPartner />
     </React.Fragment>
   );
