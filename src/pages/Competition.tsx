@@ -3,7 +3,7 @@ import HeroComp from "@/components/competition/HeroComp";
 import ListComp from "@/components/competition/ListComp";
 import { MediaPartner } from "@/components/competition/MediaPartner";
 import FAQ from "@/components/home/FAQ";
-// import { Sponsorship } from "@/components/home/Sponsorship";
+import { Sponsorship } from "@/components/home/Sponsorship";
 import { TitlePage } from "@/utils/TitlePage";
 import React from "react";
 
@@ -27,7 +27,7 @@ const Competition = () => {
         waMessage="Halo Kak, Saya Ingin Bertanya mengenai IT Competition Invofest 2026..."  />
 
       {/* Sponsorship */}
-      {/* <Sponsorship /> */}
+      <Sponsorship />
 
       {/* Media Partner */}
       <MediaPartner />
