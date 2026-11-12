@@ -104,23 +104,16 @@ export const dataWorkshop = {
   ],
   events: [
     {
-      id: 1,
-      title: "Mobile Development",
-      date: "Selasa, 25 November 2025",
-      place: "Lab Kom D.1",
-      time: "08.00 WIB - 16.30 WIB",
-    },
-    {
       id: 2,
       title: "Artificial Intelegence",
-      date: "Selasa, 25 November 2025",
-      place: "Lab Kom D.2",
+      date: "Selasa, 17 November 2026",
+      place: "Lab Kom D.1",
       time: "08.00 WIB - 16.30 WIB",
     },
     {
       id: 3,
       title: "Cyber Security",
-      date: "Rabu, 26 November 2025",
+      date: "Rabu, 18 November 2026",
       place: "Lab Kom D.1",
       time: "08.00 WIB - 16.30 WIB",
     },
