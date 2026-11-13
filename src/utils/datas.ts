@@ -7,7 +7,7 @@ export const dataSeminar = {
   heroDescription:
     "“Preparing for the Future of Technology and Industry” menggambarkan pentingnya mempersiapkan diri menghadapi perkembangan teknologi dan kebutuhan industri di masa depan." +
     "Proses belajar tidak hanya terbatas pada teori di dalam kelas atau lingkungan akademik formal, tetapi juga dapat diperoleh melalui pengalaman berorganisasi dan kegiatan lainnya sebagai bekal untuk belajar menghadapi dunia nyata, khususnya dunia kerja dan industri. Hal ini menjadi semakin penting seiring perkembangan teknologi yang semakin cepat dan kebutuhan industri yang terus berkembang.",
-  linkRegister: "https://forms.gle/chNgyZPdS7SneLwV6",
+  linkRegister: "https://docs.google.com/forms/d/e/1FAIpQLScdMQcfaYxdsqm2u5JhtqbJxwesDEfu5dojF5oNYPtE9W94ZQ/viewform?usp=header",
   image: "/assets/Maskot-Seminar-2026.webp",
   aboutTitle: "Tentang  IT SEMINAR",
   aboutDescription: `Seminar bertajuk “Human-AI Integration: Merancang Arsitektur Kolaboratif, Di tengah pesatnya kemajuan kecerdasan buatan (AI), narasi yang sering muncul adalah tentang persaingan antara manusia dan mesin. Kekhawatiran akan penggantian peran manusia oleh teknologi cerdas menjadi diskusi utama di berbagai sektor. Namun, bagaimana jika kita mengubah paradigma tersebut?
@@ -15,14 +15,10 @@ export const dataSeminar = {
                     Kami bertujuan untuk menggeser fokus dari ketakutan akan kompetisi menjadi eksplorasi peluang kolaborasi. Seminar ini akan mengupas tuntas bagaimana kita dapat merancang sistem, etika, dan lingkungan kerja di mana AI berfungsi sebagai mitra yang memperkuat kecerdasan, kreativitas, dan produktivitas manusia—bukan sebagai pengganti.`,
   speakers: [
     {
-      name: "Dery Agung Triyadi",
-      position: "Aws Indonesia",
-      image: "/assets/seminar/test1.png",
-    },
-    {
-      name: "Sowam Habibi",
-      position: "Google Indonesia",
-      image: "/assets/seminar/test2.png",
+      name: "Prof. Dr. Ir. Esther Irawati Setiawan, M.Kom",
+      position: "Google Developer Expert (GDE)",
+      image: "",
+      title: "Professor Institut STTS",
     },
   ],
   events: {
@@ -38,7 +34,7 @@ export const dataTalkshow = {
   subtitle: "Beyond the Journey: Stories, Challenges, and Breakthroughs”",
   heroDescription: ` “Stories, Challenges, and Breakthroughs” menggambarkan perjalanan para alumni melalui cerita, pengalaman, dan berbagai tantangan yang mereka hadapi hingga mencapai keberhasilan.
                     Talkshow ini tidak hanya membahas perjalanan mereka, tetapi juga proses, pengalaman, serta pencapaian yang menjadi bagian dari setiap breakthrough yang diraih.`,
-  linkRegister: "https://forms.gle/xgJY5hWLP2z4sp7eA",
+  linkRegister: "https://docs.google.com/forms/d/e/1FAIpQLSepvQVWNHK-DtKzQI3_Fe5GBfAXN6nKb7U9ttwOprhWgfJgCQ/viewform?usp=header",
   image: "/assets/Maskot-Say.webp",
   aboutTitle: "Tentang IT Talkshow",
   aboutDescription: `Seiring teknologi, khususnya kecerdasan buatan (AI), yang semakin meresap ke dalam setiap aspek kehidupan kita, muncul sebuah pertanyaan fundamental: Apakah kita sedang menciptakan teknologi yang melayani manusia, atau justru sebaliknya?

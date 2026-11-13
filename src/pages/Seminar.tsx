@@ -8,7 +8,7 @@ const Seminar = () => {
 
   return (
     <GeneralLayout {...dataSeminar}>
-      {/* <CustomSpeaker data={dataSeminar.speakers} /> */}
+       {/*<CustomSpeaker data={dataSeminar.speakers} /> */}
       <CustomEvents {...dataSeminar.events} />
     </GeneralLayout>
   );
